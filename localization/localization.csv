@@ -1,525 +1,530 @@
-keys,en,ja,fr,es
-ENGLISH,English,English,English,English
-JAPANESE,日本語,日本語,日本語,日本語
-FRENCH,Français,Français,Français,Français
-SPANISH,Español,Español,Español,Español
-Select Language,Select Language,言語を選択,Sélectionner la langue,Seleccione su idioma
-Back,Back,戻る,Retour,Retroceder
-Start!,Start!,スタート,Lancer !,¡Empezar!
-Favorite,Favorite,お気に入り,Favori,Favorito
-Favorited!,Favorited!,お気に入り追加済み,Favori !,¡Marcado como favorito!
-Play Music,Play Music,音楽を聴く,Jouer la musique,Reproducir canción
-Stop Playing,Stop Playing,聴くのをやめる,Arrêter la musique,Detener reproducción
-Speed,Speed,速さ,Vitesse,Velocidad
-MISSES,MISSES,ミス,RATÉ,FALLOS
-PAUSES,PAUSES,一時停止,PAUSES,PAUSAS
-No Pauses,No Pauses,一時停止なし,Sans pauses,Sin pausas
-PROGRESS,PROGRESS,進行度,PROGRESSION,PROGRESO
-ACCURACY,ACCURACY,精度,PRÉCISION,PRECISIÓN
-MAX COMBO,MAX COMBO,最高コンボ,COMBO MAX,MÁXIMO COMBO
-Modifiers,Modifiers,Mods,Modificateurs,Modificadores
-Map by,Map by,制作者:,Mappé par,Mapeado por
-Song ID,Song ID,ID:,ID:,ID:
-Nofail,Nofail,無敵,Nofail,Nofail
-Sudden Death,Sudden Death,即死,Mort subite,Muerte súbita
-Extra Energy,Extra Energy,HP増加,Extra-énergie,Energía extra
-Easy Mode,Easy Mode,イージーモード,Mode facile,Modo fácil
-No Regen,No Regen,HP回復なし,Sans régénération,Sin regeneración
-Hard Mode,Hard Mode,ハードモード,Mode difficile,Modo difícil
-Mirror X,Mirror X,X軸反転,Miroir X,Reflejo X
-Mirror Y,Mirror Y,Y軸反転,Miroir Y,Reflejo Y
-Earthquake,Earthquake,地震,Tremblement,Terremoto
-Ghost,Ghost,ゴースト,Dissipation,Desvanecimiento
-Chaos,Chaos,カオスモード,Chaos,Caos
-Visual Map Mode,Visual Map Mode,シアターモード,Mode map visuelle,Modo mapa visual
-Flashlight,Flashlight,フラッシュライト,Lampe Torche,Linterna
-Invert Mouse,Invert Mouse,マウス反転,Souris inversée,Ratón invertido
-Hard Rock,Hard Rock,ハードロック,Hard Rock,Hard Rock
-Health Model,Health Model,ヘルスモード,Modèle de PV,Modelo de PV
-Start From,Start From,開始地点,Commencer à,Empezar desde
-NOTES,NOTES,ノーツ,NOTES,NOTAS
-SCORE,SCORE,スコア,SCORE,PUNTUACIÓN
-PAUSED,PAUSED,一時停止,EN PAUSE,PAUSADO
-HOLD R TO EXIT,HOLD R TO EXIT,Rキーを長押しでスキップ,MAINTENIR R POUR QUITTER,MANTENER R PARA SALIR
-PRESS SPACE TO SKIP,PRESS SPACE TO SKIP,スキップするにはスペースをクリック,APPUYER SUR ESPACE POUR PASSER,PULSAR ESPACIO PARA SALTAR
-You failed (new best!),You failed (new best!),失敗（新記録！）,Échec ! (meilleur progression !),¡Moriste! (¡mejor marca!)
-Default (Sound Space),Default (Sound Space),デフォルト（Sound Space）,Par défaut (Sound Space),Por defecto (Sound Space)
-Default - same as Sound Space,Default - same as Sound Space,デフォルト - Sound Spaceと同じ,Par défaut - (le même que Sound Space),Por defecto (el mismo que en Sound Space)
-Old (easier),Old (easier),旧（もっと簡単）,Ancien (plus facile),Antiguo (más fácil)
-"Old - 6 hp (10 on easy), regen 1 hp/hit","Old - 6 hp (10 on easy), regen 1 hp/hit","旧 - 6 hp (イージーでは10hp), 回復 1hp/hit","Ancien - 6 PV (10 en facile), régénère 1 PV/note","Antiguo - 6 PV (10 PV en fácil), regenera 1 PV / nota golpeada"
-Giving up...,Giving up...,諦める,Abandon...,Abandonar...
-Save,Save,保存,Sauvegarder,Guardar
-Open User Folder,Open User Folder,ユーザーフォルダを開く,Ouvrir dossier utilisateur,Abrir carpeta de usuario
-Open Replay Folder,Open Replay Folder,リプレイフォルダーを開く,Ouvrir dossier de replay,Abrir carpeta de repeticiones
-Reload Content,Reload Content,再読み込み,Recharger le contenu,Recargar contenido
-Disable Pausing,Disable Pausing,一時停止を無効にする,Désactiver les pauses,Desactivar pausas
-disallows pausing the map,disallows pausing the map,一時停止を使わない,empêche les pauses,evita poder pausar el juego
-Custom Speed Rate,Custom Speed Rate,ノーツ速度,Vitesse customisé,Velocidad personalizable
-"[default 100%] used by the custom speed modifier (speed+ mods are 115, 125, 135, and 145)","[default 100%] used by the custom speed modifier (speed+ mods are 115, 125, 135, and 145)","[デフォルト 100%] カスタム速度Modで使用 (スピードModは115, 125, 135, 145)",[par défaut 100%],"[por defecto 100%] utilizada por el modificador de velocidad personalizable (los modificadores de velocidad extra son 115, 125, 135, and 145)"
-Hitbox Size,Hitbox Size,ヒットボックスの大きさ,Taille des hitbox,Tamaño del hitbox
-[def. 1.14] the size of note hitboxes in grid units (hit checking is done at the center of the cursor)   [1.5x = 1.71; 2x = 2.28],[def. 1.14] the size of note hitboxes in grid units (hit checking is done at the center of the cursor)   [1.5x = 1.71; 2x = 2.28],[デフォルト 1.14] ノーツのヒットボックスの大きさをグリッド単位で指定（ヒットチェックはカーソルの中心） [1.5x = 1.71; 2x = 2.28],[par défaut 1.14] la taille de l'hitbox des notes dans la grille (la vérification des hits est faites au centre du curseur)   [1.5x = 1.71; 2x = 2.28],[por defecto 1.14] el tamaño del hitbox de las notas (verificación de golpeo realizada desde el centro del cursor) [1.5x = 1.71; 2x = 2.28]
-Hit Window,Hit Window,ヒット判定,Fenêtre de hit,Registro de golpeo
-[def. 55ms] the length of time notes can be hit after reaching the grid   [1.5x = 83; 2x = 110],[def. 55ms] the length of time notes can be hit after reaching the grid   [1.5x = 83; 2x = 110],グリッドに到達した後、ノートをヒットできる時間の長さ [基本値 = 55ms、拡張値 = 1.5倍 (83ms)、2倍 (110ms)],[par défaut 55ms] la durée de temps durant les notes peuvent être touché après avoir atteint la grille [1.5x = 83; 2x = 110],[por defecto 55ms] la longitud temporal durante la que se pueden golpear las notas al pasar la cuadrícula [1.5x = 83; 2x = 110]
-Counter Speed,Counter Speed,カウンター速度,Contre-Vitesse,Contra-Velocidad
-alters the hit window to counter the effects of speed mods,alters the hit window to counter the effects of speed mods,スピードModの影響を打ち消すためにヒット判定を変更する,altère la fenêtre de hit pour contrer les répercussions des vitesses,modifica el Hit Window para contrarrestar los efectos de un modificador de velocidad
-Notes,Notes,ノーツ設定,Notes,Notas
-Note Colors,Note Colors,ノーツの色,Couleur des notes,Color de las notas
-Note Mesh,Note Mesh,ノーツの形,Modèle 3D des notes,Modelo 3D de las notas
-model used by notes,model used by notes,ノーツのモデル,modèle utilisé pour les notes,modelo utilizado por las notas
-Rounded,Rounded,丸い,Arrondi,Redondeado
-Square,Square,四角,Carré,Cuadrado
-Circle,Circle,円,Rond,Circular
-Block,Block,ブロック,Bloc,Bloque
-Front of Block,Front of Block,ブロックの前面,Devant du bloc,Frontal de bloque
-Plane,Plane,プレーン,Aire,Plano
-Note Scale,Note Scale,ノーツの大きさ,Échelle des notes,Escala de las notas
-[def. 1] the visual size of the notes (doesn't affect hitboxes),[def. 1] the visual size of the notes (doesn't affect hitboxes),ノーツの視覚的な大きさ（ヒットボックスには影響しない）,[par défaut 1] la taille visuelle des notes (n'affecte pas les hitboxs),[por defecto 1] tamaño visual (no afecta al hitbox)
-Note Opacity,Note Opacity,ノーツの透明度,Opacité des notes,Opacidad de las notas
-[def. 100%] how opaque/transparent/visible the note appears,[def. 100%] how opaque/transparent/visible the note appears,[デフォルト 100%] ノーツの不透明度/視認性,[par défaut 100%] à quel point les notes apparaitront opaque/transparante/visible,[por defecto 100%] cómo de opacas / transparentes / visibles se ven las notas
-Approach Rate,Approach Rate,接近速度,Vitesse d'approche (AR),Velocidad de aproximación (AR)
-[def. 40] the speed that notes move towards the grid. (note: this will be half of your AR in ss/vulnus),[def. 40] the speed that notes move towards the grid. (note: this will be half of your AR in ss/vulnus),[デフォルト 40] ノーツがグリッドに向かって移動する速度。(注：ss/vulnusではARの半分になります。）,[par défaut 40] la vitesse a laquelle les notes arrivent vers la grille (note : elle sera la moitié de ton AR (Approch Rate) sur Sound Space/Vulnus),[por defecto 40] la velocidad con que se aproximan las notas a la cuadrícula
-Spawn Distance,Spawn Distance,ノーツの出現距離,Distance d'apparition (SD),Distancia de aparición (SD)
-[def. 40] distance from the grid that notes spawn (approach time = SD/AR),[def. 40] distance from the grid that notes spawn (approach time = SD/AR),[デフォルト 40］ノーツがスポーンするグリッドからの距離（接近速度＝SD/AR）,[par défaut 40] la distance a laquelle les notes apparaîtront de la grille (temps d'approche = SD/AR),[por defecto 40] la distancia a la que las notas aparecen desde la cuadrícula (AR/SD = tiempo de aproximación)
-Fade Length,Fade Length,ノーツの出現時間,Durée d'apparition,Duración de aparición
-[def. 50%] percentage of the spawn distance that notes take to fade from invisible to fully opaque,[def. 50%] percentage of the spawn distance that notes take to fade from invisible to fully opaque,[デフォルト 50％] ノーツが透明から完全に不透明になるまでのスポーン距離のパーセンテージ,[par défaut 50%] le pourcentage de la distance d'apparition que les notes prennent pour apparaître d'invisible à opaque,[por defecto 50%] el porcentaje de la distancia de aparición que tardan las noas en pasar de invisibles a opacas
-Do Note Pushback,Do Note Pushback,ノーツプッシュバック,Repoussement des notes,Haz retroceder las notas
-"while enabled, notes will go past the grid when you miss, instead of always vanishing 0.1 units past the grid","while enabled, notes will go past the grid when you miss, instead of always vanishing 0.1 units past the grid",有効になっている場合、ミスしたときにノーツがグリッドを通り過ぎる。,"si activé, les notes passeront à travers la grille pour chaque notes raté, au lieu de disparaitre à 0.1 unités après la grille","si está activo, las notas pasarán a través de la cuadrícula cuando falles, en lugar de desaparecer 0.1 unidades pasada la cuadrícula"
-Half Ghost,Half Ghost,半透明,Demi-dissipation,Medio-desvanecimiento
-useful for patterns that fill the whole screen,useful for patterns that fill the whole screen,画面全体にノーツがあるときに役立つ,utile pour des patternes quit remplisse l'écran,útil para patrones que cubren toda la pantalla
-Note Spawn Effect,Note Spawn Effect,ノーツの出現エフェクト,Effet d'apparition des notes,Efecto de aparición de las notas
-"alright, fine. no distractions for you.","alright, fine. no distractions for you.",気が散らない！,pas de distractions :D,no tendrás nada para distraerte :)
-Hit Effect Image,Hit Effect Image,ヒットエフェクトのイメージ,Image hit effect,Imagen de efecto visual de golpe
-Click to replace,Click to replace,クリックで置き換え,Cliquer pour remplacer,Haz click para reemplazar
-this image is used by hit effects with an asterisk (*) in their name,this image is used by hit effects with an asterisk (*) in their name,この画像は、名前にアスタリスク（*）が含まれるヒットエフェクトで使用されます。,cette image est utilisé par les hit effect avec un astérisque (*) dans leur nom,esta imagen es utilizada por los efectos visuales de golpe con un asterisco (*) en su nombre
-Ripple* (no color),Ripple* (no color),画像* (無色),Onde* (sans couleurs),Onda* (incoloro)
-Ripple* (note color),Ripple* (note color),画像* (ノーツの色),Onde* (couleur des notes),Onda* (color de nota)
-Ripple* (rainbow),Ripple*(rainbow),画像* (虹色),Onde* (arc-en-ciel),Onda* (arcoiris)
-Shards (note color),Shards (note color),破片 (ノーツの色),Éclats* (couleur des notes),Fragmentos* (color de nota)
-Shards (rainbow),Shards (rainbow),破片 (虹色),Éclats* (arc-en-ciel),Fragmentos* (arcoiris)
-Shards (no color),Shards (no color),破片 (無色),Éclats* (sans couleurs),Fragmentos* (incoloro)
-Miss* (red),Miss* (red),ミス* (赤),Raté* (rouge),Fallo* (rojo)
-Miss* (note color),Miss* (note color),ミス* (ノーツの色),Raté* (couleur des notes),Fallo* (color de nota)
-Miss* (rainbow),Miss* (rainbow),ミス* (虹色),Raté* (arc-en-ciel),Fallo* (arcoiris)
-Miss* (no color),Miss* (no color),ミス* (無色),Raté* (sans couleurs),Fallo* (incoloro)
-Hit Effect,Hit Effect,ヒットエフェクト,Hit effect,Efecto de golpe
-effect played when you hit a note,effect played when you hit a note,ノーツを打った際のエフェクト,effet joué quand tu touches une note,el efecto visual al golpear una nota
-Show Hit Effect,Show Hit Effect,ヒットエフェクトを表示,Montrer hit effect,Mostrar efecto visual
-plays your selected hit effect when you hit a note,plays your selected hit effect when you hit a note,ノーツを打った際に選択したヒット・エフェクトを再生する,joue l'hit effect selectionné quand tu touche une note,muestra el efecto seleccionado al golpear una nota
-Hit Effect at Cursor,Hit Effect at Cursor,カーソルヒットエフェクトを表示,Hit effect au curseur,Efecto visual sobre el cursor
-hit effects will appear at the center of notes when this is off,hit effects will appear at the center of notes when this is off,これがオフの場合、ヒットエフェクトがノーツの中央に表示されます。,les hit effects apparaîtront au centre des notes si cette option est désactivé,el efecto visual aparecerá en el centro de las notas golpeadas si esta opción está desactivada
-Approach Squares,Approach Squares,アプローチガイド,Carré d'approche,Cuadrado de proximidad
-squares on the grid that show note approach - similar to the circles in osu!,squares on the grid that show note approach - similar to the circles in osu!,ノーツの接近を示すグリッド上の正方形 - Osu!のサークルに似ています！,carré sur la grille qui représente la vitesse d'approche des notes - similaire aux cercles dans osu!,aparecerán cuadrados en la pantalla que representan la velocidad de aproximación - como en osu!
-Approach Follow,Approach Follow,アプローチフォロー,Suivie d'approche,Aproximación con seguimiento
-makes it so the approach squares lock to the note,makes it so the approach squares lock to the note,アプローチガイドがノーツについていく,fait que les carrés d'approche se verouille aux notes,hace que los cuadrados de proximidad se posicionen sobre la nota
-Miss Effect Image,Miss Effect Image,ミスエフェクトの画像,Image miss effect,Imagen de efecto visual de fallo
-"same as above, but applies to your miss effect instead","same as above, but applies to your miss effect instead",上記と同じだが、代わりに自分のミス効果に適用される。,"même chose, sauf que ça s'applique au miss effect","lo mismo que arriba, pero aplicada al efecto de fallo"
-Miss Effect,Miss Effect,ミスエフェクト,Miss effect,Efecto de fallo
-hit effect but when you don't,hit effect but when you don't,ミスした時のエフェクト,hit effect mais pas,efecto de golpe pero va a ser que no
-Ripple* (no color),Ripple* (no color),画像* (無色),Onde* (sans couleurs),Onda* (incoloro)
-Ripple* (note color),Ripple* (note color),画像* (ノーツの色),Onde* (couleur des notes),Onda* (color de nota)
-Ripple* (rainbow),Ripple* (rainbow),画像* (虹色),Onde* (arc-en-ciel),Onda* (arcoiris)
-Shards (note color),Shards (note color),破片 (ノーツの色),Éclats* (couleur des notes),Fragmentos* (color de nota)
-Shards (rainbow),Shards (rainbow),破片 (虹色),Éclats* (arc-en-ciel),Fragmentos* (arcoiris)
-Shards (no color),Shards (no color),破片 (無色),Éclats* (sans couleurs),Fragmentos* (incoloro)
-Miss* (red),Miss* (red),ミス* (赤),Raté* (rouge),Fallo* (rojo)
-Miss* (note color),Miss* (note color),ミス* (ノーツの色),Raté* (couleur des notes),Fallo* (color de nota)
-Miss* (rainbow),Miss* (rainbow),ミス* (虹色),Raté* (arc-en-ciel),Fallo* (arcoiris)
-Miss* (no color),Miss* (no color),ミス* (無色),Raté* (sans couleurs),Fallo* (incoloro)
-Show Miss Effect,Show Miss Effect,ミスエフェクトを表示,Afficher miss effect,Mostrar efecto visual de fallo
-"replace ""hit"" with ""miss"" in the description of the setting above this one","replace ""hit"" with ""miss"" in the description of the setting above this one",この上の設定の説明の「ヒット」を「ミス」に置き換える。,"remplace ""hit"" avec ""miss"" dans la description du paramètre","sustituye ""golpe"" por ""fallo"" en la descripción del ajuste superior"
-Replays & Recording,Replays & Recording,録画とリプレイ,Replays et enregistrement,Repeticiones y grabación
-Record Replays,Record Replays,リプレイを録画,Enregistrer replays,Grabar repeticiones
-records replays. what else did you expect...? (drag a replay file into the game to view),records replays. what else did you expect...? (drag a replay file into the game to view),リプレイを録画 (リプレイファイルをゲームにドラッグして表示する）,déposez un fichier replay sur le jeu pour le visionner,permite grabar repeticiones (desplaza un fichero sobre la ventana del juego para visualizar)
-Alt. Replay Camera,Alt. Replay Camera,カメラアングルを追加,Caméra replay alternative,Repetición en cámara alternativa
-alters the camera angle in replays - side view,alters the camera angle in replays - side view,リプレイ時のカメラアングルを横に変える,altère l'angle de la caméra dans les replays - vue côté,altera el ángulo de visualización durante las repeticiones - vista lateral
-Recording Mode,Recording Mode,録画モード,Mode d'enregistrement,Modo de grabación
-Legacy,Legacy,レガシー,Classique,Clásico
-Maximise,Maximise,最高,Maximiser,Maximizar
-Minimise,Minimise,最低,Minimiser,Minimizar
-[def. Maximise] changes the method used for dynamic fps,[def. Maximise] changes the method used for dynamic fps,[デフォルト 最大] ダイナミックfpsに使用する方法を変更する。,[par défaut Maximiser] change la méthode utilisée les IPS dynamiques,[por defecto Maximizar] cambia el método utilizado para FPS dinámicos
-Recording FPS,Recording FPS,録画FPS,IPS de l'enregistrement,FPS de grabación
-[def. 30/144] changes the dynamic fps bounds of your replays,[def. 30/144] changes the dynamic fps bounds of your replays,[デフォルト 30/144] リプレイのFPS制限を変える,[par défaut 30/144] change les limites des IPS dynamiques lors de vos replays,[por defecto 30/144] cambia los límites de los FPS
-Camera & Controls,Camera & Controls,カメラと操作,Caméra et contrôles,Cámara y controles
-Sensitivity,Sensitivity,感度,Sensibilité,Sensibilidad
-[def. 1] changes how much the cursor/camera move with mouse/touch input,[def. 1] changes how much the cursor/camera move with mouse/touch input,[デフォルト 1] マウス/タッチ入力によるカーソル/カメラの感度,[par défaut 1] change à quel point la caméra bouge avec le curseur,[por defecto 1] cambia la cantidad de movimiento de la cámara respecto al cursor
-Absolute Mode,Absolute Mode,マウスロック解除,Mode absolu,Modo absoluto
-turning this on will unlock the mouse while playing - useful for tablets,turning this on will unlock the mouse while playing - useful for tablets,これをオンにすると、プレイ中にマウスのロックが解除されます - タブレットに便利,débloque le pointeur lors du jeu (utile pour les tablettes),desbloquea el cursor durante la partida (útil para tabletas)
-Disable Controller,Disable Controller,コントローラーチェックをしない,Désactiver manette,Desactivar mando
-disables controller checks when starting a song,disables controller checks when starting a song,オンにすると、曲の開始時にコントローラーのチェックを無効にする。,désactive le check des manettes lors du jeu,desactiva la comprobación de mandos al empezar a jugar
-Absolute Scale,Absolute Scale,ロック解除時の感度,Échelle absolue,Escala absoluta
-[def. 1] changes how much the cursor/camera move with absolute mode,[def. 1] changes how much the cursor/camera move with absolute mode,[デフォルト 1] マウスロックを解除した際のカーソル/カメラの感度,[par défaut 1] change à quel point la caméra bouge avec le mode absolu,[por defecto 1] cambia la cantidad de movimiento de la cámara respecto al cursor en modo absoluto
-Camera Mode Presets,Camera Mode Presets,カメラモードのプリセット,Presets pour la caméra,Presets para la cámara
-Half-lock,Half-lock,半固定,Half-lock,Half-lock
-Full-lock,Full-lock,全固定,Full-lock,Full-lock
-Reverse-lock,Reverse-lock,逆固定,Reverse-lock,Reverse-lock
-Spin,Spin,スピン,Spin,Spin
-Half-lock (faraway),Half-lock (faraway),半固定（遠い）,Half-lock (lointain),Half-lock (lejano)
-,Full-lock (faraway),全固定（遠い）,Full-lock (lointain),Full-lock (lejano)
-,Reverse-lock (faraway),逆固定（遠い）,Reverse-lock (lointain),Reverse-lock (lejano)
-Spin-lock (mid-pivot),Spin-lock (mid-pivot),スピン（真ん中固定）,Spin-lock (semi-pivot),Spin-lock (pivote central)
-Camera Parallax,Camera Parallax,視差,Parallax de la caméra,Parallax de la cámara
-how much the camera moves with the cursor - affects everything,how much the camera moves with the cursor - affects everything,カーソルとカメラの移動量 - すべてに影響する,change à quel point la caméra bouge avec le curseur - affecte le parallax du HUD,cambia la cantidad de movimiento de la cámara respecto al cursor (afecta a toda la pantalla)
-HUD Parallax,HUD Parallax,HUD視差,Parallax du HUD,Parallax del HUD
-how much the hud moves with the cursor - added on top of camera parallax,how much the hud moves with the cursor - added on top of camera parallax,カーソルと一緒にHUDがどれだけ動くか - カメラ視差の上に追加される,à quel point le HUD bouge avec le curseur,cambia la cantidad de movimiento del HUD respecto al cursor (añadido al parallax de la cámara)
-Grid Parallax,Grid Parallax,HUD視差,Parallax de la grille,Parallax de la cuadrícula
-how much the note grid moves with the cursor - added on top of camera parallax,how much the note grid moves with the cursor - added on top of camera parallax,カーソルとノートのグリッドの移動量 - カメラ視差に追加,à quel point la grille de notes bouge avec le curseur,cambia la cantidad de movimiento de la cuadrícula respecto al cursor (añadido al parallax de la cámara)
-Camera Unlock,Camera Unlock,カメラのロックを解除,Débloquer caméra,Desbloquear cámara
-"enables camera rotation - aka ""spin""","enables camera rotation - aka ""spin""",カメラの回転を有効にする - スピン,"active la rotation de la caméra (""spin"")","activa la rotación de la cámara (modo ""spin"")"
-Faraway Hud,Faraway Hud,HUDを離す,HUD lointain,HUD lejano
-moves the HUD back by 10 grid units (20 studs) and makes it larger,moves the HUD back by 10 grid units (20 studs) and makes it larger,HUDを10グリッド単位（20スタッド）後退させ、大きくする。,pousse et enlarge le HUD de 10 unités de la grille (20 mètres),mueve el HUD 10 unidades de cuadrícula hacia atrás (20 metros)
-Edge Buffer (Drift),Edge Buffer (Drift),エッジバッファ (ドリフト),Drift du rebord,Derrape sobre bordes
-"[def. 0] aka cursor drift; makes the cursor ""stick"" to the edges by letting it move slightly past the edges","[def. 0] aka cursor drift; makes the cursor ""stick"" to the edges by letting it move slightly past the edges",[def. 0] 別名カーソルドリフト; カーソルをエッジから少しはみ出させることで、エッジに「くっつく」ようにする。,"[par défaut 0] aussi connu en tant que ""cursor drift"", donne l'impression que le curseur se ""colle"" au rebords en le laissant les dépasser","[por defecto 0] conocido como ""cursor drift"", hace que el cursor se adhiera a los bordes haciendo que se mueva ligeramente a través de ellos"
-Buffer Cursor,Buffer Cursor,バッファカーソル,Vrai curseur,Cursor verdadero
-"shows a mini cursor at the ""real"" position when you enter the edge buffer","shows a mini cursor at the ""real"" position when you enter the edge buffer","エッジバッファに入ると、""実際の""位置にミニカーソルが表示される。","montre un mini curseur à la ""vraie"" position lorsque vous sortez du rebord","muestra un mini cursor en la posición ""real"" cuando derrapas sobre un borde"
-Follow Buffer Cursor,Follow Buffer Cursor,ドリフトに付いて行く,Suivre vrai curseur,Seguir cursor verdadero
-makes the parallax follow the buffer cursor instead of the real one,makes the parallax follow the buffer cursor instead of the real one,視差をドリフトカーソルに合わせる,fait en sorte que le parallax suit le vrai curseur,hace que el parallax siga al cursor verdadero 
-Field of View,Field of View,視野（FOV),Champ de vision,Campo de visión (FOV)
-[def. 70] you know what this does,[def. 70] you know what this does,[デフォルト 70] これが何を意味するか、あなたは知っている。,[par défaut 70],[por defecto 70] deberías saber lo que hace
-Hit FOV,Hit FOV,ヒットFOV,Champ de vision hit,Efecto de golpeo FOV
-enables a FOV (Field of View) pulse when you hit a note,enables a FOV (Field of View) pulse when you hit a note,ノーツを打つと視野がぶれる,active une pulsation du champ de vision lorsque vous touchez une note,activa un efecto pulso en el campo de visión al golpear una nota
-Hit FOV Modes,Hit FOV Modes,ヒットFOVモード,Modes champ de vision hit,Modos de efecto de golpeo FOV
-Normal,Normal,ノーマル,Normal,Normal
-Additive,Additive,累積,Additif,Aditivo
-Exponential,Exponential,指数増加,Exponentiel,Exponencial
-Mode: Additive,Mode: Additive,モード: 累積,Mode: additif,Modo: aditivo
-Hit FOV Amplifier,Hit FOV Amplifier,ヒットFOVの強さ,Amplifieur champ de vision hit,Amplificador del efecto de golpeo FOV
-[def. 2] how intense is the hit FOV pulsing is,[def. 2] how intense is the hit FOV pulsing is,[デフォルト 2] ノーツをヒットした時のFOV反動の強さ,[par défaut 2] l'intensité du champ de vision hit,[por defecto 2] intensidad del pulso en el campo de visión
-Hit FOV Decay,Hit FOV Decay,ヒットFOVの減衰,Diminution champ de vision hit,Desvanecimiento del efecto de golpeo FOV
-[def. 20] how long it takes for hit FOV pulsing to wear-off,[def. 20] how long it takes for hit FOV pulsing to wear-off,[デフォルト 20] ヒットFOVの反動が消えるまでの時間,[par défaut 20] combien de temps ça prend pour que le champ de vision hit se dissipe,[por defecto 20] el tiempo necesario para que un pulso en el campo de visión se desvanezca
-Customization,Customization,カスタマイズ,Personnalisation,Personalización
-Background World,Background World,背景,Monde arrière-plan,Mundo de fondo
-background and environment used in the song player,background and environment used in the song player,メニューやゲーム中の背景,arrière-plan et environement utilisé mi-jeu,fondo y ambiente utilizados durante la partida
-Disable BG Effects,Disable BG Effects,背景を消す,Désactiver éffets d'arrière-plan,Desactivar efectos del fondo
-only affects The Grid for now,only affects The Grid for now,今はグリッドの背景しか変化しない,"affecte seulement le monde ""The Grid"" pour le moment","afecta solo a ""The Grid"" por ahora"
-Custom World BG,Custom World BG,カスタム背景,Monde arrière-plan personnalisé,Mundo de fondo personalizado
-"this is the background for the ""Custom Background"" world","this is the background for the ""Custom Background"" world",カスタム背景を選択したときの背景,"l'arrière-plan pour l'option ""Custom Background""","el fondo utilizado en ""Custom Background"""
-Cursor Image,Cursor Image,カーソルイメージ,Image du curseur,Imagen del cursor
-"ah, the cursor. arguably the most important part of this game.","ah, the cursor. arguably the most important part of this game.",カーソルに映るイメージを変える,Modifie l'image du curseur,"ah, casi se me olvida lo más importante. el cursor"
-Color Mode,Color Mode,カーソルの色設定,Mode de couleur,Modo de color
-how the cursor will be colored,how the cursor will be colored,ヒット時カーソルの色の変更,comment le curseur va être coloré,el modo de coloración del cursor
-Single Color,Single Color,一色,Couleur unique,Color único
-Rainbow,Rainbow,虹色,Arc-en-ciel,Arcoiris
-Note Color,Note Color,ノーツカの色,Couleur de la note,Color de nota
-Color,Color,色,Couleur,Color
-"[def. #ffffff] color used for ""Single Color""","[def. #ffffff] color used for ""Single Color""","[デフォルト＃ffffff] ""Single Color""に使われる色","[par défaut #ffffff] couleur utilisée pour ""couleur unique""","[por defecto #ffffff] color utilizado para ""Color único"""
-Cursor Scale,Cursor Scale,カーソルの大きさ,Échelle du curseur,Escala del cursor
-[def. 1] cursor size multiplier (doesn't affect hitboxes),[def. 1] cursor size multiplier (doesn't affect hitboxes),[デフォルト１]カーソルの大きさを変える(当たり判定は変わらない）,[par défaut 1] la taille du curseur (n'affecte pas la hitbox),[por defecto 1] la escala del cursor (no afecta al hitbox)
-Cursor Spin,Cursor Spin,カーソル回転,Rotation du curseur,Rotación del cursor
-[def. 0°] makes the cursor image rotate,[def. 0°] makes the cursor image rotate,[デフォルト０°]カーソルのイメージが回転する,[par défaut 0°] fait tourner le curseur,[por defecto 0º] rota la imagen del cursor
-Cursor Trail,Cursor Trail,カーソル軌跡,Traînée du curseur,Estela del cursor
-many of you have asked so i shall deliver,many of you have asked so i shall deliver,カーソルを追う線,Ligne suivant le curseur,una línea que sigue al cursor
-Smart Trail,Smart Trail,スマートな軌跡,Traînée intelligente,Estela inteligente
-makes the trail smooth by using distance moved to spawn particles instead of having a constant number,makes the trail smooth by using distance moved to spawn particles instead of having a constant number,パーティクルのスポーンに一定数ではなく移動距離を使用することで軌跡を滑らかにする,rends la traînée plus douce en utilisant la distance au lien d'un nombre fixe,suaviza la estela utilizando el desplazamiento en lugar de un número constante
-Trail Fade Mode,Trail Fade Mode,軌跡フェードモード,Mode dissipation de la traînée,Modo de desvanecimiento de la estela
-how the trail will fade out,how the trail will fade out,どれだけ軌跡がフェードアウトするか,comment la traînée se dissipe,de qué forma se desvanece la estela
-Scale only,Scale only,スケールだけ,Taille seulement,Solo la escala
-Opacity only,Opacity only,不透明性だけ,Opacité seulement,Solo la opacidad
-Trail Detail,Trail Detail,残像の詳細,Détail de la traînée,Nivel de detalle de la estela
-[def. 10] number of particles in the cursor trail / (smart trail) number spawned per grid unit,[def. 10] number of particles in the cursor trail / (smart trail) number spawned per grid unit,[デフォルト 10]カーソルの軌跡のパーティクル数 / (スマート軌跡)1グリッド単位あたりの生成数,[par défaut 10] le nombre de particules dans la traînée du curseur (traînée intelligente),[por defecto 10] el número de partículas generadas sobre la estela del cursor (con estela inteligente: por unidad de desplazamiento)
-Trail Time,Trail Time,軌跡,Temps de la traînée,Tiempo de estela
-[def. 0.15] how long the cursor trail lasts in seconds,[def. 0.15] how long the cursor trail lasts in seconds,[デフォルト 0.15] 軌跡が何秒間残るか,[par défaut 0.15] combien de temps la traînée dure en secondes,[por defecto 0.15] duración de la estela del cursor en segundos
-Touch Indicator,Touch Indicator,タッチインジケーター,Indicateur tactile,Indicador táctil
-this is the image that shows up under your finger on a touchscreen,this is the image that shows up under your finger on a touchscreen,画面をタッチしたとき指の下に表示される画像,l'image qui apparaît sous votre doigt sur un écran tactile,la imagen que aparece bajo tu dedo sobre una pantalla táctil
-Graphics & Advanced,Graphics & Advanced,グラフィック設定,Graphiques et avancé,Gráficos y ajustes avanzados
-Render Scale,Render Scale,レンダースケール,Échelle du rendement,Escala de renderizado
-"GUI scale, higher = smaller","GUI scale, higher = smaller",GUIスケール higher = smaller,Échelle du GUI (plus haut = plus petit),Escala del GUI (más alto = más pequeño)
-Vsync,Vsync,Vsync,Synchronization verticale,Sincronización vertical (Vsync)
-makes the game smoother at the cost of slightly increased input lag,makes the game smoother at the cost of slightly increased input lag,入力ラグがわずかに増加する代償としてゲームがよりスムーズになる,rends le jeu plus doux au prix d'un peu plus de latence avec les mouvements,hace que el juego se vea más fluido a cambio de un poco de latencia
-Fullscreen,Fullscreen,フルスクリーン,Plein écran,Pantalla completa
-"because you don't have anything else to focus on, do you?","because you don't have anything else to focus on, do you?",他に集中する事が無いからだろ？,"Parce qu'il n'y a rien d'autre à faire, n'est-ce pas?","porque no tendrás nada más que hacer, no?"
-Auto-Maximize,Auto-Maximize,自動最大化,Auto-maximiser,Auto-maximizar
-you might wanna turn this thing off if you're on an ultrawide display,you might wanna turn this thing off if you're on an ultrawide display,ウルトラワイドディスプレイを使っている人はこれをオフにしたほうがいいかもしれない,il se peut que vous vouliez désactiver cela si vous avez un écran ultra-large,deberías desactivar esto si tu monitor es extra-grande
-Show Warnings,Show Warnings,警告を表示,Afficher les avertissements,Muestra avisos
-turning this off disables the warnings for things like high trail detail or unhittable hitwindows,turning this off disables the warnings for things like high trail detail or unhittable hitwindows,これをオフにすると軌跡の詳細やヒットウィンドウがヒットしない場合などの警告が無効になります。,désactiver cela cache les avertissements pour certaines choses (comme des notes qui ne peuvent pas être touchées),desactivar esta opción deshabilita los avisos para ciertas cosas (como el nivel de detalle elevado)
-FPS Limit,FPS Limit,FPS制限,Limite d'IPS,Límite de FPS
-[0 = no limit] puts a limit on the framerate; use this if ssp is using 100% gpu,[0 = no limit] puts a limit on the framerate; use this if ssp is using 100% gpu,[0 = 制限無し] FPSを制限する　もしsspがGPUを100％使用していたら制限してください,[0 = pas de limite],[0 = ilimitado] limita la tasa de refresco; utiliza esto para reducir el consumo de la GPU
-Audio,Audio,音声,Audio,Audio
-Master Volume,Master Volume,マスターボリューム,Volume principal,Volumen principal
-overall volume,overall volume,全体のボリューム,Volume principal,volumen principal
-Music Volume,Music Volume,曲のボリューム,Volume de la musique,Volumen de la música
-music volume,music volume,曲のボリューム,Volume de la musique,volumen de la música
-Hit Volume,Hit Volume,ヒットボリューム,Volume des notes touchées,Volumen de golpeo
-hit sound volume,hit sound volume,ヒットサウンドボリューム,Volume des notes touchées,volumen de golpeo
-Miss Volume,Miss Volume,ミスボリューム,Volume des notes manquées,Volumen de fallo
-miss sound volume,miss sound volume,ミスサウンドボリューム,Volume des notes manquées,volumen de fallo
-Fail Volume,Fail Volume,失敗ボリューム,Volume d'échec,Volumen de muerte
-fail sound volume,fail sound volume,失敗サウンドボリューム,Volume d'échec,volumen de muerte
-PB Volume,PB Volume,PBボリューム,Volume du nouveau record,Volumen de nuevo récord
-new best sound volume,new best sound volume,ニューベストサウンドボリューム,Volume du nouveau record,volumen de nuevo récord
-Hit Sound,Hit Sound,ヒットサウンド,Son des notes touchées (hits),Sonido de golpeo (hitsound)
-"customize this with a ""hit.mp3"" file in your save directory","customize this with a ""hit.mp3"" file in your save directory","音に""hit.mp3""と名前を付けセーブディレクトリに入れるとその音になる","personnalisez cela en plaçant un fichier nommé ""hit.mp3"" dans votre dossier de sauvegarde","personalízalo añadiendo un fichero ""hit.mp3"" en tu carpeta de usuario"
-Miss Sound,Miss Sound,ミスサウンド,Son des notes manquées (miss),Sonido de fallo (misssound)
-"customize this with a ""miss.mp3"" file in your save directory","customize this with a ""miss.mp3"" file in your save directory","音に""miss.mp3""と名前を付けセーブディレクトリに入れるとその音になる","personnalisez cela en plaçant un fichier nommé ""miss.mp3"" dans votre dossier de sauvegarde","personalízalo añadiendo un fichero ""miss.mp3"" en tu carpeta de usuario"
-Disable Directional,Disable Directional,指向性サウンドを無効にする,Désactiver son directionel,Desactivar sonido direccional
-makes the hit/miss sounds non-directional,makes the hit/miss sounds non-directional,hit/miss　の指向性を無効にする,rends les sons hit/miss non-directionel,hace que los sonidos hit / miss sean no-direccionales
-Universal Offset,Universal Offset,ユニバーサルオフセット,Offset universel,Retardo universal
-[def. 0 ms] offsets the music from the actual map (positive = music starts earlier),[def. 0 ms] offsets the music from the actual map (positive = music starts earlier),[デフォルト .0ms] 実際のマップから音楽をオフセットする (positive = 音楽の開始が早い),[par défaut 0 ms] déplace la musique de la vraie map,[por defecto 0 ms] desplaza el comienzo de la canción respecto al mapa
-Menu Music,Menu Music,メニュー音楽,Musique du menu principal,Música del menú principal
-"customize this with a ""menu.mp3"" file in your save directory (default song by pyrule)","customize this with a ""menu.mp3"" file in your save directory (default song by pyrule)","曲に""menu.mp3""と名前を付けセーブディレクトリに入れるとその曲になる(デフォルトソングby pyrule)","personnalisez cela en plaçant un fichier nommé ""menu.mp3"" dans votre dossier de sauvegarde","personalízalo añadiendo un fichero ""menu.mp3"" en tu carpeta de usuario"
-Auto Preview Songs,Auto Preview Songs,自動プレビュー再生,Auto-apercevoir les chansons,Auto-reproducir canciones
-automatically play previews when a song is selected,automatically play previews when a song is selected,マップを選ぶと自動的に音楽が流れる,joue automatiquement la musique d'une map lorsque celle-ci est sélectionnée,reproduce una muestra al seleccionar una canción
-UI Components,UI Components,UI設定,Composantes de l'IU (interface),Componentes de la interfaz de usuario (UI)
-Enable Grid,Enable Grid,グリッドを表示,Afficher la grille,Habilitar la cuadrícula
-turns the note grid on or off,turns the note grid on or off,ノートのグリッドをオンまたはオフにする,permet d'activer ou de désactiver la grille,activa la cuadrícula
-Enable Border,Enable Border,画面の端を表示,Afficher les rebords,Habilitar los bordes
-turns the note grid border on or off,turns the note grid border on or off,ノートのグリッドの境界線をオンまたはオフにする,pour activer ou désactiver la bordure de la grille,activa el borde de la cuadrícula
-Simple HUD,Simple HUD,シンプルHUD ,HUD simplifié,HUD simple
-changes the side panels to show only your misses and pauses,changes the side panels to show only your misses and pauses,ミスとポーズだけを表示するようにサイドパネルを変更する,change les panneaux pour montrer que les notes manquées et les pauses,cambia los paneles laterales para mostrar sólo los fallos y pausas
-Show Letter Grade,Show Letter Grade,グレードを表示する,Afficher la note lettrée,Mostrar puntuación en forma de letra
-"shows a letter grade (SS, S, A, etc.) above your accuracy","shows a letter grade (SS, S, A, etc.) above your accuracy","SS, S, A, etc 　これらのグレードを表示","la note qui représente votre visée (SS, S, A, B, etc.)","muestra la letra que representa tu puntuación (SS, S, A, B, etc.)"
-Show Settings,Show Settings,設定を表示,Afficher les paramètres,Mostrar ajustes
-"shows your approach rate, hit window, and camera config at the start of songs (to show off)","shows your approach rate, hit window, and camera config at the start of songs (to show off)",曲のはじめに approach rate. hit window. camera設定. を表示する(見せつけるため),"montre votre vitesse d'approche, la fenêtre de hit et la configuration de la caméra","muestra tu velocidad de aproximación, registrode golpeo y la configuración de la cámara"
-Display True Combo,Display True Combo,コンボ数を表示,Afficher le vrai combo,Mostrar el combo verdadero
-displays the real value of your combo behind the grid,displays the real value of your combo behind the grid,グリッドの後ろにコンボ数を表示,montre la vraie valeur de votre combo derrière la grille,muestra el valor verdadero del combo detrás de la cuadrícula
-Show Energy,Show Energy,HPを表示,Afficher énergie,Mostrar energía
-i don't understand why you'd turn this off but people have asked so here you go,i don't understand why you'd turn this off but people have asked so here you go,これをオフにする理由は分からないが、どうやってオフにするかを聞かれたので,montre la santé/points de vie,muestra tu salud / PV
-Show Timer,Show Timer,タイマーを表示,Afficher le chronomètre,Mostrar temporizador
-tells you how far into a song you are (and the name of the song),tells you how far into a song you are (and the name of the song),曲名と曲のどこまでプレイしたかを表示,affiche le nom de la chanson et le degré d'avancement de la chanson,muestra el nombre de la canción y su progreso actual
-Accuracy Bar,Accuracy Bar,精度バー,Afficher la barre de visée,Mostrar barra de precisión
-shows your accuracy on a progress bar,shows your accuracy on a progress bar,進行バーの上に精度を表示,montre votre visée dans une barre de progrès,muestra tu precisión en una barra de progreso
-Show Left Panel,Show Left Panel,左のパネルを表示,Afficher le panneau de gauche,Mostrar panel izquierdo
-"contains: combo meter, pause counter, accuracy","contains: combo meter, pause counter, accuracy",コンボメーター ポーズカウンター 精度 が含まれています,"contient: combo, pauses et visée","contiene: combo, pausas y precisión"
-Show Right Panel,Show Right Panel,右のパネルを表示,Afficher le panneau de droite,Mostrar panel derecho
-"contains: framerate, miss counter, notes hit / total notes","contains: framerate, miss counter, notes hit / total notes",フレームレート ミスカウンター ノートヒット/トータルノート が含まれています,"contient: IPS, notes manquées, notes touchées et notes totales","contiene: FPS, fallos, notas golpeadas y notas totales"
-Show Cursor,Show Cursor,カーソルを表示,Afficher le curseur,Mostrar cursor
+﻿keys,en,ja,fr,es,it
+ENGLISH,English,English,English,English,Inglese
+JAPANESE,日本語,日本語,日本語,日本語,Giapponese
+FRENCH,Français,Français,Français,Français,Francese
+SPANISH,Español,Español,Español,Español,Spagnolo
+ITALIAN,Italian,イタリア語,Italien,Italiano,Italiano
+Select Language,Select Language,言語を選択,Sélectionner la langue,Seleccione su idioma,Seleziona lingua
+Back,Back,戻る,Retour,Retroceder,Indietro
+Start!,Start!,スタート,Lancer !,¡Empezar!,Inizia!
+Favorite,Favorite,お気に入り,Favori,Favorito,Aggiungi ai Preferiti
+Favorited!,Favorited!,お気に入り追加済み,Favori !,¡Marcado como favorito!,Aggiunto ai preferiti!
+Play Music,Play Music,音楽を聴く,Jouer la musique,Reproducir canción,Riproduci canzone
+Stop Playing,Stop Playing,聴くのをやめる,Arrêter la musique,Detener reproducción,Ferma riproduzione
+Speed,Speed,速さ,Vitesse,Velocidad,Velocità
+MISSES,MISSES,ミス,RATÉ,FALLOS,ERRORI
+PAUSES,PAUSES,一時停止,PAUSES,PAUSAS,PAUSE
+No Pauses,No Pauses,一時停止なし,Sans pauses,Sin pausas,Nessuna pausa
+PROGRESS,PROGRESS,進行度,PROGRESSION,PROGRESO,PROGRESSO
+ACCURACY,ACCURACY,精度,PRÉCISION,PRECISIÓN,PRECISIONE
+MAX COMBO,MAX COMBO,最高コンボ,COMBO MAX,MÁXIMO COMBO,MAX COMBO
+Modifiers,Modifiers,Mods,Modificateurs,Modificadores,Modificatori
+Map by,Map by,制作者:,Mappé par,Mapeado por,Creato da
+Song ID,Song ID,ID:,ID:,ID:,ID:
+Nofail,Nofail,無敵,Nofail,Nofail,Nofail
+Sudden Death,Sudden Death,即死,Mort subite,Muerte súbita,Morte improvvisa
+Extra Energy,Extra Energy,HP増加,Extra-énergie,Energía extra,Energia extra
+Easy Mode,Easy Mode,イージーモード,Mode facile,Modo fácil,Modalità facile
+No Regen,No Regen,HP回復なし,Sans régénération,Sin regeneración,Senza rigenerazione
+Hard Mode,Hard Mode,ハードモード,Mode difficile,Modo difícil,Modalità difficile
+Mirror X,Mirror X,X軸反転,Miroir X,Reflejo X,Specchio X
+Mirror Y,Mirror Y,Y軸反転,Miroir Y,Reflejo Y,Specchio Y
+Earthquake,Earthquake,地震,Tremblement,Terremoto,Terremoto
+Ghost,Ghost,ゴースト,Dissipation,Desvanecimiento,Dissolvenza
+Chaos,Chaos,カオスモード,Chaos,Caos,Caos
+Visual Map Mode,Visual Map Mode,シアターモード,Mode map visuelle,Modo mapa visual,Modalità mappa visuale
+Flashlight,Flashlight,フラッシュライト,Lampe Torche,Linterna,Torcia
+Invert Mouse,Invert Mouse,マウス反転,Souris inversée,Ratón invertido,Inverti mouse
+Hard Rock,Hard Rock,ハードロック,Hard Rock,Hard Rock,Hard Rock
+Health Model,Health Model,ヘルスモード,Modèle de PV,Modelo de PV,Modello di salute
+Start From,Start From,開始地点,Commencer à,Empezar desde,Inizia da
+NOTES,NOTES,ノーツ,NOTES,NOTAS,NOTE
+SCORE,SCORE,スコア,SCORE,PUNTUACIÓN,PUNTEGGIO
+PAUSED,PAUSED,一時停止,EN PAUSE,PAUSADO,IN PAUSA
+HOLD R TO EXIT,HOLD R TO EXIT,Rキーを長押しでスキップ,MAINTENIR R POUR QUITTER,MANTENER R PARA SALIR,TIENI PREMUTO R PER USCIRE
+PRESS SPACE TO SKIP,PRESS SPACE TO SKIP,スキップするにはスペースをクリック,APPUYER SUR ESPACE POUR PASSER,PULSAR ESPACIO PARA SALTAR,PREMI SPAZIO PER SALTARE
+You failed (new best!),You failed (new best!),失敗（新記録！）,Échec ! (meilleur progression !),¡Moriste! (¡mejor marca!),Hai perso (nuovo record!)
+Default (Sound Space),Default (Sound Space),デフォルト（Sound Space）,Par défaut (Sound Space),Por defecto (Sound Space),Predefinito (Sound Space)
+Default - same as Sound Space,Default - same as Sound Space,デフォルト - Sound Spaceと同じ,Par défaut - (le même que Sound Space),Por defecto (el mismo que en Sound Space),Predefinito - uguale a Sound Space
+Old (easier),Old (easier),旧（もっと簡単）,Ancien (plus facile),Antiguo (más fácil),Antico (più facile)
+"Old - 6 hp (10 on easy), regen 1 hp/hit","Old - 6 hp (10 on easy), regen 1 hp/hit","旧 - 6 hp (イージーでは10hp), 回復 1hp/hit","Ancien - 6 PV (10 en facile), régénère 1 PV/note","Antiguo - 6 PV (10 PV en fácil), regenera 1 PV / nota golpeada","Antico - 6 HP (10 facile), rigenera 1 HP/colpo"
+Giving up...,Giving up...,諦める,Abandon...,Abandonar...,Sto rinunciando...
+Save,Save,保存,Sauvegarder,Guardar,Salva
+Open User Folder,Open User Folder,ユーザーフォルダを開く,Ouvrir dossier utilisateur,Abrir carpeta de usuario,Apri cartella utente
+Open Replay Folder,Open Replay Folder,リプレイフォルダーを開く,Ouvrir dossier de replay,Abrir carpeta de repeticiones,Apri cartella replay
+Reload Content,Reload Content,再読み込み,Recharger le contenu,Recargar contenido,Ricarica contenuto
+Disable Pausing,Disable Pausing,一時停止を無効にする,Désactiver les pauses,Desactivar pausas,Disabilita pause
+disallows pausing the map,disallows pausing the map,一時停止を使わない,empêche les pauses,evita poder pausar el juego,impedisce di pausare la mappa
+Custom Speed Rate,Custom Speed Rate,ノーツ速度,Vitesse customisé,Velocidad personalizable,Velocità personalizzata
+"[default 100%] used by the custom speed modifier (speed+ mods are 115, 125, 135, and 145)","[default 100%] used by the custom speed modifier (speed+ mods are 115, 125, 135, and 145)","[デフォルト 100%] カスタム速度Modで使用 (スピードModは115, 125, 135, 145)",[par défaut 100%],"[por defecto 100%] utilizada por el modificador de velocidad personalizable (los modificadores de velocidad extra son 115, 125, 135, and 145)","[predefinito 100%] utilizzato dal modificatore di velocità personalizzata (i mod speed+ sono 115, 125, 135 e 145)"
+Hitbox Size,Hitbox Size,ヒットボックスの大きさ,Taille des hitbox,Tamaño del hitbox,Dimensione hitbox
+[def. 1.14] the size of note hitboxes in grid units (hit checking is done at the center of the cursor)   [1.5x = 1.71; 2x = 2.28],[def. 1.14] the size of note hitboxes in grid units (hit checking is done at the center of the cursor)   [1.5x = 1.71; 2x = 2.28],[デフォルト 1.14] ノーツのヒットボックスの大きさをグリッド単位で指定（ヒットチェックはカーソルの中心） [1.5x = 1.71; 2x = 2.28],[par défaut 1.14] la taille de l'hitbox des notes dans la grille (la vérification des hits est faites au centre du curseur)   [1.5x = 1.71; 2x = 2.28],[por defecto 1.14] el tamaño del hitbox de las notas (verificación de golpeo realizada desde el centro del cursor) [1.5x = 1.71; 2x = 2.28],"[predefinito 1.14] la dimensione dell'hitbox delle note in unità griglia (il controllo dei colpi è fatto dal centro del cursore) [1.5x = 1.71; 2x = 2.28]"
+Hit Window,Hit Window,ヒット判定,Fenêtre de hit,Registro de golpeo,"Finestra di hit"
+[def. 55ms] the length of time notes can be hit after reaching the grid   [1.5x = 83; 2x = 110],[def. 55ms] the length of time notes can be hit after reaching the grid   [1.5x = 83; 2x = 110],グリッドに到達した後、ノートをヒットできる時間の長さ [基本値 = 55ms、拡張値 = 1.5倍 (83ms)、2倍 (110ms)],[par défaut 55ms] la durée de temps durant les notes peuvent être touché après avoir atteint la grille [1.5x = 83; 2x = 110],[por defecto 55ms] la longitud temporal durante la que se pueden golpear las notas al pasar la cuadrícula [1.5x = 83; 2x = 110],"[predefinito 55ms] la durata in cui le note possono essere colpite dopo aver raggiunto la griglia [1.5x = 83; 2x = 110]"
+Counter Speed,Counter Speed,カウンター速度,Contre-Vitesse,Contra-Velocidad,Velocità contatore
+alters the hit window to counter the effects of speed mods,alters the hit window to counter the effects of speed mods,スピードModの影響を打ち消すためにヒット判定を変更する,altère la fenêtre de hit pour contrer les répercussions des vitesses,modifica el Hit Window para contrarrestar los efectos de un modificador de velocidad,altera la finestra di hit per contrastare gli effetti dei mod di velocità
+Notes,Notes,ノーツ設定,Notes,Notas,Note
+Note Colors,Note Colors,ノーツの色,Couleur des notes,Color de las notas,Colore note
+Note Mesh,Note Mesh,ノーツの形,Modèle 3D des notes,Modelo 3D de las notas,Mesh note
+model used by notes,model used by notes,ノーツのモデル,modèle utilisé pour les notes,modelo utilizado por las notas,modello utilizzato dalle note
+Rounded,Rounded,丸い,Arrondi,Redondeado,Arrotondato
+Square,Square,四角,Carré,Cuadrado,Quadrato
+Circle,Circle,円,Rond,Circular,Cerchio
+Block,Block,ブロック,Bloc,Bloque,Blocco
+Front of Block,Front of Block,ブロックの前面,Devant du bloc,Frontal de bloque,Fronte del blocco
+Plane,Plane,プレーン,Aire,Plano,Piano
+Note Scale,Note Scale,ノーツの大きさ,Échelle des notes,Escala de las notas,Scala note
+[def. 1] the visual size of the notes (doesn't affect hitboxes),[def. 1] the visual size of the notes (doesn't affect hitboxes),ノーツの視覚的な大きさ（ヒットボックスには影響しない）,[par défaut 1] la taille visuelle des notes (n'affecte pas les hitboxs),[por defecto 1] tamaño visual (no afecta al hitbox),"[predefinito 1] la dimensione visiva delle note (non influisce sugli hitbox)"
+Note Opacity,Note Opacity,ノーツの透明度,Opacité des notes,Opacidad de las notas,Opacità note
+[def. 100%] how opaque/transparent/visible the note appears,[def. 100%] how opaque/transparent/visible the note appears,[デフォルト 100%] ノーツの不透明度/視認性,[par défaut 100%] à quel point les notes apparaitront opaque/transparante/visible,[por defecto 100%] cómo de opacas / transparentes / visibles se ven las notas,"[predefinito 100%] quanto le note appaiono opache/trasparenti/visibili"
+Approach Rate,Approach Rate,接近速度,Vitesse d'approche (AR),Velocidad de aproximación (AR),Velocità di avvicinamento (AR)
+[def. 40] the speed that notes move towards the grid. (note: this will be half of your AR in ss/vulnus),[def. 40] the speed that notes move towards the grid. (note: this will be half of your AR in ss/vulnus),[デフォルト 40] ノーツがグリッドに向かって移動する速度。(注：ss/vulnusではARの半分になります。）,[par défaut 40] la vitesse a laquelle les notes arrivent vers la grille (note : elle sera la moitié de ton AR (Approch Rate) sur Sound Space/Vulnus),[por defecto 40] la velocidad con que se aproximan las notas a la cuadrícula,"[predefinito 40] la velocità con cui le note si muovono verso la griglia (nota: sarà la metà del tuo AR in ss/vulnus)"
+Spawn Distance,Spawn Distance,ノーツの出現距離,Distance d'apparition (SD),Distancia de aparición (SD),Distanza di spawn (SD)
+[def. 40] distance from the grid that notes spawn (approach time = SD/AR),[def. 40] distance from the grid that notes spawn (approach time = SD/AR),[デフォルト 40］ノーツがスポーンするグリッドからの距離（接近速度＝SD/AR）,[par défaut 40] la distance a laquelle les notes apparaîtront de la grille (temps d'approche = SD/AR),[por defecto 40] la distancia a la que las notas aparecen desde la cuadrícula (AR/SD = tiempo de aproximación),"[predefinito 40] distanza dalla griglia in cui le note compaiono (tempo di avvicinamento = SD/AR)"
+Fade Length,Fade Length,ノーツの出現時間,Durée d'apparition,Duración de aparición,Durata dissolvenza
+[def. 50%] percentage of the spawn distance that notes take to fade from invisible to fully opaque,[def. 50%] percentage of the spawn distance that notes take to fade from invisible to fully opaque,[デフォルト 50％] ノーツが透明から完全に不透明になるまでのスポーン距離のパーセンテージ,[par défaut 50%] le pourcentage de la distance d'apparition que les notes prennent pour apparaître d'invisible à opaque,[por defecto 50%] el porcentaje de la distancia de aparición que tardan las noas en pasar de invisibles a opacas,"[predefinito 50%] percentuale della distanza di spawn in cui le note passano da invisibili a completamente opache"
+Do Note Pushback,Do Note Pushback,ノーツプッシュバック,Repoussement des notes,Haz retroceder las notas,Rimbalzo note
+"while enabled, notes will go past the grid when you miss, instead of always vanishing 0.1 units past the grid","while enabled, notes will go past the grid when you miss, instead of always vanishing 0.1 units past the grid",有効になっている場合、ミスしたときにノーツがグリッドを通り過ぎる。,"si activé, les notes passeront à travers la grille pour chaque notes raté, au lieu de disparaitre à 0.1 unités après la grille","si está activo, las notas pasarán a través de la cuadrícula cuando falles, en lugar de desaparecer 0.1 unidades pasada la cuadrícula","se abilitato, le note passeranno oltre la griglia quando sbagli, invece di scomparire a 0,1 unità oltre la griglia"
+Half Ghost,Half Ghost,半透明,Demi-dissipation,Medio-desvanecimiento,Mezzo-trasparenza
+useful for patterns that fill the whole screen,useful for patterns that fill the whole screen,画面全体にノーツがあるときに役立つ,utile pour des patternes quit remplisse l'écran,útil para patrones que cubren toda la pantalla,utile per pattern che riempiono tutto lo schermo
+Note Spawn Effect,Note Spawn Effect,ノーツの出現エフェクト,Effet d'apparition des notes,Efecto de aparición de las notas,Effetto di spawn note
+"alright, fine. no distractions for you.","alright, fine. no distractions for you.",気が散らない！,pas de distractions :D,no tendrás nada para distraerte :),"va bene, niente distrazioni per te."
+Hit Effect Image,Hit Effect Image,ヒットエフェクトのイメージ,Image hit effect,Imagen de efecto visual de golpe,Immagine effetto colpo
+Click to replace,Click to replace,クリックで置き換え,Cliquer pour remplacer,Haz click para reemplazar,Fai clic per sostituire
+this image is used by hit effects with an asterisk (*) in their name,this image is used by hit effects with an asterisk (*) in their name,この画像は、名前にアスタリスク（*）が含まれるヒットエフェクトで使用されます。,cette image est utilisé par les hit effect avec un astérisque (*) dans leur nom,esta imagen es utilizada por los efectos visuales de golpe con un asterisco (*) en su nombre,questa immagine è utilizzata dagli effetti di colpo con un asterisco (*) nel nome
+Ripple* (no color),Ripple* (no color),画像* (無色),Onde* (sans couleurs),Onda* (incoloro),Ripple* (nessun colore)
+Ripple* (note color),Ripple* (note color),画像* (ノーツの色),Onde* (couleur des notes),Onda* (color de nota),Ripple* (colore nota)
+Ripple* (rainbow),Ripple*(rainbow),画像* (虹色),Onde* (arc-en-ciel),Onda* (arcoiris),Ripple* (arcobaleno)
+Shards (note color),Shards (note color),破片 (ノーツの色),Éclats* (couleur des notes),Fragmentos* (color de nota),Shards* (colore nota)
+Shards (rainbow),Shards (rainbow),破片 (虹色),Éclats* (arc-en-ciel),Fragmentos* (arcoiris),Shards* (arcobaleno)
+Shards (no color),Shards (no color),破片 (無色),Éclats* (sans couleurs),Fragmentos* (incoloro),Shards* (nessun colore)
+Miss* (red),Miss* (red),ミス* (赤),Raté* (rouge),Fallo* (rojo),Miss* (rosso)
+Miss* (note color),Miss* (note color),ミス* (ノーツの色),Raté* (couleur des notes),Fallo* (color de nota),Miss* (colore nota)
+Miss* (rainbow),Miss* (rainbow),ミス* (虹色),Raté* (arc-en-ciel),Fallo* (arcoiris),Miss* (arcobaleno)
+Miss* (no color),Miss* (no color),ミス* (無色),Raté* (sans couleurs),Fallo* (incoloro),Miss* (nessun colore)
+Hit Effect,Hit Effect,ヒットエフェクト,Hit effect,Efecto de golpe,Effetto hit
+effect played when you hit a note,effect played when you hit a note,ノーツを打った際のエフェクト,effet joué quand tu touches une note,el efecto visual al golpear una nota,effetto riprodotto quando colpisci una nota
+Show Hit Effect,Show Hit Effect,ヒットエフェクトを表示,Montrer hit effect,Mostrar efecto visual,Mostra effetto hit
+plays your selected hit effect when you hit a note,plays your selected hit effect when you hit a note,ノーツを打った際に選択したヒット・エフェクトを再生する,joue l'hit effect selectionné quand tu touche une note,muestra el efecto seleccionado al golpear una nota,riproduce l'effetto hit selezionato quando colpisci una nota
+Hit Effect at Cursor,Hit Effect at Cursor,カーソルヒットエフェクトを表示,Hit effect au curseur,Efecto visual sobre el cursor,Effetto hit al cursore
+hit effects will appear at the center of notes when this is off,hit effects will appear at the center of notes when this is off,これがオフの場合、ヒットエフェクトがノーツの中央に表示されます。,les hit effects apparaîtront au centre des notes si cette option est désactivé,el efecto visual aparecerá en el centro de las notas golpeadas si esta opción está desactivada,gli effetti hit appariranno al centro delle note quando questa opzione è disattivata
+Approach Squares,Approach Squares,アプローチガイド,Carré d'approche,Cuadrado de proximidad,Quadrati di avvicinamento
+squares on the grid that show note approach - similar to the circles in osu!,squares on the grid that show note approach - similar to the circles in osu!,ノーツの接近を示すグリッド上の正方形 - Osu!のサークルに似ています！,carré sur la grille qui représente la vitesse d'approche des notes - similaire aux cercles dans osu!,aparecerán cuadrados en la pantalla que representan la velocidad de aproximación - como en osu!,quadrati sulla griglia che mostrano l'avvicinamento della nota - simile ai cerchi in osu!
+Approach Follow,Approach Follow,アプローチフォロー,Suivie d'approche,Aproximación con seguimiento,Seguimento dell'approccio
+makes it so the approach squares lock to the note,makes it so the approach squares lock to the note,アプローチガイドがノーツについていく,fait que les carrés d'approche se verouille aux notes,hace que los cuadrados de proximidad se posicionen sobre la nota,fa sì che i quadrati di avvicinamento si blocchino alla nota
+Miss Effect Image,Miss Effect Image,ミスエフェクトの画像,Image miss effect,Imagen de efecto visual de fallo,Immagine effetto miss
+"same as above, but applies to your miss effect instead","same as above, but applies to your miss effect instead",上記と同じだが、代わりに自分のミス効果に適用される。,"même chose, sauf que ça s'applique au miss effect","lo mismo que arriba, pero aplicada al efecto de fallo","uguale a sopra, ma si applica al tuo effetto miss invece"
+Miss Effect,Miss Effect,ミスエフェクト,Miss effect,Efecto de fallo,Effetto miss
+hit effect but when you don't,hit effect but when you don't,ミスした時のエフェクト,hit effect mais pas,efecto de golpe pero va a ser que no,effetto hit ma quando sbagli
+Ripple* (no color),Ripple* (no color),画像* (無色),Onde* (sans couleurs),Onda* (incoloro),Ripple* (nessun colore)
+Ripple* (note color),Ripple* (note color),画像* (ノーツの色),Onde* (couleur des notes),Onda* (color de nota),Ripple* (colore nota)
+Ripple* (rainbow),Ripple* (rainbow),画像* (虹色),Onde* (arc-en-ciel),Onda* (arcoiris),Ripple* (arcobaleno)
+Shards (note color),Shards (note color),破片 (ノーツの色),Éclats* (couleur des notes),Fragmentos* (color de nota),Shards* (colore nota)
+Shards (rainbow),Shards (rainbow),破片 (虹色),Éclats* (arc-en-ciel),Fragmentos* (arcoiris),Shards* (arcobaleno)
+Shards (no color),Shards (no color),破片 (無色),Éclats* (sans couleurs),Fragmentos* (incoloro),Shards* (nessun colore)
+Miss* (red),Miss* (red),ミス* (赤),Raté* (rouge),Fallo* (rojo),Miss* (rosso)
+Miss* (note color),Miss* (note color),ミス* (ノーツの色),Raté* (couleur des notes),Fallo* (color de nota),Miss* (colore nota)
+Miss* (rainbow),Miss* (rainbow),ミス* (虹色),Raté* (arc-en-ciel),Fallo* (arcoiris),Miss* (arcobaleno)
+Miss* (no color),Miss* (no color),ミス* (無色),Raté* (sans couleurs),Fallo* (incoloro),Miss* (nessun colore)
+Show Miss Effect,Show Miss Effect,ミスエフェクトを表示,Afficher miss effect,Mostrar efecto visual de fallo,Mostra effetto miss
+"replace ""hit"" with ""miss"" in the description of the setting above this one","replace ""hit"" with ""miss"" in the description of the setting above this one",この上の設定の説明の「ヒット」を「ミス」に置き換える。,"remplace ""hit"" avec ""miss"" dans la description du paramètre","sustituye ""golpe"" por ""fallo"" en la descripción del ajuste superior","sostituisci ""colpo"" con ""sbaglio"" nella descrizione dell'impostazione sopra"
+Replays & Recording,Replays & Recording,録画とリプレイ,Replays et enregistrement,Repeticiones y grabación,Riproduttori e registrazione
+Record Replays,Record Replays,リプレイを録画,Enregistrer replays,Grabar repeticiones,Registra riproduttori
+records replays. what else did you expect...? (drag a replay file into the game to view),records replays. what else did you expect...? (drag a replay file into the game to view),リプレイを録画 (リプレイファイルをゲームにドラッグして表示する）,déposez un fichier replay sur le jeu pour le visionner,permite grabar repeticiones (desplaza un fichero sobre la ventana del juego para visualizar),registra i riproduttori. cosa altro ti aspettavi...? (trascina un file di riproduzione nel gioco per visualizzare)
+Alt. Replay Camera,Alt. Replay Camera,カメラアングルを追加,Caméra replay alternative,Repetición en cámara alternativa,Telecamera riproduzione alternativa
+alters the camera angle in replays - side view,alters the camera angle in replays - side view,リプレイ時のカメラアングルを横に変える,altère l'angle de la caméra dans les replays - vue côté,altera el ángulo de visualización durante las repeticiones - vista lateral,altera l'angolo della telecamera nei riproduttori - vista laterale
+Recording Mode,Recording Mode,録画モード,Mode d'enregistrement,Modo de grabación,Modalità di registrazione
+Legacy,Legacy,レガシー,Classique,Clásico,Legacy
+Maximise,Maximise,最高,Maximiser,Maximizar,Massimizza
+Minimise,Minimise,最低,Minimiser,Minimizar,Minimizza
+[def. Maximise] changes the method used for dynamic fps,[def. Maximise] changes the method used for dynamic fps,[デフォルト 最大] ダイナミックfpsに使用する方法を変更する。,[par défaut Maximiser] change la méthode utilisée les IPS dynamiques,[por defecto Maximizar] cambia el método utilizado para FPS dinámicos,[predefinito Massimizza] cambia il metodo utilizzato per fps dinamici
+Recording FPS,Recording FPS,録画FPS,IPS de l'enregistrement,FPS de grabación,FPS di registrazione
+[def. 30/144] changes the dynamic fps bounds of your replays,[def. 30/144] changes the dynamic fps bounds of your replays,[デフォルト 30/144] リプレイのFPS制限を変える,[par défaut 30/144] change les limites des IPS dynamiques lors de vos replays,[por defecto 30/144] cambia los límites de los FPS,"[predefinito 30/144] cambia i limiti fps dinamici dei tuoi riproduttori"
+Camera & Controls,Camera & Controls,カメラと操作,Caméra et contrôles,Cámara y controles,Telecamera e controlli
+Sensitivity,Sensitivity,感度,Sensibilité,Sensibilidad,Sensibilità
+[def. 1] changes how much the cursor/camera move with mouse/touch input,[def. 1] changes how much the cursor/camera move with mouse/touch input,[デフォルト 1] マウス/タッチ入力によるカーソル/カメラの感度,[par défaut 1] change à quel point la caméra bouge avec le curseur,[por defecto 1] cambia la cantidad de movimiento de la cámara respecto al cursor,"[predefinito 1] cambia quanto il cursore/telecamera si muove con l'input del mouse/touch"
+Absolute Mode,Absolute Mode,マウスロック解除,Mode absolu,Modo absoluto,Modalità assoluta
+turning this on will unlock the mouse while playing - useful for tablets,turning this on will unlock the mouse while playing - useful for tablets,これをオンにすると、プレイ中にマウスのロックが解除されます - タブレットに便利,débloque le pointeur lors du jeu (utile pour les tablettes),desbloquea el cursor durante la partida (útil para tabletas),l'attivazione di questa opzione sblocca il mouse durante il gioco - utile per i tablet
+Disable Controller,Disable Controller,コントローラーチェックをしない,Désactiver manette,Desactivar mando,Disabilita controller
+disables controller checks when starting a song,disables controller checks when starting a song,オンにすると、曲の開始時にコントローラーのチェックを無効にする。,désactive le check des manettes lors du jeu,desactiva la comprobación de mandos al empezar a jugar,disabilita i controlli del controller all'avvio di una canzone
+Absolute Scale,Absolute Scale,ロック解除時の感度,Échelle absolue,Escala absoluta,Scala assoluta
+[def. 1] changes how much the cursor/camera move with absolute mode,[def. 1] changes how much the cursor/camera move with absolute mode,[デフォルト 1] マウスロックを解除した際のカーソル/カメラの感度,[par défaut 1] change à quel point la caméra bouge avec le mode absolu,[por defecto 1] cambia la cantidad de movimiento de la cámara respecto al cursor en modo absoluto,"[predefinito 1] cambia quanto il cursore/telecamera si muove con la modalità assoluta"
+Camera Mode Presets,Camera Mode Presets,カメラモードのプリセット,Presets pour la caméra,Presets para la cámara,Preset modalità telecamera
+Half-lock,Half-lock,半固定,Half-lock,Half-lock,Half-lock
+Full-lock,Full-lock,全固定,Full-lock,Full-lock,Full-lock
+Reverse-lock,Reverse-lock,逆固定,Reverse-lock,Reverse-lock,Reverse-lock
+Spin,Spin,スピン,Spin,Spin,Spin
+Half-lock (faraway),Half-lock (faraway),半固定（遠い）,Half-lock (lointain),Half-lock (lejano),Half-lock (lontano)
+,Full-lock (faraway),全固定（遠い）,Full-lock (lointain),Full-lock (lejano),Full-lock (lontano)
+,Reverse-lock (faraway),逆固定（遠い）,Reverse-lock (lointain),Reverse-lock (lejano),Reverse-lock (lontano)
+Spin-lock (mid-pivot),Spin-lock (mid-pivot),スピン（真ん中固定）,Spin-lock (semi-pivot),Spin-lock (pivote central),Spin-lock (pivote centrale)
+Camera Parallax,Camera Parallax,視差,Parallax de la caméra,Parallax de la cámara,Parallax telecamera
+how much the camera moves with the cursor - affects everything,how much the camera moves with the cursor - affects everything,カーソルとカメラの移動量 - すべてに影響する,change à quel point la caméra bouge avec le curseur - affecte le parallax du HUD,cambia la cantidad de movimiento de la cámara respecto al cursor (afecta a toda la pantalla),quanto la telecamera si muove con il cursore - influisce su tutto
+HUD Parallax,HUD Parallax,HUD視差,Parallax du HUD,Parallax del HUD,Parallax HUD
+how much the hud moves with the cursor - added on top of camera parallax,how much the hud moves with the cursor - added on top of camera parallax,カーソルと一緒にHUDがどれだけ動くか - カメラ視差の上に追加される,à quel point le HUD bouge avec le curseur,cambia la cantidad de movimiento del HUD respecto al cursor (añadido al parallax de la cámara),quanto l'HUD si muove con il cursore - aggiunto sopra il parallax della telecamera
+Grid Parallax,Grid Parallax,HUD視差,Parallax de la grille,Parallax de la cuadrícula,Parallax griglia
+how much the note grid moves with the cursor - added on top of camera parallax,how much the note grid moves with the cursor - added on top of camera parallax,カーソルとノートのグリッドの移動量 - カメラ視差に追加,à quel point la grille de notes bouge avec le curseur,cambia la cantidad de movimiento de la cuadrícula respecto al cursor (añadido al parallax de la cámara),quanto la griglia di note si muove con il cursore - aggiunta sopra il parallax della telecamera
+Camera Unlock,Camera Unlock,カメラのロックを解除,Débloquer caméra,Desbloquear cámara,Sblocca telecamera
+"enables camera rotation - aka ""spin""","enables camera rotation - aka ""spin""",カメラの回転を有効にする - スピン,"active la rotation de la caméra (""spin"")","activa la rotación de la cámara (modo ""spin"")","abilita la rotazione della telecamera - noto come ""spin"""
+Faraway Hud,Faraway Hud,HUDを離す,HUD lointain,HUD lejano,HUD lontano
+moves the HUD back by 10 grid units (20 studs) and makes it larger,moves the HUD back by 10 grid units (20 studs) and makes it larger,HUDを10グリッド単位（20スタッド）後退させ、大きくする。,pousse et enlarge le HUD de 10 unités de la grille (20 mètres),mueve el HUD 10 unidades de cuadrícula hacia atrás (20 metros),sposta l'HUD indietro di 10 unità di griglia (20 studs) e lo ingrandisce
+Edge Buffer (Drift),Edge Buffer (Drift),エッジバッファ (ドリフト),Drift du rebord,Derrape sobre bordes,Buffer bordo (Drift)
+"[def. 0] aka cursor drift; makes the cursor ""stick"" to the edges by letting it move slightly past the edges","[def. 0] aka cursor drift; makes the cursor ""stick"" to the edges by letting it move slightly past the edges",[def. 0] 別名カーソルドリフト; カーソルをエッジから少しはみ出させることで、エッジに「くっつく」ようにする。,"[par défaut 0] aussi connu en tant que ""cursor drift"", donne l'impression que le curseur se ""colle"" au rebords en le laissant les dépasser","[por defecto 0] conocido como ""cursor drift"", hace que el cursor se adhiera a los bordes haciendo que se mueva ligeramente a través de ellos","[predefinito 0] noto come cursor drift; fa sì che il cursore si ""attacchi"" ai bordi permettendogli di muoversi leggermente oltre i bordi"
+Buffer Cursor,Buffer Cursor,バッファカーソル,Vrai curseur,Cursor verdadero,Cursore buffer
+"shows a mini cursor at the ""real"" position when you enter the edge buffer","shows a mini cursor at the ""real"" position when you enter the edge buffer","エッジバッファに入ると、""実際の""位置にミニカーソルが表示される。","montre un mini curseur à la ""vraie"" position lorsque vous sortez du rebord","muestra un mini cursor en la posición ""real"" cuando derrapas sobre un borde","mostra un mini cursore nella posizione ""reale"" quando entri nel buffer del bordo"
+Follow Buffer Cursor,Follow Buffer Cursor,ドリフトに付いて行く,Suivre vrai curseur,Seguir cursor verdadero,Segui cursore buffer
+makes the parallax follow the buffer cursor instead of the real one,makes the parallax follow the buffer cursor instead of the real one,視差をドリフトカーソルに合わせる,fait en sorte que le parallax suit le vrai curseur,hace que el parallax siga al cursor verdadero ,fa sì che il parallax segua il cursore buffer invece di quello reale
+Field of View,Field of View,視野（FOV),Champ de vision,Campo de visión (FOV),Campo visivo
+[def. 70] you know what this does,[def. 70] you know what this does,[デフォルト 70] これが何を意味するか、あなたは知っている。,[par défaut 70],[por defecto 70] deberías saber lo que hace,[predefinito 70] sai cosa fa questo
+Hit FOV,Hit FOV,ヒットFOV,Champ de vision hit,Efecto de golpeo FOV,Hit FOV
+enables a FOV (Field of View) pulse when you hit a note,enables a FOV (Field of View) pulse when you hit a note,ノーツを打つと視野がぶれる,active une pulsation du champ de vision lorsque vous touchez une note,activa un efecto pulso en el campo de visión al golpear una nota,abilita un impulso FOV quando colpisci una nota
+Hit FOV Modes,Hit FOV Modes,ヒットFOVモード,Modes champ de vision hit,Modos de efecto de golpeo FOV,Modalità Hit FOV
+Normal,Normal,ノーマル,Normal,Normal,Normale
+Additive,Additive,累積,Additif,Aditivo,Additivo
+Exponential,Exponential,指数増加,Exponentiel,Exponencial,Esponenziale
+Mode: Additive,Mode: Additive,モード: 累積,Mode: additif,Modo: aditivo,Modalità: Additiva
+Hit FOV Amplifier,Hit FOV Amplifier,ヒットFOVの強さ,Amplifieur champ de vision hit,Amplificador del efecto de golpeo FOV,Amplificatore Hit FOV
+[def. 2] how intense is the hit FOV pulsing is,[def. 2] how intense is the hit FOV pulsing is,[デフォルト 2] ノーツをヒットした時のFOV反動の強さ,[par défaut 2] l'intensité du champ de vision hit,[por defecto 2] intensidad del pulso en el campo de visión,[predefinito 2] quanto intensa è la pulsazione dell'Hit FOV
+Hit FOV Decay,Hit FOV Decay,ヒットFOVの減衰,Diminution champ de vision hit,Desvanecimiento del efecto de golpeo FOV,Decadimento Hit FOV
+[def. 20] how long it takes for hit FOV pulsing to wear-off,[def. 20] how long it takes for hit FOV pulsing to wear-off,[デフォルト 20] ヒットFOVの反動が消えるまでの時間,[par défaut 20] combien de temps ça prend pour que le champ de vision hit se dissipe,[por defecto 20] el tiempo necesario para que un pulso en el campo de visión se desvanezca,[predefinito 20] quanto tempo ci vuole perché la pulsazione dell'Hit FOV si dissiphi
+Customization,Customization,カスタマイズ,Personnalisation,Personalización,Personalizzazione
+Background World,Background World,背景,Monde arrière-plan,Mundo de fondo,Mondo di sfondo
+background and environment used in the song player,background and environment used in the song player,メニューやゲーム中の背景,arrière-plan et environement utilisé mi-jeu,fondo y ambiente utilizados durante la partida,sfondo e ambiente utilizzati nel giocatore di canzoni
+Disable BG Effects,Disable BG Effects,背景を消す,Désactiver éffets d'arrière-plan,Desactivar efectos del fondo,Disabilita effetti sfondo
+only affects The Grid for now,only affects The Grid for now,今はグリッドの背景しか変化しない,"affecte seulement le monde ""The Grid"" pour le moment","afecta solo a ""The Grid"" por ahora",al momento influisce solo su The Grid
+Custom World BG,Custom World BG,カスタム背景,Monde arrière-plan personnalisé,Mundo de fondo personalizado,Sfondo personalizzato
+"this is the background for the ""Custom Background"" world","this is the background for the ""Custom Background"" world",カスタム背景を選択したときの背景,"l'arrière-plan pour l'option ""Custom Background""","el fondo utilizado en ""Custom Background""","lo sfondo utilizzato in ""Custom Background"""
+Cursor Image,Cursor Image,カーソルイメージ,Image du curseur,Imagen del cursor,Immagine del cursore
+"ah, the cursor. arguably the most important part of this game.","ah, the cursor. arguably the most important part of this game.",カーソルに映るイメージを変える,Modifie l'image du curseur,"ah, casi se me olvida lo más importante. el cursor","ah, il cursore. probabilmente la parte più importante di questo gioco."
+Color Mode,Color Mode,カーソルの色設定,Mode de couleur,Modo de color,Modalità colore
+how the cursor will be colored,how the cursor will be colored,ヒット時カーソルの色の変更,comment le curseur va être coloré,el modo de coloración del cursor,come il cursore sarà colorato
+Single Color,Single Color,一色,Couleur unique,Color único,Colore singolo
+Rainbow,Rainbow,虹色,Arc-en-ciel,Arcoiris,Arcobaleno
+Note Color,Note Color,ノーツカの色,Couleur de la note,Color de nota,Colore nota
+Color,Color,色,Couleur,Color,Colore
+"[def. #ffffff] color used for ""Single Color""","[def. #ffffff] color used for ""Single Color""","[デフォルト＃ffffff] ""Single Color""に使われる色","[par défaut #ffffff] couleur utilisée pour ""couleur unique""","[por defecto #ffffff] color utilizado para ""Color único""","[predefinito #ffffff] colore utilizzato per ""Colore singolo"""
+Cursor Scale,Cursor Scale,カーソルの大きさ,Échelle du curseur,Escala del cursor,Scala del cursore
+[def. 1] cursor size multiplier (doesn't affect hitboxes),[def. 1] cursor size multiplier (doesn't affect hitboxes),[デフォルト１]カーソルの大きさを変える(当たり判定は変わらない）,[par défaut 1] la taille du curseur (n'affecte pas la hitbox),[por defecto 1] la escala del cursor (no afecta al hitbox),[predefinito 1] moltiplicatore della dimensione del cursore (non influisce sugli hitbox)
+Cursor Spin,Cursor Spin,カーソル回転,Rotation du curseur,Rotación del cursor,Rotazione del cursore
+[def. 0°] makes the cursor image rotate,[def. 0°] makes the cursor image rotate,[デフォルト０°]カーソルのイメージが回転する,[par défaut 0°] fait tourner le curseur,[por defecto 0º] rota la imagen del cursor,[predefinito 0°] fa ruotare l'immagine del cursore
+Cursor Trail,Cursor Trail,カーソル軌跡,Traînée du curseur,Estela del cursor,Scia del cursore
+many of you have asked so i shall deliver,many of you have asked so i shall deliver,カーソルを追う線,Ligne suivant le curseur,una línea que sigue al cursor,una linea che segue il cursore
+Smart Trail,Smart Trail,スマートな軌跡,Traînée intelligente,Estela inteligente,Scia intelligente
+makes the trail smooth by using distance moved to spawn particles instead of having a constant number,makes the trail smooth by using distance moved to spawn particles instead of having a constant number,パーティクルのスポーンに一定数ではなく移動距離を使用することで軌跡を滑らかにする,rends la traînée plus douce en utilisant la distance au lien d'un nombre fixe,suaviza la estela utilizando el desplazamiento en lugar de un número constante,rende la scia liscia utilizzando la distanza percorsa per generare particelle invece di un numero costante
+Trail Fade Mode,Trail Fade Mode,軌跡フェードモード,Mode dissipation de la traînée,Modo de desvanecimiento de la estela,Modalità dissolvenza scia
+how the trail will fade out,how the trail will fade out,どれだけ軌跡がフェードアウトするか,comment la traînée se dissipe,de qué forma se desvanece la estela,come la scia svanirà
+Scale only,Scale only,スケールだけ,Taille seulement,Solo la escala,Solo la scala
+Opacity only,Opacity only,不透明性だけ,Opacité seulement,Solo la opacidad,Solo l'opacità
+Trail Detail,Trail Detail,残像の詳細,Détail de la traînée,Nivel de detalle de la estela,Dettaglio della scia
+[def. 10] number of particles in the cursor trail / (smart trail) number spawned per grid unit,[def. 10] number of particles in the cursor trail / (smart trail) number spawned per grid unit,[デフォルト 10]カーソルの軌跡のパーティクル数 / (スマート軌跡)1グリッド単位あたりの生成数,[par défaut 10] le nombre de particules dans la traînée du curseur (traînée intelligente),[por defecto 10] el número de partículas generadas sobre la estela del cursor (con estela inteligente: por unidad de desplazamiento),"[predefinito 10] numero di particelle nella scia del cursore / (scia intelligente) numero generato per unità di griglia"
+Trail Time,Trail Time,軌跡,Temps de la traînée,Tiempo de estela,Tempo della scia
+[def. 0.15] how long the cursor trail lasts in seconds,[def. 0.15] how long the cursor trail lasts in seconds,[デフォルト 0.15] 軌跡が何秒間残るか,[par défaut 0.15] combien de temps la traînée dure en secondes,[por defecto 0.15] duración de la estela del cursor en segundos,[predefinito 0.15] quanto dura la scia del cursore in secondi
+Touch Indicator,Touch Indicator,タッチインジケーター,Indicateur tactile,Indicador táctil,Indicatore tattile
+this is the image that shows up under your finger on a touchscreen,this is the image that shows up under your finger on a touchscreen,画面をタッチしたとき指の下に表示される画像,l'image qui apparaît sous votre doigt sur un écran tactile,la imagen que aparece bajo tu dedo sobre una pantalla táctil,questa è l'immagine che appare sotto il tuo dito su uno schermo tattile
+Graphics & Advanced,Graphics & Advanced,グラフィック設定,Graphiques et avancé,Gráficos y ajustes avanzados,Grafica e avanzate
+Render Scale,Render Scale,レンダースケール,Échelle du rendement,Escala de renderizado,Scala di rendering
+"GUI scale, higher = smaller","GUI scale, higher = smaller",GUIスケール higher = smaller,Échelle du GUI (plus haut = plus petit),Escala del GUI (más alto = más pequeño),"Scala GUI, più alto = più piccolo"
+Vsync,Vsync,Vsync,Synchronization verticale,Sincronización vertical (Vsync),Vsync
+makes the game smoother at the cost of slightly increased input lag,makes the game smoother at the cost of slightly increased input lag,入力ラグがわずかに増加する代償としてゲームがよりスムーズになる,rends le jeu plus doux au prix d'un peu plus de latence avec les mouvements,hace que el juego se vea más fluido a cambio de un poco de latencia,rende il gioco più fluido al costo di un lieve aumento della latenza di input
+Fullscreen,Fullscreen,フルスクリーン,Plein écran,Pantalla completa,Schermo intero
+"because you don't have anything else to focus on, do you?","because you don't have anything else to focus on, do you?",他に集中する事が無いからだろ？,"Parce qu'il n'y a rien d'autre à faire, n'est-ce pas?","porque no tendrás nada más que hacer, no?","perché non hai nient'altro su cui concentrarti, vero?"
+Auto-Maximize,Auto-Maximize,自動最大化,Auto-maximiser,Auto-maximizar,Auto-massimizza
+you might wanna turn this thing off if you're on an ultrawide display,you might wanna turn this thing off if you're on an ultrawide display,ウルトラワイドディスプレイを使っている人はこれをオフにしたほうがいいかもしれない,il se peut que vous vouliez désactiver cela si vous avez un écran ultra-large,deberías desactivar esto si tu monitor es extra-grande,potresti voler disattivare questa opzione se stai usando un display ultrawide
+Show Warnings,Show Warnings,警告を表示,Afficher les avertissements,Muestra avisos,Mostra avvisi
+turning this off disables the warnings for things like high trail detail or unhittable hitwindows,turning this off disables the warnings for things like high trail detail or unhittable hitwindows,これをオフにすると軌跡の詳細やヒットウィンドウがヒットしない場合などの警告が無効になります。,désactiver cela cache les avertissements pour certaines choses (comme des notes qui ne peuvent pas être touchées),desactivar esta opción deshabilita los avisos para ciertas cosas (como el nivel de detalle elevado),disattivare questa opzione disabilita gli avvisi per cose come dettagli di scia elevati o finestre di hit non colpibili
+FPS Limit,FPS Limit,FPS制限,Limite d'IPS,Límite de FPS,Limite FPS
+[0 = no limit] puts a limit on the framerate; use this if ssp is using 100% gpu,[0 = no limit] puts a limit on the framerate; use this if ssp is using 100% gpu,[0 = 制限無し] FPSを制限する　もしsspがGPUを100％使用していたら制限してください,[0 = pas de limite],[0 = ilimitado] limita la tasa de refresco; utiliza esto para reducir el consumo de la GPU,"[0 = nessun limite] imposta un limite alla frequenza di fotogrammi; usa questo se ssp sta usando il 100% della GPU"
+Audio,Audio,音声,Audio,Audio,Audio
+Master Volume,Master Volume,マスターボリューム,Volume principal,Volumen principal,Volume principale
+overall volume,overall volume,全体のボリューム,Volume principal,volumen principal,volume complessivo
+Music Volume,Music Volume,曲のボリューム,Volume de la musique,Volumen de la música,Volume musica
+music volume,music volume,曲のボリューム,Volume de la musique,volumen de la música,volume della musica
+Hit Volume,Hit Volume,ヒットボリューム,Volume des notes touchées,Volumen de golpeo,Volume hit
+hit sound volume,hit sound volume,ヒットサウンドボリューム,Volume des notes touchées,volumen de golpeo,volume del suono hit
+Miss Volume,Miss Volume,ミスボリューム,Volume des notes manquées,Volumen de fallo,Volume miss
+miss sound volume,miss sound volume,ミスサウンドボリューム,Volume des notes manquées,volumen de fallo,volume del suono miss
+Fail Volume,Fail Volume,失敗ボリューム,Volume d'échec,Volumen de muerte,Volume fallimento
+fail sound volume,fail sound volume,失敗サウンドボリューム,Volume d'échec,volumen de muerte,volume del suono di fallimento
+PB Volume,PB Volume,PBボリューム,Volume du nouveau record,Volumen de nuevo récord,Volume PB
+new best sound volume,new best sound volume,ニューベストサウンドボリューム,Volume du nouveau record,volumen de nuevo récord,volume del nuovo record
+Hit Sound,Hit Sound,ヒットサウンド,Son des notes touchées (hits),Sonido de golpeo (hitsound),Suono hit
+"customize this with a ""hit.mp3"" file in your save directory","customize this with a ""hit.mp3"" file in your save directory","音に""hit.mp3""と名前を付けセーブディレクトリに入れるとその音になる","personnalisez cela en plaçant un fichier nommé ""hit.mp3"" dans votre dossier de sauvegarde","personalízalo añadiendo un fichero ""hit.mp3"" en tu carpeta de usuario","personalizzalo aggiungendo un file ""hit.mp3"" nella tua cartella di salvataggio"
+Miss Sound,Miss Sound,ミスサウンド,Son des notes manquées (miss),Sonido de fallo (misssound),Suono miss
+"customize this with a ""miss.mp3"" file in your save directory","customize this with a ""miss.mp3"" file in your save directory","音に""miss.mp3""と名前を付けセーブディレクトリに入れるとその音になる","personnalisez cela en plaçant un fichier nommé ""miss.mp3"" dans votre dossier de sauvegarde","personalízalo añadiendo un fichero ""miss.mp3"" en tu carpeta de usuario","personalizzalo aggiungendo un file ""miss.mp3"" nella tua cartella di salvataggio"
+Disable Directional,Disable Directional,指向性サウンドを無効にする,Désactiver son directionel,Desactivar sonido direccional,Disabilita audio direzionale
+makes the hit/miss sounds non-directional,makes the hit/miss sounds non-directional,hit/miss　の指向性を無効にする,rends les sons hit/miss non-directionel,hace que los sonidos hit / miss sean no-direccionales,rende i suoni hit/miss non-direzionali
+Universal Offset,Universal Offset,ユニバーサルオフセット,Offset universel,Retardo universal,Offset universale
+[def. 0 ms] offsets the music from the actual map (positive = music starts earlier),[def. 0 ms] offsets the music from the actual map (positive = music starts earlier),[デフォルト .0ms] 実際のマップから音楽をオフセットする (positive = 音楽の開始が早い),[par défaut 0 ms] déplace la musique de la vraie map,[por defecto 0 ms] desplaza el comienzo de la canción respecto al mapa,"[predefinito 0 ms] compensa la musica dalla mappa effettiva (positivo = la musica inizia prima)"
+Menu Music,Menu Music,メニュー音楽,Musique du menu principal,Música del menú principal,Musica del menu
+"customize this with a ""menu.mp3"" file in your save directory (default song by pyrule)","customize this with a ""menu.mp3"" file in your save directory (default song by pyrule)","曲に""menu.mp3""と名前を付けセーブディレクトリに入れるとその曲になる(デフォルトソングby pyrule)","personnalisez cela en plaçant un fichier nommé ""menu.mp3"" dans votre dossier de sauvegarde","personalízalo añadiendo un fichero ""menu.mp3"" en tu carpeta de usuario","personalizzalo aggiungendo un file ""menu.mp3"" nella tua cartella di salvataggio (canzone predefinita di pyrule)"
+Auto Preview Songs,Auto Preview Songs,自動プレビュー再生,Auto-apercevoir les chansons,Auto-reproducir canciones,Auto anteprima canzoni
+automatically play previews when a song is selected,automatically play previews when a song is selected,マップを選ぶと自動的に音楽が流れる,joue automatiquement la musique d'une map lorsque celle-ci est sélectionnée,reproduce una muestra al seleccionar una canción,riproduce automaticamente le anteprime quando una canzone è selezionata
+UI Components,UI Components,UI設定,Composantes de l'IU (interface),Componentes de la interfaz de usuario (UI),Componenti UI
+Enable Grid,Enable Grid,グリッドを表示,Afficher la grille,Habilitar la cuadrícula,Abilita griglia
+turns the note grid on or off,turns the note grid on or off,ノートのグリッドをオンまたはオフにする,permet d'activer ou de désactiver la grille,activa la cuadrícula,attiva o disattiva la griglia di note
+Enable Border,Enable Border,画面の端を表示,Afficher les rebords,Habilitar los bordes,Abilita bordi
+turns the note grid border on or off,turns the note grid border on or off,ノートのグリッドの境界線をオンまたはオフにする,pour activer ou désactiver la bordure de la grille,activa el borde de la cuadrícula,attiva o disattiva il bordo della griglia di note
+Simple HUD,Simple HUD,シンプルHUD ,HUD simplifié,HUD simple,HUD semplice
+changes the side panels to show only your misses and pauses,changes the side panels to show only your misses and pauses,ミスとポーズだけを表示するようにサイドパネルを変更する,change les panneaux pour montrer que les notes manquées et les pauses,cambia los paneles laterales para mostrar sólo los fallos y pausas,cambia i pannelli laterali per mostrare solo gli errori e le pause
+Show Letter Grade,Show Letter Grade,グレードを表示する,Afficher la note lettrée,Mostrar puntuación en forma de letra,Mostra voto in lettere
+"shows a letter grade (SS, S, A, etc.) above your accuracy","shows a letter grade (SS, S, A, etc.) above your accuracy","SS, S, A, etc 　これらのグレードを表示","la note qui représente votre visée (SS, S, A, B, etc.)","muestra la letra que representa tu puntuación (SS, S, A, B, etc.)","mostra un voto in lettere (SS, S, A, ecc.) sopra la tua precisione"
+Show Settings,Show Settings,設定を表示,Afficher les paramètres,Mostrar ajustes,Mostra impostazioni
+"shows your approach rate, hit window, and camera config at the start of songs (to show off)","shows your approach rate, hit window, and camera config at the start of songs (to show off)",曲のはじめに approach rate. hit window. camera設定. を表示する(見せつけるため),"montre votre vitesse d'approche, la fenêtre de hit et la configuration de la caméra","muestra tu velocidad de aproximación, registrode golpeo y la configuración de la cámara","mostra il tuo approach rate, hit window e configurazione della telecamera all'inizio delle canzoni (per fare sfoggio)"
+Display True Combo,Display True Combo,コンボ数を表示,Afficher le vrai combo,Mostrar el combo verdadero,Mostra combo vero
+displays the real value of your combo behind the grid,displays the real value of your combo behind the grid,グリッドの後ろにコンボ数を表示,montre la vraie valeur de votre combo derrière la grille,muestra el valor verdadero del combo detrás de la cuadrícula,mostra il valore reale del tuo combo dietro la griglia
+Show Energy,Show Energy,HPを表示,Afficher énergie,Mostrar energía,Mostra energia
+i don't understand why you'd turn this off but people have asked so here you go,i don't understand why you'd turn this off but people have asked so here you go,これをオフにする理由は分からないが、どうやってオフにするかを聞かれたので,montre la santé/points de vie,muestra tu salud / PV,non capisco perché disattiveresti questa opzione ma la gente ha chiesto così ecco
+Show Timer,Show Timer,タイマーを表示,Afficher le chronomètre,Mostrar temporizador,Mostra temporizador
+tells you how far into a song you are (and the name of the song),tells you how far into a song you are (and the name of the song),曲名と曲のどこまでプレイしたかを表示,affiche le nom de la chanson et le degré d'avancement de la chanson,muestra el nombre de la canción y su progreso actual,ti dice a che punto della canzone sei (e il nome della canzone)
+Accuracy Bar,Accuracy Bar,精度バー,Afficher la barre de visée,Mostrar barra de precisión,Barra di precisione
+shows your accuracy on a progress bar,shows your accuracy on a progress bar,進行バーの上に精度を表示,montre votre visée dans une barre de progrès,muestra tu precisión en una barra de progreso,mostra la tua precisione su una barra di progresso
+Show Left Panel,Show Left Panel,左のパネルを表示,Afficher le panneau de gauche,Mostrar panel izquierdo,Mostra pannello sinistro
+"contains: combo meter, pause counter, accuracy","contains: combo meter, pause counter, accuracy",コンボメーター ポーズカウンター 精度 が含まれています,"contient: combo, pauses et visée","contiene: combo, pausas y precisión","contiene: combo meter, pause counter, precisione"
+Show Right Panel,Show Right Panel,右のパネルを表示,Afficher le panneau de droite,Mostrar panel derecho,Mostra pannello destro
+"contains: framerate, miss counter, notes hit / total notes","contains: framerate, miss counter, notes hit / total notes",フレームレート ミスカウンター ノートヒット/トータルノート が含まれています,"contient: IPS, notes manquées, notes touchées et notes totales","contiene: FPS, fallos, notas golpeadas y notas totales","contiene: framerate, miss counter, note colpite / note totali"
+Show Cursor,Show Cursor,カーソルを表示,Afficher le curseur,Mostrar cursor,Mostra cursore
 "to prevent issues where people forget they turned the cursor off, this doesn't save","to prevent issues where people forget they turned the cursor off, this doesn't save","誰かがカーソルをオフにしたことを忘れてしまう問題を防ぐ (これはセーブされません)
-",ce paramètre n'est pas sauvegardé au cas où l'utilisateur ne se souvient pas de l'avoir désactivé,"en caso de despiste, esta opción no se guarda"
-Attach Energy to Grid,Attach Energy to Grid,HPをグリッドに付ける,Attacher l'énergie à la grille,Adjuntar la energía a la cuadrícula
-attaches your health bar + modifiers to the note grid,attaches your health bar + modifiers to the note grid,ヘルスバートモディファイヤーをノートグリッドに付ける,attache votre barre de santé et vos mods à la grille de notes,adjunta tu barra de salud y tus modificadores a la cuadrícula
-Attach Timer to Grid,Attach Timer to Grid,タイマーをグリッドに付ける,Attacher le chronomètre à la grille,Adjuntar el temporizador a la cuadrícula
-attaches the timer + song name to the note grid,attaches the timer + song name to the note grid,タイマー＋曲名をノートグリッドに付ける ,attache la minuterie et le nom de la chanson à la grille de notes,adjunta el temporizador y el nombre de la canción a la cuadrícula
-Score Popup,Score Popup,スコアポップアップ,Pop-up de score,Pop-up de puntuación
-show the score you get from hitting a note at the bottom of the grid,show the score you get from hitting a note at the bottom of the grid,グリッドの下にhitして手にいれたスコアを表示します,montre le score que vous obtenez en touchant une note vers le bas de la grille,muestra la puntuación obtenida al golpear una nota
-Billboard Popup,Billboard Popup,看板ポップアップ,Pop-up billboard,Pop-up de puntuación
-apply a billboard effect to the score popup,apply a billboard effect to the score popup,スコアポップアップに看板効果を適応する,"applique un effet ""billboard"" au pop-up de score","aplica un efecto ""cartelera"" al pop-up de puntuación"
-UI Colors,UI Colors,UIの色,Couleurs de l'UI,Colores de la UI
-Theme Presets,Theme Presets,それらのプリセット,Thèmes,Temas
-Classic,Classic,クラシック,Classique,Clásico
-Inverted,Inverted,反転した,Inversé,Invertido
-Rainbow Grid,Rainbow Grid,レインボーグリッド,Grille arc-en-ciel,Cuadrícula arcoiris
-makes the grid rainbow,makes the grid rainbow,グリッドをレインボーにする,rend la grille arc-en-ciel,hace que la cuadrícula se vea arcoiris
-Rainbow HUD,Rainbow HUD,レインボーHUD,HUD arc-en-ciel,HUD arcoiris
-makes literally your entire HUD rainbow,makes literally your entire HUD rainbow,文字通りHUD全体をレインボーにする,rends le HUD en entier arc-en-ciel,hace que todo el HUD se vea arcoiris
-Panel Background,Panel Background,パネル背景,Arrière-plan des panneaux,Color de los paneles
-[def. 9b000000] background color of the left and right panels,[def. 9b000000] background color of the left and right panels,[デフォルト 9b000000] 左と右のパネルの背景色,[par défaut #9b000000] couleur arrière-plan des panneaux gauche et droite,[por defecto 9b000000] color de fondo de los paneles izquierdo y derecho
-Panel Text,Panel Text,パネルテキスト,Texte des panneaux,Texto de los paneles
-[def. ffffff] color of any text on panels that doesn't have its own setting,[def. ffffff] color of any text on panels that doesn't have its own setting,[デフォルト ffffff] 独自の設定を持っていないパネル上のテキストの色 ,[par défaut #ffffff] couleur de tout textes qui n'a pas de paramètre spécifique,[por defecto ffffff] color de todo el texto en los paneles sin ajustes propios
-Score Counter,Score Counter,スコアカウンター,Compteur de score,Contador de puntuación
-[def. ffffff] text color of the score counter,[def. ffffff] text color of the score counter,[デフォルト ffffff] スコアカウンターのテキストカラー,[par défaut #ffffff],[por defecto ffffff] color del contador de puntuación
-Pause UI Opacity,Pause UI Opacity,ポーズUIの不透明度,Opacité du menu pause,Opacidad del menú de pausa
-"[def. 0.75] opacity of the ""paused"" screen","[def. 0.75] opacity of the ""paused"" screen",[デフォルト 0.75] 一時停止画面の不透明度,[par défaut #ffffff],[por defecto 0.75] opacidad de la pantalla de pausa
-"""PAUSED""","""PAUSED""","""一時停止""","""EN PAUSE""","""PAUSADO"""
-"[def. 684400] text color of the ""paused"" message, empty color of unpause progress bar","[def. 684400] text color of the ""paused"" message, empty color of unpause progress bar","[デフォルト 684400] ""一時停止した""を満たす色  一時停止解除進行バーの空の色",[par défaut #684400],"[por defecto 684400] color de texto del mensaje ""PAUSADO"" y color del borde de la barra que aparece al despausar"
-"""PAUSED"" (Unpausing)","""PAUSED"" (Unpausing)","""一時停止""(解除)","""EN PAUSE"" (en résumant)","""PAUSADO"" (resumiendo)"
-[def. 80fff3] fill color of unpause progress bar,[def. 80fff3] fill color of unpause progress bar,[デフォルト 80fff3]　一時停止解除進行バーを満たす色,[par défaut #80fff3] couleur de la barre de progrès qui apparaît en résumant,[por defecto 80fff3] color de relleno de la barra que aparece al despausar
-"""Hold R to exit""","""Hold R to exit""",""" R 長押しで終了""","""Maintenir R pour quitter""","""Mantén R para abandonar"""
-[def. ffdb00] text color of the give up hint,[def. ffdb00] text color of the give up hint,[デフォルト ffdb00] 諦めるヒントの色,[par défaut #ffdb00],"[por defecto ffdb00] color de texto del mensaje ""Mantén R para bandonar"""
-Combo Wheel - Fill,Combo Wheel - Fill,コンボホイール - 満,Roue combo - remplie,Rueda de combo - relleno
-[def. 7bfff3] fill color of the combo display wheel,[def. 7bfff3] fill color of the combo display wheel,[デフォルト 7bfff3] コンボ表示ホイールを満たす色,[par défaut #7bfff3],[por defecto 7bfff3] color de relleno de la rueda de combo
-Combo Wheel - Empty,Combo Wheel - Empty,コンボホイール - 空,Roue combo - vide,Rueda de combo - borde
-[def. b94b4b4b] empty color of the combo display wheel,[def. b94b4b4b] empty color of the combo display wheel,[デフォルト b94b4b4b] コンボ表示ホイールの空の色,[par défaut #b94b4b4b],[por defecto b94b4b4b] color de borde la rueda de combo
-Accuracy Bar - Fill,Accuracy Bar - Fill,精度バー － 満,Barre de visée - remplie,Barra de precisión - relleno
-[def. 8cff00] fill color of the accuracy display bar,[def. 8cff00] fill color of the accuracy display bar,[デフォルト 8cff00] 精度バーを満たす色,[par défaut #8cff00],[por defecto 8cff00] color de relleno de la barra de precisión
-Accuracy Bar - Empty,Accuracy Bar - Empty,精度バー - 空,Barre de visée - vide,Barra de precisión - borde
-[def. b08f8f8f] empty color of the accuracy display bar,[def. b08f8f8f] empty color of the accuracy display bar,[デフォルト b08f8f8f] 精度バーの空の色,[par défaut #b08f8f8f],[por defecto b08f8f8f] color de borde de la barra de precisión
-"""Giving up...""","""Giving up...""","""諦める....""","""Abandon...""","""Abandonar..."""
-"[def. ffffff] text color of the ""Giving up..."" and ""Skipping..."" messages","[def. ffffff] text color of the ""Giving up..."" and ""Skipping..."" messages","[デフォルト ffffff] ""諦める""と""スキップ中""の文字の色",[par défaut #ffffff],"[por defecto ffffff] color de los mensajes ""Abandonar..."" y ""Saltando..."""
-Exit Wheel (Give up),Exit Wheel (Give up),終了ホイール(諦める),Roue de sortie (abandon),Rueda de salida (abandono)
-[def. ff8f2c] fill color of the exit progress wheel (before end of song),[def. ff8f2c] fill color of the exit progress wheel (before end of song),[デフォルト ff8f2c] 終了進行ホイールを満たす色(曲が終わる前),[par défaut #ff8f2c],[por defecto ff8f2c] color de relleno de la rueda de progreso de salida (antes del final de la canción)
-Exit Wheel (Skip),Exit Wheel (Skip),終了ホイール(スキップ),Roue de sortie (passer),Rueda de salida (saltar)
-[def. 81ff75] fill color of the exit progress wheel (after end of song),[def. 81ff75] fill color of the exit progress wheel (after end of song),[デフォルト 81ff75] 終了進行ホイールを満たす色(曲が終わった後),[par défaut #81ff75],[por defecto 81ff75] color de relleno de la rueda de progreso de salida (al acabar la canción)
-Timer Text (Normal),Timer Text (Normal),タイマーテキスト(普通),Texte chronomètre (normal),Texto del temporizador (normal)
-[def. ffffff] text color of the song name and time display,[def. ffffff] text color of the song name and time display,[デフォルト ffffff] 曲の名前と時間表示のカラー,[par défaut #ffffff],[por defecto ffffff] color de texto del nombre de la canción y del temporizador
-Timer Text (End),Timer Text (End),タイマーテキスト(終わり),Texte chronomètre (fin),Texto del temporizador (fin)
-[def. 77ff77] text color of the song name and time display (after end of song),[def. 77ff77] text color of the song name and time display (after end of song),[デフォルト 77ff77] 曲の名前と時間表示のカラー（曲が終わった後),[par défaut #77ff77],[por defecto 77ff77] color de texto del nombre de la canción y del temporizador (al acabar la canción)
-Timer Text (Skip),Timer Text (Skip),タイマーテキスト(スキップ),Texte chronomètre (passer),Texto del temporizador (saltar)
-[def. b3ffff] text color of the song name and time display (when skipping is possible),[def. b3ffff] text color of the song name and time display (when skipping is possible),[デフォルト  b3ffff] 曲の名前と時間表示のカラー(スキップ可能時),[par défaut #b3ffff],[por defecto b3ffff] color de texto del nombre de la canción y del temporizador (cuando es posible saltar)
-Timer - Fill (Normal),Timer - Fill (Normal),タイマー - 満(普通),Chronomètre - rempli (normal),Temporizador - relleno (normal)
-[def. ffffff] fill color of timer progress bar,[def. ffffff] fill color of timer progress bar,[デフォルト  ffffff] 進行バーのタイマーを満たす色,[par défaut #ffffff],[por defecto ffffff] color de relleno de la barra de progreso del temporizador
-Timer - Empty (Normal),Timer - Empty (Normal),タイマー - 空(普通),Chronomètre - vide (normal),Temporizador - borde (normal)
-[def. af8f8f8f] empty color of timer progress bar,[def. af8f8f8f] empty color of timer progress bar,[デフォルト  af8f8f8f] 進行バーのタイマーの空の色,[par défaut #af8f8f8f],[por defecto af8f8f8f] color de borde de la barra de progreso del temporizador
-Timer - Fill (End),Timer - Fill (End),タイマー - 満(終わり),Chronomètre - rempli (fin),Temporizador - relleno (fin)
-[def. 25bf00] fill color of timer progress bar (after end of song),[def. 25bf00] fill color of timer progress bar (after end of song),[デフォルト 25bf00] 進行バーのタイマーを満たす色(曲が終わった後）,[par défaut #25bf00],[por defecto 25bf00] color de relleno de la barra de progreso del temporizador (al acabar la canción)
-Timer - Empty (End),Timer - Empty (End),タイマー - 空(終わり),Chronomètre - vide (fin),Temporizador - borde (fin)
-[def. af008f00] empty color of timer progress bar (after end of song),[def. af008f00] empty color of timer progress bar (after end of song),[デフォルト  af008bf00] 進行バーのタイマーの空の色(曲が終わった後),[par défaut #af008f00],[por defecto af008f00] color de borde de la barra de progreso del temporizador (al acabar la canción)
-Timer - Fill (Skip),Timer - Fill (Skip),タイマー - 満(スキップ),Chronomètre - rempli (passer),Temporizador - relleno (saltar)
-[def. b3ffff] fill color of timer progress bar (when skipping is possible),[def. b3ffff] fill color of timer progress bar (when skipping is possible),[デフォルト  63ffff] 進行バーのタイマーを満たす色(スキップ可能時),[par défaut #b3ffff],[por defecto b3ffff] color de relleno de la barra de progreso del temporizador (cuando es posible saltar)
-Timer - Empty (Skip),Timer - Empty (Skip),タイマー - 空(スキップ),Chronomètre - vide (passer),Temporizador - borde (saltar)
-[def. b0638f8f] empty color of timer progress bar (when skipping is possible),[def. b0638f8f] empty color of timer progress bar (when skipping is possible),[デフォルト  b0638f8f] 進行バーのタイマーの空の色(スキップ可能時),[par défaut #b0638f8f],[por defecto b0638f8f] color de borde de la barra de progreso del temporizador (cuando es posible saltar)
-Miss Counter,Miss Counter,ミスカウンター,Compteur de notes manquées,Contador de fallos
-[def. ffffff] text color of the miss counter,[def. ffffff] text color of the miss counter,[デフォルト  ffffff] ミスカウンターのテキストの色,[par défaut #ffffff],[por defecto ffffff] color de texto del contador de fallos
-Miss Counter (Flash),Miss Counter (Flash),ミスカウンター(Flash),Compteur de notes manquées (flash),Contador de fallos (flash)
-[def. ff0000] miss counter text briefly flashes this color when you get a miss,[def. ff0000] miss counter text briefly flashes this color when you get a miss,[デフォルト  ff0000] ミスしたときに、ミスカウンターのテキストが少しこの色に点滅する,[par défaut #ff0000],[por defecto ff0000] el contador de fallos hace un efecto flash en este color cada vez que falles
-Pause Counter (Zero),Pause Counter (Zero),ポーズカウンター(Zero),Compteur de pauses (zéro),Contador de pausas (cero)
-[def. ffffff] color of the pause counter (with no pauses),[def. ffffff] color of the pause counter (with no pauses),[デフォルト ffffff] ポーズカウンターの色(ポーズ無し),[par défaut #ffffff],[por defecto ffffff] color del contador de pausas (sin pausas)
-Pause Counter (Used),Pause Counter (Used),ポーズカウンター(Used),Compteur de pauses (utilisé),Contador de pausas (usado)
-[def. ff66ff] color of the pause counter (with at least 1 pause),[def. ff66ff] color of the pause counter (with at least 1 pause),[デフォルト  ff66ff] ポーズカウンターの色 (ポーズ回数が少なくとも１ある時),[par défaut #ff66ff],[por defecto ff66ff] color del contador de pausas (con al menos una pausa)
-Grade SS - Saturation,Grade SS - Saturation,グレード SS - 彩度,Note SS - saturation,Puntuación SS - saturación
-[def. 0.4] hsv saturation of rainbow effect on grade SS,[def. 0.4] hsv saturation of rainbow effect on grade SS,[デフォルト  0.4] グレードが SS の時のレインボー彩度のHSV値,[par défaut 0.4],[por defecto 0.4] valor de saturación de la puntuación SS
-Grade SS - Value,Grade SS - Value,グレード SS - 値,Note SS - valeur,Puntuación SS - valor
-[def. 1] hsv value of rainbow effect on grade SS,[def. 1] hsv value of rainbow effect on grade SS,[デフォルト  1]グレードが SS の時のレインボー効果のHSV値,[par défaut 1],[por defecto] valor de efecto arcoiris (hue) de la puntuación SS
-Grade SS - Shine,Grade SS - Shine,グレード SS - 光,Note SS - brilliance,Puntuación SS - brillo
-[def. 1] level of shine shader when grade is SS,[def. 1] level of shine shader when grade is SS,[デフォルト  1] グレードが SS の時のグローレベル,[par défaut 1],[por defecto 1] nivel de brillo de la puntuación SS
-Grade S - Color,Grade S - Color,グレード S - 色,Note S - couleur,Puntuación S - color
-[def. 91fffa] color of text when grade is S,[def. 91fffa] color of text when grade is S,[デフォルト  91fffa] グレードが S の時の色,[par défaut #91fffa],[par défaut #91fffa] - color de la puntuación S
-Grade S - Shine,Grade S - Shine,グレード S - 光,Note S - brilliance,Puntuación S - brillo
-[def. 0.5] level of shine shader when grade is S,[def. 0.5] level of shine shader when grade is S,[デフォルト  0.5] グレードが S の時のグローレベル,[par défaut 0.5],[por defecto 0.5] nivel de brillo de la puntuación S
-Grade A - Color,Grade A - Color,グレード A - 色,Note A - couleur,Puntuación A - color
-[def. 91ff92] color of text when grade is A,[def. 91ff92] color of text when grade is A,[デフォルト  91ff92] グレードが A の時の色,[par défaut #91ff92],[par défaut #91ff92] - color de la puntuación A
-Grade B - Color,Grade B - Color,グレード B - 色,Note B - couleur,Puntuación B - color
-[def. e7ffc0] color of text when grade is B,[def. e7ffc0] color of text when grade is B,[デフォルト  e7ffc0] グレードが B の時の色,[par défaut #e7ffc0],[par défaut #e7ffc0] - color de la puntuación B
-Grade C - Color,Grade C - Color,グレード C -色,Note C - couleur,Puntuación C - color
-[def. fcf7b3] color of text when grade is C,[def. fcf7b3] color of text when grade is C,[デフォルト  fcf7b3] グレードが C の時の色,[par défaut #fcf7b3],[par défaut #fcf7b3] - color de la puntuación C
-Grade D - Color,Grade D - Color,グレード D - 色,Note D - couleur,Puntuación D - color
-[def. fcd0b3] color of text when grade is D,[def. fcd0b3] color of text when grade is D,[デフォルト  fcd0b3] グレードが D の時の色,[par défaut #fcd0b3],[par défaut #fcd0b3] - color de la puntuación D
-Grade F - Color,Grade F - Color,グレード F - 色,Note D - couleur,Puntuación F - color
-[def. ff8282] color of text when grade is F,[def. ff8282] color of text when grade is F,[デフォルト  ff8282] グレードが F の時の色,[par défaut #ff8282],[par défaut #ff8282] - color de la puntuación F
-Experimental,Experimental,実験的,Expérimental,Expérimental
-WARNING,WARNING,警告,AVERTISSEMENT,AVISO
-"These features aren't completely ready yet, and could be very buggy, unstable, or just not work at all. Use them at your own risk.","These features aren't completely ready yet, and could be very buggy, unstable, or just not work at all. Use them at your own risk.",これらの機能はまだ完全に出来上がっていないため、不安定であったり全く機能しない可能性があります　自己責任で使用してください,"Ces paramètres ne sont pas complètement fini pour le moment, et pourrait contenir des bugs ou ne pas marcher. Utilisez à votre propre risque.","Estos ajustes están inacabados por el momento, y pueden causar bugs o no funcionar directamente. Úsalos bajo tu propia responsabilidad."
-Ensure Hitsync,Ensure Hitsync,ヒットシンクを確保,Assurer hitsync,Asegurar sincronización
-ensure that hitsounds are always (near-perfectly) synced to the map,ensure that hitsounds are always (near-perfectly) synced to the map,ヒット音が常に（ほぼ完璧に）マップに同期するようにする,force les sons des notes touchées à être toujours presque parfaitement synchronisés,acopla forzosamente los sonidos de golpeo a las notas golpeadas
-Retain Song Pitch,Retain Song Pitch,曲のピッチを維持,Garder le ton des chansons,Retener el tono de las canciones
-"while this is enabled, speed modifiers will not impact the pitch of the beatmap's music","while this is enabled, speed modifiers will not impact the pitch of the beatmap's music",これが有効になっている間は、スピードモディファイアはビートマップの音楽のピッチに影響を与えない,"lorsque cela est activé, les modificateurs de vitesse ne vont pas changer le ton des chansons","mientras esté activo, los modificadores de velocidad no podrán afectar al tono de las canciones"
-Show Extensive Stats,Show Extensive Stats,広範な統計を表示,Afficher statistiques extensives,Mostrar estadísticas extendidas
-[UNFINISHED] displays some additional statistics about your gameplay while ingame,[UNFINISHED] displays some additional statistics about your gameplay while ingame,"""未完成"" ゲーム中にゲームプレイに関する追加の統計情報を表示",[INCOMPLET] affiche des statistiques additionelles lorsque vous jouez,[INCOMPLETO] muestra algunos datos estadísticos sobre tu gameplay durante una partida
-Play Intro Cutscene,Play Intro Cutscene,イントロカットシーンを再生,Jouer la cinématique introductrice,Reproducir intro
-Replay,Replay,リプレイ,Rejouer,Volver a reproducir
-replays the intro cutscene,replays the intro cutscene,イントロカットシーンをリプレイする,rejoue la cinématique introductrice,muestra de nuevo la cinemática de introducción
-Disable Intro Cutscene,Disable Intro Cutscene,イントロカットシーンを無効にする,Désactiver cinématique introductrice,Desactivar intro
-disables the intro cutscene,disables the intro cutscene,イントロカットシーンを無効にする,désactiver cinématique introductrice,desactiva la cinemática de introducción
-"Development mode is active, game mods will not be used.","Development mode is active, game mods will not be used.",開発者モードを有効　モッドは使用されません,"Le mode développement est activé, les mods ne seront pas utilisés.","El modo desarrollador está activo, los modificaadores de juego no serán utilizados"
-Play Song,Play Song,曲を再生,Jouer,Reproducir canción
-Song Select,Song Select,曲を選択,Chansons,Seleccionar canción
-Settings,Settings,設定,Paramètres,Ajustes
-Credits,Credits,クレジット,Crédits,Créditos
-Content Manager,Content Manager,コンテンツマネージャー,Contenu,Gestor de contenido
-Language,Language,言語,Langue,Lenguaje
-Quit to Desktop,Quit to Desktop,デスクトップに戻る,Quitter,Salir al escritorio
-Search,Search,検索,Rechercher,Buscar
-Author,Author,作者,Auteur,Autor
-broken,broken,壊れている,endommagé,estropeado
-online,online,オンライン,en ligne,online
-difficulty,difficulty,難易度,difficulté,dificultad
-name,name,名前,nom,nombre
-auto play screen,auto play screen,オートプレイ画面,écran auto-jouer,pantalla de auto-juego
-Select random from search,Select random from search,サーチからランダムにマップを選ぶ,Aléatoire,Seleccionar aleatorio dentro de la búsqueda
-Delete Map,Delete Map,マップを削除,Supprimer,Eliminar
-Are you sure you want to delete this map? You might not be able to get it back.,Are you sure you want to delete this map? You might not be able to get it back.,このマップを削除してもよろしいですか？このマップを戻せなくなる可能性があります,Êtes-vous sûr de vouloir supprimer cette map ? Il se puisse que vous ne pouviez pas la ravoir,¿Estás seguro de que quieres borrar este mapa? Es posible que no lo puedas recuperar.
-Cancel,Cancel,キャンセル,Retour,Volver
-OK,OK,OK,OK,OK
-Convert to sspm v2,Convert to sspm v2,sspm v2 に変換する,Convertir vers SSPM V2,Convertir a SSPM v2
-Copy...,Copy...,コピー...,Copier...,Copiar...
-Path,Path,パス,Chemin,Ruta
-Name,Name,名前,Nom,Nombre
-Set difficulty,Set difficulty,難易度を設定,Changer difficulté,Cambiar dificultad
-N/A,N/A,N/A,N/A,N/C
-Easy,Easy,イージー,Facile,Fácil
-Medium,Medium,ミディアム,Moyen,Medio
-Hard,Hard,ハード,Difficile,Difícil
-Logic?,Logic?,ロジック?,Logique ?,Lógico?
-助 (Tasukete),助 (Tasukete),助(助けて）,助 (Tasukete),助 (Tasukete)
-Export .txt map data,Export .txt map data,.txt map データを抽出,Exporter la map en .txt,Exportar el mapa en formato .txt
-Export audio data,Export audio data,オーディオデータを抽出,Exporter l'audio,Exportar el audio
-N/A,N/A,N/A,N/A,N/C
-EASY,EASY,イージー,FACILE,FÁCIL
-MEDIUM,MEDIUM,ミディアム,MOYEN,MEDIO
-HARD,HARD,ハード,DIFFICILE,DIFÍCIL
-LOGIC?,LOGIC?,ロジック?,LOGIQUE ?,LÓGICO?
+",ce paramètre n'est pas sauvegardé au cas où l'utilisateur ne se souvient pas de l'avoir désactivé,"en caso de despiste, esta opción no se guarda","per evitare problemi in cui le persone dimenticherebbero di aver spento il cursore, questo non si salva"
+Attach Energy to Grid,Attach Energy to Grid,HPをグリッドに付ける,Attacher l'énergie à la grille,Adjuntar la energía a la cuadrícula,Allega energia alla griglia
+attaches your health bar + modifiers to the note grid,attaches your health bar + modifiers to the note grid,ヘルスバートモディファイヤーをノートグリッドに付ける,attache votre barre de santé et vos mods à la grille de notes,adjunta tu barra de salud y tus modificadores a la cuadrícula,allega la tua barra di salute e i modificatori alla griglia di note
+Attach Timer to Grid,Attach Timer to Grid,タイマーをグリッドに付ける,Attacher le chronomètre à la grille,Adjuntar el temporizador a la cuadrícula,Allega temporizador alla griglia
+attaches the timer + song name to the note grid,attaches the timer + song name to the note grid,タイマー＋曲名をノートグリッドに付ける ,attache la minuterie et le nom de la chanson à la grille de notes,adjunta el temporizador y el nombre de la canción a la cuadrícula,allega il timer e il nome della canzone alla griglia di note
+Score Popup,Score Popup,スコアポップアップ,Pop-up de score,Pop-up de puntuación,Pop-up punteggio
+show the score you get from hitting a note at the bottom of the grid,show the score you get from hitting a note at the bottom of the grid,グリッドの下にhitして手にいれたスコアを表示します,montre le score que vous obtenez en touchant une note vers le bas de la grille,muestra la puntuación obtenida al golpear una nota,mostra il punteggio ottenuto dal colpo di una nota nella parte inferiore della griglia
+Billboard Popup,Billboard Popup,看板ポップアップ,Pop-up billboard,Pop-up de puntuación,Pop-up billboard
+apply a billboard effect to the score popup,apply a billboard effect to the score popup,スコアポップアップに看板効果を適応する,"applique un effet ""billboard"" au pop-up de score","aplica un efecto ""cartelera"" al pop-up de puntuación","applica un effetto billboard al pop-up del punteggio"
+UI Colors,UI Colors,UIの色,Couleurs de l'UI,Colores de la UI,Colori UI
+Theme Presets,Theme Presets,それらのプリセット,Thèmes,Temas,Preset temi
+Classic,Classic,クラシック,Classique,Clásico,Classico
+Inverted,Inverted,反転した,Inversé,Invertido,Invertito
+Rainbow Grid,Rainbow Grid,レインボーグリッド,Grille arc-en-ciel,Cuadrícula arcoiris,Griglia arcobaleno
+makes the grid rainbow,makes the grid rainbow,グリッドをレインボーにする,rend la grille arc-en-ciel,hace que la cuadrícula se vea arcoiris,rende la griglia arcobaleno
+Rainbow HUD,Rainbow HUD,レインボーHUD,HUD arc-en-ciel,HUD arcoiris,HUD arcobaleno
+makes literally your entire HUD rainbow,makes literally your entire HUD rainbow,文字通りHUD全体をレインボーにする,rends le HUD en entier arc-en-ciel,hace que todo el HUD se vea arcoiris,rende letteralmente tutto l'HUD arcobaleno
+Panel Background,Panel Background,パネル背景,Arrière-plan des panneaux,Color de los paneles,Sfondo pannello
+[def. 9b000000] background color of the left and right panels,[def. 9b000000] background color of the left and right panels,[デフォルト 9b000000] 左と右のパネルの背景色,[par défaut #9b000000] couleur arrière-plan des panneaux gauche et droite,[por defecto 9b000000] color de fondo de los paneles izquierdo y derecho,"[predefinito 9b000000] colore di sfondo dei pannelli sinistro e destro"
+Panel Text,Panel Text,パネルテキスト,Texte des panneaux,Texto de los paneles,Testo pannello
+[def. ffffff] color of any text on panels that doesn't have its own setting,[def. ffffff] color of any text on panels that doesn't have its own setting,[デフォルト ffffff] 独自の設定を持っていないパネル上のテキストの色 ,[par défaut #ffffff] couleur de tout textes qui n'a pas de paramètre spécifique,[por defecto ffffff] color de todo el texto en los paneles sin ajustes propios,"[predefinito ffffff] colore di qualsiasi testo su pannelli che non ha una propria impostazione"
+Score Counter,Score Counter,スコアカウンター,Compteur de score,Contador de puntuación,Contatore punteggio
+[def. ffffff] text color of the score counter,[def. ffffff] text color of the score counter,[デフォルト ffffff] スコアカウンターのテキストカラー,[par défaut #ffffff],[por defecto ffffff] color del contador de puntuación,[predefinito ffffff] colore del testo del contatore punteggio
+Pause UI Opacity,Pause UI Opacity,ポーズUIの不透明度,Opacité du menu pause,Opacidad del menú de pausa,Opacità UI pausa
+"[def. 0.75] opacity of the ""paused"" screen","[def. 0.75] opacity of the ""paused"" screen",[デフォルト 0.75] 一時停止画面の不透明度,[par défaut #ffffff],[por defecto 0.75] opacidad de la pantalla de pausa,"[predefinito 0.75] opacità della schermata ""in pausa"""
+"""PAUSED""","""PAUSED""","""一時停止""","""EN PAUSE""","""PAUSADO""","""IN PAUSA"""
+"[def. 684400] text color of the ""paused"" message, empty color of unpause progress bar","[def. 684400] text color of the ""paused"" message, empty color of unpause progress bar","[デフォルト 684400] ""一時停止した""を満たす色  一時停止解除進行バーの空の色",[par défaut #684400],"[por defecto 684400] color de texto del mensaje ""PAUSADO"" y color del borde de la barra que aparece al despausar","[predefinito 684400] colore del testo del messaggio ""IN PAUSA"", colore vuoto della barra di progresso di ripresa"
+"""PAUSED"" (Unpausing)","""PAUSED"" (Unpausing)","""一時停止""(解除)","""EN PAUSE"" (en résumant)","""PAUSADO"" (resumiendo)","IN PAUSA (Riprendendo)"
+[def. 80fff3] fill color of unpause progress bar,[def. 80fff3] fill color of unpause progress bar,[デフォルト 80fff3]　一時停止解除進行バーを満たす色,[par défaut #80fff3] couleur de la barre de progrès qui apparaît en résumant,[por defecto 80fff3] color de relleno de la barra que aparece al despausar,"[predefinito 80fff3] colore di riempimento della barra di progresso di ripresa"
+"""Hold R to exit""","""Hold R to exit""",""" R 長押しで終了""","""Maintenir R pour quitter""","""Mantén R para abandonar""","""Tieni R per uscire"""
+[def. ffdb00] text color of the give up hint,[def. ffdb00] text color of the give up hint,[デフォルト ffdb00] 諦めるヒントの色,[par défaut #ffdb00],"[por defecto ffdb00] color de texto del mensaje ""Mantén R para bandonar""","[predefinito ffdb00] colore del testo del suggerimento di resa"
+Combo Wheel - Fill,Combo Wheel - Fill,コンボホイール - 満,Roue combo - remplie,Rueda de combo - relleno,Ruota combo - Riempimento
+[def. 7bfff3] fill color of the combo display wheel,[def. 7bfff3] fill color of the combo display wheel,[デフォルト 7bfff3] コンボ表示ホイールを満たす色,[par défaut #7bfff3],[por defecto 7bfff3] color de relleno de la rueda de combo,"[predefinito 7bfff3] colore di riempimento della ruota di visualizzazione combo"
+Combo Wheel - Empty,Combo Wheel - Empty,コンボホイール - 空,Roue combo - vide,Rueda de combo - borde,Ruota combo - Vuota
+[def. b94b4b4b] empty color of the combo display wheel,[def. b94b4b4b] empty color of the combo display wheel,[デフォルト b94b4b4b] コンボ表示ホイールの空の色,[par défaut #b94b4b4b],[por defecto b94b4b4b] color de borde la rueda de combo,"[predefinito b94b4b4b] colore vuoto della ruota di visualizzazione combo"
+Accuracy Bar - Fill,Accuracy Bar - Fill,精度バー － 満,Barre de visée - remplie,Barra de precisión - relleno,Barra di precisione - Riempimento
+[def. 8cff00] fill color of the accuracy display bar,[def. 8cff00] fill color of the accuracy display bar,[デフォルト 8cff00] 精度バーを満たす色,[par défaut #8cff00],[por defecto 8cff00] color de relleno de la barra de precisión,"[predefinito 8cff00] colore di riempimento della barra di visualizzazione della precisione"
+Accuracy Bar - Empty,Accuracy Bar - Empty,精度バー - 空,Barre de visée - vide,Barra de precisión - borde,Barra di precisione - Vuota
+[def. b08f8f8f] empty color of the accuracy display bar,[def. b08f8f8f] empty color of the accuracy display bar,[デフォルト b08f8f8f] 精度バーの空の色,[par défaut #b08f8f8f],[por defecto b08f8f8f] color de borde de la barra de precisión,"[predefinito b08f8f8f] colore vuoto della barra di visualizzazione della precisione"
+"""Giving up...""","""Giving up...""","""諦める....""","""Abandon...""","""Abandonar...""","""Sto rinunciando..."""
+"[def. ffffff] text color of the ""Giving up..."" and ""Skipping..."" messages","[def. ffffff] text color of the ""Giving up..."" and ""Skipping..."" messages","[デフォルト ffffff] ""諦める""と""スキップ中""の文字の色",[par défaut #ffffff],"[por defecto ffffff] color de los mensajes ""Abandonar..."" y ""Saltando...""","[predefinito ffffff] colore del testo dei messaggi ""Sto rinunciando..."" e ""Saltando..."""
+Exit Wheel (Give up),Exit Wheel (Give up),終了ホイール(諦める),Roue de sortie (abandon),Rueda de salida (abandono),Ruota uscita (Abbandono)
+[def. ff8f2c] fill color of the exit progress wheel (before end of song),[def. ff8f2c] fill color of the exit progress wheel (before end of song),[デフォルト ff8f2c] 終了進行ホイールを満たす色(曲が終わる前),[par défaut #ff8f2c],[por defecto ff8f2c] color de relleno de la rueda de progreso de salida (antes del final de la canción),"[predefinito ff8f2c] colore di riempimento della ruota di progresso di uscita (prima della fine della canzone)"
+Exit Wheel (Skip),Exit Wheel (Skip),終了ホイール(スキップ),Roue de sortie (passer),Rueda de salida (saltar),Ruota uscita (Salta)
+[def. 81ff75] fill color of the exit progress wheel (after end of song),[def. 81ff75] fill color of the exit progress wheel (after end of song),[デフォルト 81ff75] 終了進行ホイールを満たす色(曲が終わった後),[par défaut #81ff75],[por defecto 81ff75] color de relleno de la rueda de progreso de salida (al acabar la canción),"[predefinito 81ff75] colore di riempimento della ruota di progresso di uscita (dopo la fine della canzone)"
+Timer Text (Normal),Timer Text (Normal),タイマーテキスト(普通),Texte chronomètre (normal),Texto del temporizador (normal),Testo temporizador (Normale)
+[def. ffffff] text color of the song name and time display,[def. ffffff] text color of the song name and time display,[デフォルト ffffff] 曲の名前と時間表示のカラー,[par défaut #ffffff],[por defecto ffffff] color de texto del nombre de la canción y del temporizador,"[predefinito ffffff] colore del testo del nome della canzone e della visualizzazione del tempo"
+Timer Text (End),Timer Text (End),タイマーテキスト(終わり),Texte chronomètre (fin),Texto del temporizador (fin),Testo temporizador (Fine)
+[def. 77ff77] text color of the song name and time display (after end of song),[def. 77ff77] text color of the song name and time display (after end of song),[デフォルト 77ff77] 曲の名前と時間表示のカラー（曲が終わった後),[par défaut #77ff77],[por defecto 77ff77] color de texto del nombre de la canción y del temporizador (al acabar la canción),"[predefinito 77ff77] colore del testo del nome della canzone e della visualizzazione del tempo (dopo la fine della canzone)"
+Timer Text (Skip),Timer Text (Skip),タイマーテキスト(スキップ),Texte chronomètre (passer),Texto del temporizador (saltar),Testo temporizador (Salta)
+[def. b3ffff] text color of the song name and time display (when skipping is possible),[def. b3ffff] text color of the song name and time display (when skipping is possible),[デフォルト  b3ffff] 曲の名前と時間表示のカラー(スキップ可能時),[par défaut #b3ffff],[por defecto b3ffff] color de texto del nombre de la canción y del temporizador (cuando es posible saltar),"[predefinito b3ffff] colore del testo del nome della canzone e della visualizzazione del tempo (quando è possibile saltare)"
+Timer - Fill (Normal),Timer - Fill (Normal),タイマー - 満(普通),Chronomètre - rempli (normal),Temporizador - relleno (normal),Temporizador - Riempimento (Normale)
+[def. ffffff] fill color of timer progress bar,[def. ffffff] fill color of timer progress bar,[デフォルト  ffffff] 進行バーのタイマーを満たす色,[par défaut #ffffff],[por defecto ffffff] color de relleno de la barra de progreso del temporizador,"[predefinito ffffff] colore di riempimento della barra di progresso del timer"
+Timer - Empty (Normal),Timer - Empty (Normal),タイマー - 空(普通),Chronomètre - vide (normal),Temporizador - borde (normal),Temporizador - Vuota (Normale)
+[def. af8f8f8f] empty color of timer progress bar,[def. af8f8f8f] empty color of timer progress bar,[デフォルト  af8f8f8f] 進行バーのタイマーの空の色,[par défaut #af8f8f8f],[por defecto af8f8f8f] color de borde de la barra de progreso del temporizador,"[predefinito af8f8f8f] colore vuoto della barra di progresso del timer"
+Timer - Fill (End),Timer - Fill (End),タイマー - 満(終わり),Chronomètre - rempli (fin),Temporizador - relleno (fin),Temporizador - Riempimento (Fine)
+[def. 25bf00] fill color of timer progress bar (after end of song),[def. 25bf00] fill color of timer progress bar (after end of song),[デフォルト 25bf00] 進行バーのタイマーを満たす色(曲が終わった後）,[par défaut #25bf00],[por defecto 25bf00] color de relleno de la barra de progreso del temporizador (al acabar la canción),"[predefinito 25bf00] colore di riempimento della barra di progresso del timer (dopo la fine della canzione)"
+Timer - Empty (End),Timer - Empty (End),タイマー - 空(終わり),Chronomètre - vide (fin),Temporizador - borde (fin),Temporizador - Vuota (Fine)
+[def. af008f00] empty color of timer progress bar (after end of song),[def. af008f00] empty color of timer progress bar (after end of song),[デフォルト  af008bf00] 進行バーのタイマーの空の色(曲が終わった後),[par défaut #af008f00],[por defecto af008f00] color de borde de la barra de progreso del temporizador (al acabar la canción),"[predefinito af008f00] colore vuoto della barra di progresso del timer (dopo la fine della canzone)"
+Timer - Fill (Skip),Timer - Fill (Skip),タイマー - 満(スキップ),Chronomètre - rempli (passer),Temporizador - relleno (saltar),Temporizador - Riempimento (Salta)
+[def. b3ffff] fill color of timer progress bar (when skipping is possible),[def. b3ffff] fill color of timer progress bar (when skipping is possible),[デフォルト  63ffff] 進行バーのタイマーを満たす色(スキップ可能時),[par défaut #b3ffff],[por defecto b3ffff] color de relleno de la barra de progreso del temporizador (cuando es posible saltar),"[predefinito b3ffff] colore di riempimento della barra di progresso del timer (quando è possibile saltare)"
+Timer - Empty (Skip),Timer - Empty (Skip),タイマー - 空(スキップ),Chronomètre - vide (passer),Temporizador - borde (saltar),Temporizador - Vuota (Salta)
+[def. b0638f8f] empty color of timer progress bar (when skipping is possible),[def. b0638f8f] empty color of timer progress bar (when skipping is possible),[デフォルト  b0638f8f] 進行バーのタイマーの空の色(スキップ可能時),[par défaut #b0638f8f],[por defecto b0638f8f] color de borde de la barra de progreso del temporizador (cuando es posible saltar),"[predefinito b0638f8f] colore vuoto della barra di progresso del timer (quando è possibile saltare)"
+Miss Counter,Miss Counter,ミスカウンター,Compteur de notes manquées,Contador de fallos,Contatore falsi
+[def. ffffff] text color of the miss counter,[def. ffffff] text color of the miss counter,[デフォルト  ffffff] ミスカウンターのテキストの色,[par défaut #ffffff],[por defecto ffffff] color de texto del contador de fallos,"[predefinito ffffff] colore del testo del contatore mancati"
+Miss Counter (Flash),Miss Counter (Flash),ミスカウンター(Flash),Compteur de notes manquées (flash),Contador de fallos (flash),Contatore falsi (Flash)
+[def. ff0000] miss counter text briefly flashes this color when you get a miss,[def. ff0000] miss counter text briefly flashes this color when you get a miss,[デフォルト  ff0000] ミスしたときに、ミスカウンターのテキストが少しこの色に点滅する,[par défaut #ff0000],[por defecto ff0000] el contador de fallos hace un efecto flash en este color cada vez que falles,"[predefinito ff0000] il testo del contatore mancati lampeggia brevemente in questo colore quando sbagli"
+Pause Counter (Zero),Pause Counter (Zero),ポーズカウンター(Zero),Compteur de pauses (zéro),Contador de pausas (cero),Contatore pause (Zero)
+[def. ffffff] color of the pause counter (with no pauses),[def. ffffff] color of the pause counter (with no pauses),[デフォルト ffffff] ポーズカウンターの色(ポーズ無し),[par défaut #ffffff],[por defecto ffffff] color del contador de pausas (sin pausas),"[predefinito ffffff] colore del contatore pause (senza pause)"
+Pause Counter (Used),Pause Counter (Used),ポーズカウンター(Used),Compteur de pauses (utilisé),Contador de pausas (usado),Contatore pause (Usato)
+[def. ff66ff] color of the pause counter (with at least 1 pause),[def. ff66ff] color of the pause counter (with at least 1 pause),[デフォルト  ff66ff] ポーズカウンターの色 (ポーズ回数が少なくとも１ある時),[par défaut #ff66ff],[por defecto ff66ff] color del contador de pausas (con al menos una pausa),"[predefinito ff66ff] colore del contatore pause (con almeno 1 pausa)"
+Grade SS - Saturation,Grade SS - Saturation,グレード SS - 彩度,Note SS - saturation,Puntuación SS - saturación,Grado SS - Saturazione
+[def. 0.4] hsv saturation of rainbow effect on grade SS,[def. 0.4] hsv saturation of rainbow effect on grade SS,[デフォルト  0.4] グレードが SS の時のレインボー彩度のHSV値,[par défaut 0.4],[por defecto 0.4] valor de saturación de la puntuación SS,"[predefinito 0.4] saturazione HSV dell'effetto arcobaleno sul grado SS"
+Grade SS - Value,Grade SS - Value,グレード SS - 値,Note SS - valeur,Puntuación SS - valor,Grado SS - Valore
+[def. 1] hsv value of rainbow effect on grade SS,[def. 1] hsv value of rainbow effect on grade SS,[デフォルト  1]グレードが SS の時のレインボー効果のHSV値,[par défaut 1],[por defecto] valor de efecto arcoiris (hue) de la puntuación SS,"[predefinito 1] valore HSV dell'effetto arcobaleno sul grado SS"
+Grade SS - Shine,Grade SS - Shine,グレード SS - 光,Note SS - brilliance,Puntuación SS - brillo,Grado SS - Brillantezza
+[def. 1] level of shine shader when grade is SS,[def. 1] level of shine shader when grade is SS,[デフォルト  1] グレードが SS の時のグローレベル,[par défaut 1],[por defecto 1] nivel de brillo de la puntuación SS,"[predefinito 1] livello di brillantezza dello shader quando il grado è SS"
+Grade S - Color,Grade S - Color,グレード S - 色,Note S - couleur,Puntuación S - color,Grado S - Colore
+[def. 91fffa] color of text when grade is S,[def. 91fffa] color of text when grade is S,[デフォルト  91fffa] グレードが S の時の色,[par défaut #91fffa],[par défaut #91fffa] - color de la puntuación S,"[predefinito 91fffa] colore del testo quando il grado è S"
+Grade S - Shine,Grade S - Shine,グレード S - 光,Note S - brilliance,Puntuación S - brillo,Grado S - Brillantezza
+[def. 0.5] level of shine shader when grade is S,[def. 0.5] level of shine shader when grade is S,[デフォルト  0.5] グレードが S の時のグローレベル,[par défaut 0.5],[por defecto 0.5] nivel de brillo de la puntuación S,"[predefinito 0.5] livello di brillantezza dello shader quando il grado è S"
+Grade A - Color,Grade A - Color,グレード A - 色,Note A - couleur,Puntuación A - color,Grado A - Colore
+[def. 91ff92] color of text when grade is A,[def. 91ff92] color of text when grade is A,[デフォルト  91ff92] グレードが A の時の色,[par défaut #91ff92],[par défaut #91ff92] - color de la puntuación A,"[predefinito 91ff92] colore del testo quando il grado è A"
+Grade B - Color,Grade B - Color,グレード B - 色,Note B - couleur,Puntuación B - color,Grado B - Colore
+[def. e7ffc0] color of text when grade is B,[def. e7ffc0] color of text when grade is B,[デフォルト  e7ffc0] グレードが B の時の色,[par défaut #e7ffc0],[par défaut #e7ffc0] - color de la puntuación B,"[predefinito e7ffc0] colore del testo quando il grado è B"
+Grade C - Color,Grade C - Color,グレード C -色,Note C - couleur,Puntuación C - color,Grado C - Colore
+[def. fcf7b3] color of text when grade is C,[def. fcf7b3] color of text when grade is C,[デフォルト  fcf7b3] グレードが C の時の色,[par défaut #fcf7b3],[par défaut #fcf7b3] - color de la puntuación C,"[predefinito fcf7b3] colore del testo quando il grado è C"
+Grade D - Color,Grade D - Color,グレード D - 色,Note D - couleur,Puntuación D - color,Grado D - Colore
+[def. fcd0b3] color of text when grade is D,[def. fcd0b3] color of text when grade is D,[デフォルト  fcd0b3] グレードが D の時の色,[par défaut #fcd0b3],[par défaut #fcd0b3] - color de la puntuación D,"[predefinito fcd0b3] colore del testo quando il grado è D"
+Grade F - Color,Grade F - Color,グレード F - 色,Note D - couleur,Puntuación F - color,Grado F - Colore
+[def. ff8282] color of text when grade is F,[def. ff8282] color of text when grade is F,[デフォルト  ff8282] グレードが F の時の色,[par défaut #ff8282],[par défaut #ff8282] - color de la puntuación F,"[predefinito ff8282] colore del testo quando il grado è F"
+Experimental,Experimental,実験的,Expérimental,Expérimental,Sperimentale
+WARNING,WARNING,警告,AVERTISSEMENT,AVISO,AVVERTENZA
+"These features aren't completely ready yet, and could be very buggy, unstable, or just not work at all. Use them at your own risk.","These features aren't completely ready yet, and could be very buggy, unstable, or just not work at all. Use them at your own risk.",これらの機能はまだ完全に出来上がっていないため、不安定であったり全く機能しない可能性があります　自己責任で使用してください,"Ces paramètres ne sont pas complètement fini pour le moment, et pourrait contenir des bugs ou ne pas marcher. Utilisez à votre propre risque.","Estos ajustes están inacabados por el momento, y pueden causar bugs o no funcionar directamente. Úsalos bajo tu propia responsabilidad.","Queste funzionalità non sono ancora completamente pronte e potrebbero essere molto buggy, instabili o non funzionare affatto. Usale a tuo rischio."
+Ensure Hitsync,Ensure Hitsync,ヒットシンクを確保,Assurer hitsync,Asegurar sincronización,Assicura sincronizzazione
+ensure that hitsounds are always (near-perfectly) synced to the map,ensure that hitsounds are always (near-perfectly) synced to the map,ヒット音が常に（ほぼ完璧に）マップに同期するようにする,force les sons des notes touchées à être toujours presque parfaitement synchronisés,acopla forzosamente los sonidos de golpeo a las notas golpeadas,"assicura che i suoni degli hit siano sempre (quasi perfettamente) sincronizzati con la mappa"
+Retain Song Pitch,Retain Song Pitch,曲のピッチを維持,Garder le ton des chansons,Retener el tono de las canciones,Mantieni il tono della canzone
+"while this is enabled, speed modifiers will not impact the pitch of the beatmap's music","while this is enabled, speed modifiers will not impact the pitch of the beatmap's music",これが有効になっている間は、スピードモディファイアはビートマップの音楽のピッチに影響を与えない,"lorsque cela est activé, les modificateurs de vitesse ne vont pas changer le ton des chansons","mientras esté activo, los modificadores de velocidad no podrán afectar al tono de las canciones","quando questa opzione è abilitata, i modificatori di velocità non influiranno sul tono della musica della mappa"
+Show Extensive Stats,Show Extensive Stats,広範な統計を表示,Afficher statistiques extensives,Mostrar estadísticas extendidas,Mostra statistiche estese
+[UNFINISHED] displays some additional statistics about your gameplay while ingame,[UNFINISHED] displays some additional statistics about your gameplay while ingame,"""未完成"" ゲーム中にゲームプレイに関する追加の統計情報を表示",[INCOMPLET] affiche des statistiques additionelles lorsque vous jouez,[INCOMPLETO] muestra algunos datos estadísticos sobre tu gameplay durante una partida,"[NON FINITO] mostra alcune statistiche aggiuntive del tuo gameplay durante il gioco"
+Play Intro Cutscene,Play Intro Cutscene,イントロカットシーンを再生,Jouer la cinématique introductrice,Reproducir intro,Riproduci intro
+Replay,Replay,リプレイ,Rejouer,Volver a reproducir,Riprova
+replays the intro cutscene,replays the intro cutscene,イントロカットシーンをリプレイする,rejoue la cinématique introductrice,muestra de nuevo la cinemática de introducción,"riprova la cinemática intro"
+Disable Intro Cutscene,Disable Intro Cutscene,イントロカットシーンを無効にする,Désactiver cinématique introductrice,Desactivar intro,Disabilita intro
+disables the intro cutscene,disables the intro cutscene,イントロカットシーンを無効にする,désactiver cinématique introductrice,desactiva la cinemática de introducción,"disabilita la cinemática intro"
+"Development mode is active, game mods will not be used.","Development mode is active, game mods will not be used.",開発者モードを有効　モッドは使用されません,"Le mode développement est activé, les mods ne seront pas utilisés.","El modo desarrollador está activo, los modificaadores de juego no serán utilizados","La modalità sviluppatore è attiva, i mod di gioco non verranno utilizzati."
+Play Song,Play Song,曲を再生,Jouer,Reproducir canción,Riproduci anteprima canzone
+Song Select,Song Select,曲を選択,Chansons,Seleccionar canción,Seleziona canzone
+Settings,Settings,設定,Paramètres,Ajustes,Impostazioni
+Credits,Credits,クレジット,Crédits,Créditos,Crediti
+Content Manager,Content Manager,コンテンツマネージャー,Contenu,Gestor de contenido,Gestore contenuti
+Language,Language,言語,Langue,Lenguaje,Lingua
+Quit to Desktop,Quit to Desktop,デスクトップに戻る,Quitter,Salir al escritorio,Esci al desktop
+Search,Search,検索,Rechercher,Buscar,Cerca
+Author,Author,作者,Auteur,Autor,Autore
+broken,broken,壊れている,endommagé,estropeado,rotto
+online,online,オンライン,en ligne,online,online
+difficulty,difficulty,難易度,difficulté,dificultad,difficoltà
+name,name,名前,nom,nombre,nome
+auto play screen,auto play screen,オートプレイ画面,écran auto-jouer,pantalla de auto-juego,schermata auto-gioco
+Select random from search,Select random from search,サーチからランダムにマップを選ぶ,Aléatoire,Seleccionar aleatorio dentro de la búsqueda,Seleziona casuale dalla ricerca
+Delete Map,Delete Map,マップを削除,Supprimer,Eliminar,Elimina mappa
+Are you sure you want to delete this map? You might not be able to get it back.,Are you sure you want to delete this map? You might not be able to get it back.,このマップを削除してもよろしいですか？このマップを戻せなくなる可能性があります,Êtes-vous sûr de vouloir supprimer cette map ? Il se puisse que vous ne pouviez pas la ravoir,¿Estás seguro de que quieres borrar este mapa? Es posible que no lo puedas recuperar.,"Sei sicuro di voler eliminare questa mappa? Potresti non essere in grado di recuperarla."
+Cancel,Cancel,キャンセル,Retour,Volver,Annulla
+OK,OK,OK,OK,OK,OK
+Convert to sspm v2,Convert to sspm v2,sspm v2 に変換する,Convertir vers SSPM V2,Convertir a SSPM v2,Converti a SSPM v2
+Copy...,Copy...,コピー...,Copier...,Copiar...,Copia...
+Path,Path,パス,Chemin,Ruta,Percorso
+Name,Name,名前,Nom,Nombre,Nome
+Set difficulty,Set difficulty,難易度を設定,Changer difficulté,Cambiar dificultad,Imposta difficoltà
+N/A,N/A,N/A,N/A,N/C,N/D
+Easy,Easy,イージー,Facile,Fácil,Facile
+Medium,Medium,ミディアム,Moyen,Medio,Medio
+Hard,Hard,ハード,Difficile,Difícil,Difficile
+Logic?,Logic?,ロジック?,Logique ?,Lógico?,Logico?
+助 (Tasukete),助 (Tasukete),助(助けて）,助 (Tasukete),助 (Tasukete),助 (Tasukete)
+Export .txt map data,Export .txt map data,.txt map データを抽出,Exporter la map en .txt,Exportar el mapa en formato .txt,Esporta dati mappa .txt
+Export audio data,Export audio data,オーディオデータを抽出,Exporter l'audio,Exportar el audio,Esporta dati audio
+N/A,N/A,N/A,N/A,N/C,N/D
+EASY,EASY,イージー,FACILE,FÁCIL,FACILE
+MEDIUM,MEDIUM,ミディアム,MOYEN,MEDIO,MEDIO
+HARD,HARD,ハード,DIFFICILE,DIFÍCIL,DIFFICILE
+LOGIC?,LOGIC?,ロジック?,LOGIQUE ?,LÓGICO?,LOGICO?
 "Default hitboxes, ","Default hitboxes, ",デフォルトヒットボックス、,Hitbox par défaut,Hitbox por defecto
-"Hitboxes: %s, ","Hitboxes: %s, ",ヒットボックス: %s、,"Hitbox: %s,","Hitboxes: %s,"
-default hitwindow,default hitwindow,デフォルトヒットウインドー,fenêtre de hit par défaut,registro de golpeo por defecto
-hitwindow: %s ms,hitwindow: %s ms,ヒットウインドー: %s ms,Fenêtre de hit: %s ms,registro de golpeo: %s ms
-Loading,Loading,読み込み中,Chargement,Cargando
-Waiting for engine,Waiting for engine,エンジンの応答待ち,En attente du moteur de jeu,Esperando al motor de juego
-Initialization,Initialization,初期化,Initialisation,Inicialización
-Starting the game,Starting the game,ゲームを起動中,Lancement du jeu,Cargando juego
-No PB,No PB,PBなし,Pas de record,Sin récord
-[ NOFAIL ACTIVE ],[ NOFAIL ACTIVE ],[失敗なしオン],[ NOFAIL ACTIF ],[NOFAIL ACTIVADO]
-Mirror,Mirror,フリップ,Miroir,Espejo
-Vulnus Judgement,Vulnus Judgement,Vulnusヒットウインドー,Jugement Vulnus,Registro tipo Vulnus
-You failed!,You failed!,失敗!,Échec!,¡Moriste!
-Inverted Mouse,Inverted Mouse,マウスフリップ,Souris inversée,Ratón invertido
-Personal Best,Personal Best,自己ベスト,Meilleur record,Récorrd personal
-Best Attempt,Best Attempt,一番の試み,Meilleur essai,Mejor intento
-You passed!,You passed!, ,Passé !,¡Ganaste!
-New best!,New best!,ニューベスト!,Nouveau record !,¡Nuevo récord!
-Replay passed,Replay passed,リプレイ通過,Replay passé,Reproducción finalizada
-FULL COMBO,FULL COMBO,フルコンボ,FULL COMBO,FULL COMBO
-NO COMBO,NO COMBO,ノーコンボ,PAS DE COMBO,SIN COMBO
-Import Song,Import Song,マップを追加する,Importer une map,Importar un mapa
-Vulnus Map - Select Difficulty,Vulnus Map - Select Difficulty,ヴォルナスマップー難易度選択,Map Vulnus - sélectionner difficulté,Mapa de Vulnus - seleccionar dificultad
-Import all difficulties,Import all difficulties,全難易度をインポートする,Importer toutes les difficultés,Importar todas las dificultades
-Note: This option skips the edit screen.,Note: This option skips the edit screen.,：編集画面を飛ばす,Note: Cette option saute le menu de modification.,Nota: Esta opción se salta el menú de modificación.
-Select song type.,Select song type.,曲の種類を選択,Sélectionner le type de map.,Seleccionar el tipo de mapa
-Raw Text Map,Raw Text Map,Raw Text マップ,Map Texte,Mapa de texto
+"Hitboxes: %s, ","Hitboxes: %s, ",ヒットボックス: %s、,"Hitbox: %s,","Hitboxes: %s,","Hitbox: %s,"
+default hitwindow,default hitwindow,デフォルトヒットウインドー,fenêtre de hit par défaut,registro de golpeo por defecto,finestra hit predefinita
+hitwindow: %s ms,hitwindow: %s ms,ヒットウインドー: %s ms,Fenêtre de hit: %s ms,registro de golpeo: %s ms,finestra hit: %s ms
+Loading,Loading,読み込み中,Chargement,Cargando,Caricamento
+Waiting for engine,Waiting for engine,エンジンの応答待ち,En attente du moteur de jeu,Esperando al motor de juego,In attesa del motore
+Initialization,Initialization,初期化,Initialisation,Inicialización,Inizializzazione
+Starting the game,Starting the game,ゲームを起動中,Lancement du jeu,Cargando juego,Avvio del gioco
+No PB,No PB,PBなし,Pas de record,Sin récord,Nessun record
+[ NOFAIL ACTIVE ],[ NOFAIL ACTIVE ],[失敗なしオン],[ NOFAIL ACTIF ],[NOFAIL ACTIVADO],[ NOFAIL ATTIVO ]
+Mirror,Mirror,フリップ,Miroir,Espejo,Specchio
+Vulnus Judgement,Vulnus Judgement,Vulnusヒットウインドー,Jugement Vulnus,Registro tipo Vulnus,Giudizio Vulnus
+You failed!,You failed!,失敗!,Échec!,¡Moriste!,Hai fallito!
+Inverted Mouse,Inverted Mouse,マウスフリップ,Souris inversée,Ratón invertido,Mouse invertito
+Personal Best,Personal Best,自己ベスト,Meilleur record,Récorrd personal,Miglior record
+Best Attempt,Best Attempt,一番の試み,Meilleur essai,Mejor intento,Miglior tentativo
+You passed!,You passed!, ,Passé !,¡Ganaste!,Hai passato!
+New best!,New best!,ニューベスト!,Nouveau record !,¡Nuevo récord!,Nuovo record!
+Replay passed,Replay passed,リプレイ通過,Replay passé,Reproducción finalizada,Replay superato
+FULL COMBO,FULL COMBO,フルコンボ,FULL COMBO,FULL COMBO,FULL COMBO
+NO COMBO,NO COMBO,ノーコンボ,PAS DE COMBO,SIN COMBO,NESSUN COMBO
+Import Song,Import Song,マップを追加する,Importer une map,Importar un mapa,Importa canzone
+Vulnus Map - Select Difficulty,Vulnus Map - Select Difficulty,ヴォルナスマップー難易度選択,Map Vulnus - sélectionner difficulté,Mapa de Vulnus - seleccionar dificultad,Mappa Vulnus - Seleziona difficoltà
+Import all difficulties,Import all difficulties,全難易度をインポートする,Importer toutes les difficultés,Importar todas las dificultades,Importa tutte le difficoltà
+Note: This option skips the edit screen.,Note: This option skips the edit screen.,：編集画面を飛ばす,Note: Cette option saute le menu de modification.,Nota: Esta opción se salta el menú de modificación.,"Nota: questa opzione salta lo schermo di modifica."
+Select song type.,Select song type.,曲の種類を選択,Sélectionner le type de map.,Seleccionar el tipo de mapa,Seleziona il tipo di canzone
+Raw Text Map,Raw Text Map,Raw Text マップ,Map Texte,Mapa de texto,Mappa Testo Grezzo
 "Requires raw text data and the music/asset file.
 Use this if you have a .txt file or copied data.","Requires raw text data and the music/asset file.
 Use this if you have a .txt file or copied data.","Textファイルデータと音楽/アセットファイルが必要です
-.txt ファイルやコピーしたデータがある場合に使用してください",Demande une map en format texte et un fichier pour la musique.,Requiere un mapa de formato .txt y el audio / canción del mapa.
-Sound Space Plus Map,Sound Space Plus Map,Sound Space Plus マップ,Map Sound Space Plus,Mapa de Sound Space Plus
+.txt ファイルやコピーしたデータがある場合に使用してください",Demande une map en format texte et un fichier pour la musique.,Requiere un mapa de formato .txt y el audio / canción del mapa.,"Richiede dati di testo grezzo e il file della musica/asset.
+Usalo se hai un file .txt o dati copiati."
+Sound Space Plus Map,Sound Space Plus Map,Sound Space Plus マップ,Map Sound Space Plus,Mapa de Sound Space Plus,Mappa Sound Space Plus
 "Requires a complete Sound Space Plus map file.
 Use this if you have an .sspm file.","Requires a complete Sound Space Plus map file.
 Use this if you have an .sspm file.","Sound Space Plusマップファイル(.sspm)が必要です 
-.sspm がある場合はこれを使用してください",Demande un fichier map Sound Space Plus complet.,Requiere un fichero en formato .sspm.
-Vulnus Map,Vulnus Map,Vulnus マップ,Map Vulnus - sélectionner difficulté,Mapa de Vulnus
+.sspm がある場合はこれを使用してください",Demande un fichier map Sound Space Plus complet.,Requiere un fichero en formato .sspm.,"Richiede un file mappa Sound Space Plus completo.
+Usalo se hai un file .sspm."
+Vulnus Map,Vulnus Map,Vulnus マップ,Map Vulnus - sélectionner difficulté,Mapa de Vulnus,Mappa Vulnus
 "Requires a folder or .zip containing Vulnus map data.
 Use this if you have a folder containing .json files.","Requires a folder or .zip containing Vulnus map data.
 Use this if you have a folder containing .json files.","Vulnus のマップデータを含むファイルまたは .zip が必要です
-.jsonファイルを含むフォルダがある場合はこれを使用してください",Demande un dossier ou fichier .zip contenant une map Vulnus,Requiere una carpeta o fichero .zip que contenga los datos del mapa de Vulnus
-Legacy Map Pack,Legacy Map Pack,Legacy Map Pack,Map Pack Classique,Pack de mapas clásico
+.jsonファイルを含むフォルダがある場合はこれを使用してください",Demande un dossier ou fichier .zip contenant une map Vulnus,Requiere una carpeta o fichero .zip que contenga los datos del mapa de Vulnus,"Richiede una cartella o .zip contenente dati della mappa Vulnus.
+Usalo se hai una cartella contenente file .json."
+Legacy Map Pack,Legacy Map Pack,Legacy Map Pack,Map Pack Classique,Pack de mapas clásico,Pack mappa legacy
 "Requires a folder containing a .sspmr file and audio.
 Use this if you have a pack of maps (ie. ssarchive).","Requires a folder containing a .sspmr file and audio.
 Use this if you have a pack of maps (ie. ssarchive).",".sspmrファイルとオーディオを含むフォルダが必要です
-マップのパック（ssarchiveなど）がある場合に使用してください",Demande un dossier contenant un fichier .sspmr et un fichier audio.,Requiere una carpeta que contenga un fichero .sspmr y un audio.
-Return to menu,Return to menu,メニューに戻る,Retour,Volver al menú
-Vulnus Map - Select File,Vulnus Map - Select File,ヴォルナスマップーファイルを選択,Map Vulnus - sélectionner fichier,Mapa de Vulnus - seleccionar fichero
-"Import from a .zip, .rar, or .7z file","Import from a .zip, .rar, or .7z file",.zip .rar .7zip ファイルから加える,"Importer d'un fichier .zip, .rar ou .7z","Importar de un fichero .zip, .rar o .7z"
-Import from a folder,Import from a folder,フォルダーから加える,Importer d'un dossier,Importar de una carpeta
-Selected folder was missing a meta.json!,Selected folder was missing a meta.json!,選択したフォルダにmeta.jsonがありませんでした,Le dossier sélectionné manque le fichier meta.json!,¡Falta el fichero meta.json en la carpeta seleccionada!
-Selected folder was missing a meta.json!,Selected folder was missing a meta.json!,選択したフォルダにmeta.jsonがありませんでした,Le dossier sélectionné manque le fichier meta.json!,¡Falta el fichero meta.json en la carpeta seleccionada!
-Text Map - Select Files,Text Map - Select Files,Text Map - ファイルを選択,Map texte - sélectionner les fichiers,Mapa de texto - seleccionar ficheros
-Map data,Map data,マップデータ,Map .txt,Mapa (fichero .txt)
-Required,Required,必要,Requis,Obligatorio
-Open file,Open file,ファイルを開ける,Ouvrir fichier,Abrir fichero
-Paste data,Paste data,データを貼る,Coller,Pegar datos
-Music,Music,音楽,Musique,Canción
-Preview,Preview,試す,Aperçu,Muestra
-Temporary - use this for testing maps,Temporary - use this for testing maps,一時的-マップを試す時に使う,Temporaire - utilisez pour tester la map,Temporal (para testear mapas)
-(click field to edit),(click field to edit),編集する,(cliquez pour modifier),(haz click para modificar)
-(click to replace),(click to replace),入れ替える,(cliquez pour remplacer),(haz click para reemplazar)
-Finish,Finish,終わる,Soumettre,Finalizar
-ID in use,ID in use,このIDはもう使われています。,ID en utilisation,ID en uso
-Mapper required,Mapper required,名前を入力して下さい,Auteur requis,Autor requerido
-Song name required,Song name required,曲名を入力して下さい,Titre requis,Título requerido
-Music file required,Music file required,ファイルを選択,Fichier musique requis,Canción requerida
-Map data required,Map data required,マップデータ必要,Fichier map requis,Mapa de texto requerido
-Invalid map data,Invalid map data,このデータは読み込めません,Map invalide,Mapa inválido
-Stop previewing,Stop previewing,戻る,Arrêter l'aperçu,Detener muestra
-Import cover,Import cover,カバーを選択,Importer la couverture d'album,Importar portada
-Edit data,Edit data,データを編集,Modifier données,Modificar datos
-Finishing,Finishing,読み込み中...,Un moment S.V.P,Un momento...
-Please wait...,Please wait...,LOADING...,Chargement...,Cargando...
-Exit,Exit,戻る,Quitter,Salir
-Select Profile,Select Profile,プリセットを選ぶ,Sélectionner le profil,Seleccionar perfil
-Create/Overwrite From Current,Create/Overwrite From Current,作ると交換する,Créer/écraser de l'actuel,Crear / sobreescribir actual
-Gameplay,Gameplay,ゲームプレイ,Gameplay,Gameplay
-World & Cursor,World & Cursor,スペースとカーソル,Monde et curseur,Mundo y cursor
-UI,UI,UI,UI,UI
-Video & Audio,Video & Audio,ビデオとオーディオ,Vidéo et audio,Video y audio
-Replays & Misc,Replays & Misc,リプレイとその他,Replays et divers,Repeticiones y misceláneos
-Loading Menu,Loading Menu,,Chargement du menu,Cargando menú
-Loading,Loading,,Chargement,Cargando 
-Mapper,Mapper,マッパ,Auteur,Autor
-Artist Name - Song Name,Artist Name - Song Name,アーティスト　ー　曲名,Nom de l'artiste - Nom de la musique,Nombre del artista - Nombre de la canción
-Difficulty,Difficulty,難易度,Difficulté,Dificultad
-Restart on Death,Restart on Death,死亡時リトライ,Rejouer après échec,Comenzar de nuevo al morir
-restarts the map upon death instead of returning to menu,restarts the map upon death instead of returning to menu,死亡時にメニューに戻らずリトライ,rejoue la map après un échec au lieu de charger le menu,vuelve a jugar el mapa al morir en lugar de volver al menú
-Glow,Glow,発光,Brilliance,Brillo
-[def. 0] sets intensity of glow,[def. 0] sets intensity of glow,発光強度を設定する,[par défaut 0],[por defecto 0]
-Bloom,Bloom,光放射,Éblouissement,Resplandor
-[def. 0] sets bloom amount,[def. 0] sets bloom amount,光放射量を設定する,[par défaut 0],[por defecto 0]
-VHS Shader,VHS Shader,VHSエフェクト,Shader VHS,Sombreado VHS
-applies a vhs effect to the camera,applies a vhs effect to the camera,カメラのVHSエフェクトを有効にする,applique un effet VHS,aplica un efecto VHS
-Expand HUD on HR,Expand HUD on HR,ハードロックでHUDをリサイズする,Agrandir le HUD avec HardRock,Expandir el HUD con HardRock
-expands the HUD when using Hard Rock,expands the HUD when using Hard Rock,ハードロックを有効にするとHUDのサイズが大きくなります,agrandi le HUD proportionellement lorsque le modificateur HardRock est sélectionné,expande el HUD al utilizar HardRock
+マップのパック（ssarchiveなど）がある場合に使用してください",Demande un dossier contenant un fichier .sspmr et un fichier audio.,Requiere una carpeta que contenga un fichero .sspmr y un audio.,"Richiede una cartella contenente un file .sspmr e audio.
+Usalo se hai un pack di mappe (come ssarchive)."
+Return to menu,Return to menu,メニューに戻る,Retour,Volver al menú,Torna al menu
+Vulnus Map - Select File,Vulnus Map - Select File,ヴォルナスマップーファイルを選択,Map Vulnus - sélectionner fichier,Mapa de Vulnus - seleccionar fichero,Mappa Vulnus - Seleziona file
+"Import from a .zip, .rar, or .7z file","Import from a .zip, .rar, or .7z file",.zip .rar .7zip ファイルから加える,"Importer d'un fichier .zip, .rar ou .7z","Importar de un fichero .zip, .rar o .7z","Importa da un file .zip, .rar o .7z"
+Import from a folder,Import from a folder,フォルダーから加える,Importer d'un dossier,Importar de una carpeta,Importa da una cartella
+Selected folder was missing a meta.json!,Selected folder was missing a meta.json!,選択したフォルダにmeta.jsonがありませんでした,Le dossier sélectionné manque le fichier meta.json!,¡Falta el fichero meta.json en la carpeta seleccionada!,"La cartella selezionata manca il file meta.json!"
+Selected folder was missing a meta.json!,Selected folder was missing a meta.json!,選択したフォルダにmeta.jsonがありませんでした,Le dossier sélectionné manque le fichier meta.json!,¡Falta el fichero meta.json en la carpeta seleccionada!,"La cartella selezionata manca il file meta.json!"
+Text Map - Select Files,Text Map - Select Files,Text Map - ファイルを選択,Map texte - sélectionner les fichiers,Mapa de texto - seleccionar ficheros,Mappa Testo - Seleziona file
+Map data,Map data,マップデータ,Map .txt,Mapa (fichero .txt),Dati mappa
+Required,Required,必要,Requis,Obligatorio,Richiesto
+Open file,Open file,ファイルを開ける,Ouvrir fichier,Abrir fichero,Apri file
+Paste data,Paste data,データを貼る,Coller,Pegar datos,Incolla dati
+Music,Music,音楽,Musique,Canción,Musica
+Preview,Preview,試す,Aperçu,Muestra,Anteprima
+Temporary - use this for testing maps,Temporary - use this for testing maps,一時的-マップを試す時に使う,Temporaire - utilisez pour tester la map,Temporal (para testear mapas),Temporaneo - usalo per testare le mappe
+(click field to edit),(click field to edit),編集する,(cliquez pour modifier),(haz click para modificar),"(clicca per modificare)"
+(click to replace),(click to replace),入れ替える,(cliquez pour remplacer),(haz click para reemplazar),"(clicca per sostituire)"
+Finish,Finish,終わる,Soumettre,Finalizar,Finisci
+ID in use,ID in use,このIDはもう使われています。,ID en utilisation,ID en uso,ID in uso
+Mapper required,Mapper required,名前を入力して下さい,Auteur requis,Autor requerido,Autore richiesto
+Song name required,Song name required,曲名を入力して下さい,Titre requis,Título requerido,Nome canzone richiesto
+Music file required,Music file required,ファイルを選択,Fichier musique requis,Canción requerida,File musica richiesto
+Map data required,Map data required,マップデータ必要,Fichier map requis,Mapa de texto requerido,Dati mappa richiesti
+Invalid map data,Invalid map data,このデータは読み込めません,Map invalide,Mapa inválido,Dati mappa non validi
+Stop previewing,Stop previewing,戻る,Arrêter l'aperçu,Detener muestra,Interrompi anteprima
+Import cover,Import cover,カバーを選択,Importer la couverture d'album,Importar portada,Importa copertina
+Edit data,Edit data,データを編集,Modifier données,Modificar datos,Modifica dati
+Finishing,Finishing,読み込み中...,Un moment S.V.P,Un momento...,In corso...
+Please wait...,Please wait...,LOADING...,Chargement...,Cargando...,Attendere...
+Exit,Exit,戻る,Quitter,Salir,Esci
+Select Profile,Select Profile,プリセットを選ぶ,Sélectionner le profil,Seleccionar perfil,Seleziona profilo
+Create/Overwrite From Current,Create/Overwrite From Current,作ると交換する,Créer/écraser de l'actuel,Crear / sobreescribir actual,Crea/Sovrascrivi da attuale
+Gameplay,Gameplay,ゲームプレイ,Gameplay,Gameplay,Gameplay
+World & Cursor,World & Cursor,スペースとカーソル,Monde et curseur,Mundo y cursor,Mondo e cursore
+UI,UI,UI,UI,UI,UI
+Video & Audio,Video & Audio,ビデオとオーディオ,Vidéo et audio,Video y audio,Video e audio
+Replays & Misc,Replays & Misc,リプレイとその他,Replays et divers,Repeticiones y misceláneos,Replay e varie
+Loading Menu,Loading Menu,,Chargement du menu,Cargando menú,Caricamento menu
+Loading,Loading,,Chargement,Cargando,Caricamento 
+Mapper,Mapper,マッパ,Auteur,Autor,Mapper
+Artist Name - Song Name,Artist Name - Song Name,アーティスト　ー　曲名,Nom de l'artiste - Nom de la musique,Nombre del artista - Nombre de la canción,Nome artista - Nome canzone
+Difficulty,Difficulty,難易度,Difficulté,Dificultad,Difficoltà
+Restart on Death,Restart on Death,死亡時リトライ,Rejouer après échec,Comenzar de nuevo al morir,Riavvia al fallimento
+restarts the map upon death instead of returning to menu,restarts the map upon death instead of returning to menu,死亡時にメニューに戻らずリトライ,rejoue la map après un échec au lieu de charger le menu,vuelve a jugar el mapa al morir en lugar de volver al menú,"riavvia la mappa al fallimento invece di tornare al menu"
+Glow,Glow,発光,Brilliance,Brillo,Luminosità
+[def. 0] sets intensity of glow,[def. 0] sets intensity of glow,発光強度を設定する,[par défaut 0],[por defecto 0],"[predefinito 0] imposta l'intensità della luminosità"
+Bloom,Bloom,光放射,Éblouissement,Resplandor,Fioritura
+[def. 0] sets bloom amount,[def. 0] sets bloom amount,光放射量を設定する,[par défaut 0],[por defecto 0],"[predefinito 0] imposta la quantità di fioritura"
+VHS Shader,VHS Shader,VHSエフェクト,Shader VHS,Sombreado VHS,Shader VHS
+applies a vhs effect to the camera,applies a vhs effect to the camera,カメラのVHSエフェクトを有効にする,applique un effet VHS,aplica un efecto VHS,"applica un effetto VHS alla fotocamera"
+Expand HUD on HR,Expand HUD on HR,ハードロックでHUDをリサイズする,Agrandir le HUD avec HardRock,Expandir el HUD con HardRock,Espandi HUD su HR
+expands the HUD when using Hard Rock,expands the HUD when using Hard Rock,ハードロックを有効にするとHUDのサイズが大きくなります,agrandi le HUD proportionellement lorsque le modificateur HardRock est sélectionné,expande el HUD al utilizar HardRock,"espande l'HUD quando si utilizza Hard Rock"
