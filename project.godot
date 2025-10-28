@@ -527,7 +527,7 @@ menu_quickbar={
 
 [locale]
 
-translations=PoolStringArray( "res://localization/localization.csv", "res://localization/localization.en.translation", "res://localization/localization.ja.translation", "res://localization/localization.fr.translation", "res://localization/localization.es.translation" )
+translations=PoolStringArray( "res://localization/localization.csv", "res://localization/localization.en.translation", "res://localization/localization.ja.translation", "res://localization/localization.fr.translation", "res://localization/localization.es.translation", "res://localization/localization.pt-br.translation" )
 locale_filter=[ 0, [ "en", "ja" ] ]
 
 [logging]

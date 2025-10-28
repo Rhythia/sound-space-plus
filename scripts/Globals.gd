@@ -162,7 +162,8 @@ const locale:Array = [
 	"en",
 	"ja",
 	"fr",
-	"es"
+	"es",
+	"pt-br"
 ]	
 
 const official_map_difficulties:Dictionary = {

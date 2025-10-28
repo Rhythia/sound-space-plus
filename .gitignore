@@ -7,5 +7,6 @@ export_presets.cfg
 *.translation
 .mono/
 addons/discord_game_sdk/bin/**
+.idea/
 
 .vscode/settings.json
