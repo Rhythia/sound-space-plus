@@ -666,7 +666,7 @@ func _ready():
 		file.close()
 		if !decode.error:
 			disable_intro = decode.result.has("disable_intro") and decode.result.disable_intro
-	if !disable_intro: get_tree().call_deferred("change_scene","res://scenes/Intro.tscn")
+	
 	
 	url_regex.compile(
 		"((https?)://)[\\w\\-.]{2,256}(:\\d{1,5})?(/[\\w@:%._\\-+~&=]+)+/?"

@@ -15,6 +15,7 @@ var combo:int = 0
 var combo_level:int = 1
 var lvl_progress:int = 0
 var song_has_failed:bool = false
+var giveUpAttempts = 0;
 
 export(StyleBox) var timer_fg_done
 
@@ -31,6 +32,7 @@ func comma_sep(number):
 	return res
 
 func loadMapFile():
+	giveUpAttempts = 0
 	var map:Song = Rhythia.selected_song
 	last_ms = map.last_ms# / $Spawn.speed_multi
 #	print(last_ms)
@@ -44,6 +46,7 @@ func loadMapFile():
 	
 	$Spawn.spawn_notes(notes)
 	
+	Socket.send_map_start()
 	get_node("Spawn/Music").stream = song
 
 onready var head:Spatial = get_node("Avatar/Head")
@@ -81,8 +84,11 @@ func end(end_type:int):
 	Rhythia.song_end_combo = max_combo
 	print("song max combo: ", max_combo)
 	
+	Socket.send_map_end(end_type)
+	
 	if Rhythia.record_replays and !Rhythia.replaying:
 		Rhythia.replay.end_recording()
+	
 	
 	if Rhythia.queue_active and end_type == Globals.END_PASS:
 		if Rhythia.do_pb_check_and_set():
@@ -169,6 +175,7 @@ var giving_up:float = 0
 var black_fade_target:bool = true
 var black_fade:float = 1
 var passed:bool = false
+var lastGiveUp = false;
 
 func _process(delta):
 	
@@ -183,9 +190,18 @@ func _process(delta):
 		
 	if passed:
 		$Avatar/ArmR.translation.y += (1 - $Avatar/ArmR.translation.y) * 0.01
+#
+#	if(Socket.forceExit):
+#		end(Globals.END_GIVEUP)
+#		Socket.forceExit = false
+	
+	if(lastGiveUp != Input.is_action_pressed("give_up")):
+		if(lastGiveUp):
+			giveUpAttempts += 1;
+		lastGiveUp = Input.is_action_pressed("give_up")
 	
 	if !ending:
-		if Input.is_action_pressed("give_up"):
+		if Input.is_action_pressed("give_up") && giveUpAttempts>0:
 			giving_up += delta/0.6
 			if giving_up >= 1:
 				if !Rhythia.queue_active and $Spawn.ms > last_ms: end(Globals.END_PASS)
@@ -233,10 +249,12 @@ func hit(col):
 	total_notes += 1
 	if !Rhythia.mod_no_regen: energy = clamp(energy+energy_per_hit,0,max_energy)
 	combo += 1
+	
 
 	if combo > max_combo: max_combo = combo
 
 	var points = get_point_amt()
+	
 	if combo_level != 8:
 		lvl_progress += 1
 	if combo_level != 8 and lvl_progress == 10:
@@ -244,6 +262,7 @@ func hit(col):
 		combo_level += 1
 		if combo_level == 8: lvl_progress = 10
 	update_hud()
+	Socket.send_map_progress(hits, misses, total_notes, combo, score)
 	
 	if Rhythia.hit_fov:
 		if Rhythia.hit_fov_additive:
@@ -254,12 +273,17 @@ func hit(col):
 			$"../Camera".fov = Rhythia.get("fov") - Rhythia.hit_fov_amplifier
 	
 	score += points
+	
+	
 	return points
 
 func miss(col):
 	emit_signal("miss",col)
 	misses += 1
 	total_notes += 1
+	
+	Socket.send_map_progress(hits, misses, total_notes, combo, score)
+	
 	energy = clamp(energy-1,0,max_energy)
 	combo = 0
 	lvl_progress = 0

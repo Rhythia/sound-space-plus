@@ -48,6 +48,7 @@ onready var smm_visibility:Dictionary = {
 }
 
 func press(bi:int,q:bool=false):
+	Socket.send_menu_state(bi)
 	if !q: get_node("../Press").play()
 	for i in range(pages.size()):
 		pages[i].visible = i == bi

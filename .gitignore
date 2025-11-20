@@ -9,3 +9,7 @@ export_presets.cfg
 addons/discord_game_sdk/bin/**
 
 .vscode/settings.json
+/dist
+/export
+/actions
+/addons/discord_game_sdk

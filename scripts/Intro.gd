@@ -9,7 +9,6 @@ var can_skip2 = false
 var date = OS.get_datetime()
 
 func _ready():
-	
 	# fix hands
 	$Avatar/ArmL/Pointer.translation = Vector3(0,0,0)
 	$Avatar/ArmR/Mesh.translation = Vector3(0,0,0)
@@ -31,7 +30,7 @@ func _ready():
 	if OS.has_feature("Android"):
 		$Skip.text = "Tap to skip"
 	$ColorRect.modulate.a = 1
-#	OS.window_fullscreen = true
+	# OS.window_fullscreen = true
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	yield(get_tree().create_timer(4),"timeout")
 	running = true

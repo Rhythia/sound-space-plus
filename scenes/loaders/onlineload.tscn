@@ -1,78 +1,12 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/font/Lato/Lato-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/ui/menu/VersionNumber.gd" type="Script" id=2]
 [ext_resource path="res://assets/images/branding/icon.png" type="Texture" id=3]
 [ext_resource path="res://uitheme.tres" type="Theme" id=4]
-
-[sub_resource type="GDScript" id=7]
-script/source = "extends Node
-
-var leaving:bool = false
-
-var target:String = Rhythia.menu_target
-
-var black_fade_target:bool = false
-var black_fade:float = 0
-
-func _ready():
-	get_tree().paused = false
-	if Rhythia.vr:
-		target = \"res://vr/vrmenu.tscn\"
-		Rhythia.vr_player.transform.origin = Vector3(0,0,0)
-	PhysicsServer.set_active(true)
-	Input.set_custom_mouse_cursor(null)
-	Input.set_default_cursor_shape(Input.CURSOR_ARROW)
-	Rhythia.load_color_txt()
-	Rhythia.conmgr_transit = null
-	Rhythia.loaded_world = null
-	Rhythia.was_replay = Rhythia.replaying
-	Rhythia.replaying = false
-	if Rhythia.was_replay: Rhythia.restore_prev_state()
-	if Rhythia.selected_song: Rhythia.selected_song.discard_notes()
-	Rhythia.replay_path = \"\"
-	$BlackFade.visible = true
-	black_fade = 1
-	$BlackFade.color = Color(0,0,0,black_fade)
-	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	var s = Globals.error_sound
-	var st = Rhythia.get_stream_with_default(\"user://loadingmusic\",s)
-	if st != s:
-		$Music.stream = st
-		$Music.play()
-	
-#	$AudioStreamPlayer.play()
-	
-	var res = RQueue.queue_resource(target)
-	if res != OK:
-		Rhythia.errorstr = \"queue_resource returned %s\" % res
-		get_tree().change_scene(\"res://scenes/errors/menuload.tscn\")
-
-var result
-var left:bool = false
-
-func _process(delta):
-#	$AudioStreamPlayer.volume_db = -3 - (40*black_fade)
-	$Music.volume_db = -8 - (40*black_fade)
-	if black_fade_target && black_fade != 1:
-		black_fade = min(black_fade + (delta/0.3),1)
-		$BlackFade.color = Color(0,0,0,black_fade)
-	elif !black_fade_target && black_fade != 0:
-		black_fade = max(black_fade - (delta/0.3),0)
-		$BlackFade.color = Color(0,0,0,black_fade)
-	
-	if !leaving:
-		if RQueue.is_ready(target):
-			result = RQueue.get_resource(target)
-			leaving = true
-			black_fade_target = true
-			if !(result is Object):
-				Rhythia.errorstr = \"get_resource returned non-object (probably null)\"
-				get_tree().change_scene(\"res://scenes/errors/menuload.tscn\")
-	
-	if leaving and result and black_fade == 1:
-		get_tree().change_scene_to(result)
-"
+[ext_resource path="res://scripts/loaders/onlineload.gd" type="Script" id=5]
+[ext_resource path="res://assets/font/Noto_Sans_JP/NotoSansJP-Medium.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://scenes/loaders/LoaderTextOnline.gd" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -113,12 +47,25 @@ func _process(delta):
 		else: n.modulate.a = max(n.modulate.a-(delta*1.35),0)
 "
 
+[sub_resource type="DynamicFont" id=5]
+size = 48
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 6 )
+
 [node name="Control" type="ColorRect"]
 pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 513, 531 )
 color = Color( 0, 0, 0, 1 )
-script = SubResource( 7 )
+script = ExtResource( 5 )
 
 [node name="Label" type="Label" parent="."]
 visible = false
@@ -184,9 +131,6 @@ margin_top = -100.0
 margin_right = -20.0
 margin_bottom = -20.0
 script = SubResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="0" type="Control" parent="Spinner"]
 margin_left = 5.0
@@ -328,9 +272,6 @@ margin_left = 10.0
 margin_right = 20.0
 margin_bottom = 10.0
 color = Color( 0.941176, 0.94902, 0.952941, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="4" type="Control" parent="Spinner"]
 margin_left = 55.0
@@ -485,3 +426,24 @@ __meta__ = {
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 volume_db = -2.0
+
+[node name="Label3" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 0.5
+custom_fonts/font = SubResource( 5 )
+text = "Rhythia Online"
+align = 1
+valign = 2
+
+[node name="Label4" type="Label" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.51987
+margin_right = -2.5199
+rect_pivot_offset = Vector2( -109, -204 )
+custom_fonts/font = SubResource( 6 )
+text = "Updating Modules
+Game might require restarting"
+align = 1
+script = ExtResource( 7 )

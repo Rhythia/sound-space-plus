@@ -70,7 +70,7 @@ func select_miss_effect(effect:NoteEffect):
 	if effect:
 		selected_miss_effect = effect
 		emit_signal("selected_miss_effect_changed",effect)
-func select_song(song:Song):
+func select_song(song:Song): # here
 	if song.is_online:
 		emit_signal("download_start")
 		get_tree().paused = true
@@ -89,6 +89,7 @@ func select_song(song:Song):
 		if result.success:
 			emit_signal("download_done")
 			selected_song = song
+			Socket.send_map_select()
 			emit_signal("selected_song_changed",song)
 		elif result.error == "010-100":
 			emit_signal("download_done")
@@ -106,6 +107,7 @@ func select_song(song:Song):
 			emit_signal("download_done")
 	else:
 		selected_song = song
+		Socket.send_map_select()
 		emit_signal("selected_song_changed",song)
 
 
@@ -423,7 +425,6 @@ func update_rpc_song(): # Discord RPC
 	if mod_flashlight: mods.append("Flashlight")
 	if mod_nearsighted: mods.append("Nearsight")
 	if mod_hardrock: mods.append("Hard Rock")
-	if replay.autoplayer: mods.append("Auto")
 	
 	if mods.size() == 0: txt = "No modifiers"
 	else:
