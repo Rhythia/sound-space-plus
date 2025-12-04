@@ -10,7 +10,7 @@ func _pressed():
 		OS.shell_open(ProjectSettings.globalize_path(Globals.p("user://packs")))
 	elif confirm:
 		Rhythia.do_archive_convert = true
-		get_tree().change_scene("res://scenes/init.tscn")
+		get_tree().change_scene("res://scenes/init3d.tscn")
 	else:
 		confirm = true
 		text = "8 GB space required. Continue?"

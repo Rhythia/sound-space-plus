@@ -34,7 +34,7 @@ func confirm(v:int):
 				#get_node("../BlackFade").target = true
 				#yield(get_node("../BlackFade"),"done_fading")
 				Engine.target_fps = 0
-				get_tree().change_scene("res://scenes/init.tscn")
+				get_tree().change_scene("res://scenes/init3d.tscn")
 				return
 		else:
 			Globals.confirm_prompt.s_back.play()

@@ -373,17 +373,17 @@ margin_right = 1216.0
 margin_bottom = 77.0
 
 [node name="H" type="HBoxContainer" parent="SpecialThanks/C13"]
-margin_left = 259.0
-margin_right = 956.0
+margin_left = 375.0
+margin_right = 840.0
 margin_bottom = 25.0
 alignment = 1
 
 [node name="Label" type="Label" parent="SpecialThanks/C13/H"]
-margin_right = 697.0
+margin_right = 465.0
 margin_bottom = 25.0
 custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
 custom_fonts/font = SubResource( 160 )
-text = "Basil \"Chedski\" Cyathea - The person that started it all; unfortunately gone now"
+text = "Lily \"Chedski\" Cyathea - The person that started it all"
 align = 1
 
 [node name="C7" type="CenterContainer" parent="SpecialThanks"]

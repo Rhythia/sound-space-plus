@@ -35,6 +35,9 @@ func files_dropped(files:PoolStringArray,_screen:int):
 
 func _input(event:InputEvent):
 	if not is_visible_in_tree(): return
+	if not get_viewport().has_node("Menu/Main"): return
+	# make sure this doesn't run in devmenu
+	
 	if get_focus_owner() == $"/root/Menu/Main/Maps/MapRegistry/T/Search": return
 	if get_focus_owner() == $"/root/Menu/Main/Maps/MapRegistry/T/AuthorSearch": return
 	if get_viewport().get_node("Menu/Main/Maps/Results").visible == true:

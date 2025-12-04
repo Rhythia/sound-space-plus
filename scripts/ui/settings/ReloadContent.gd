@@ -19,6 +19,6 @@ func _pressed():
 		get_viewport().get_node("Menu").black_fade_target = true
 		yield(get_tree().create_timer(0.35),"timeout")
 		Rhythia.is_init = true
-		get_tree().change_scene("res://scenes/init.tscn")
+		get_tree().change_scene("res://scenes/init3d.tscn")
 	else:
 		Globals.confirm_prompt.s_back.play()

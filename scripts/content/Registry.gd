@@ -152,8 +152,11 @@ func load_registry_file(path:String,regtype:int,regDisplayName:String=""):
 	if regDisplayName == "": regDisplayName = path.get_base_dir().get_file()
 	print(path)
 	var file:File = File.new()
-	file.open(path,File.READ)
-	if regtype == Globals.REGISTRY_MAP:
+	var status = file.open(path,File.READ)
+	if status != OK:
+		print("Unable to open registry file %s, skipping" % path)
+		yield(Globals.get_tree(),"idle_frame") # We have to sleep here to ensure it doesn't get stuck
+	elif regtype == Globals.REGISTRY_MAP:
 		var home_path:String = path.get_base_dir() + "/"
 #		var home_path:String = "res://test_assets/"
 		var rawRegData:String = file.get_as_text()

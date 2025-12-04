@@ -6,5 +6,5 @@ func _ready():
 	else:
 		visible = true
 		
-func _physics_process(delta):
-	rect_position.y += (150 - rect_position.y) * 0.25
+func _process(delta):
+	rect_position.y += (150 - rect_position.y) * 0.25 * (delta * 60.0)

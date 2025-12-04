@@ -1,4 +1,6 @@
 extends Label
 
+export var template:String = "Rhythia [%s]"
+
 func _ready():
-	text = "Rhythia [%s]" % ProjectSettings.get_setting("application/config/version")
+	text = template % ProjectSettings.get_setting("application/config/version")

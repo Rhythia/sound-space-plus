@@ -33,7 +33,7 @@ func _ready():
 	$ColorRect.modulate.a = 1
 #	OS.window_fullscreen = true
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
-	yield(get_tree().create_timer(4),"timeout")
+#	yield(get_tree().create_timer(4),"timeout")
 	running = true
 	$Avatar/Animations.play("Float")
 	$Avatar/Animations.playback_speed = 1
@@ -49,13 +49,13 @@ func _ready():
 	yield(get_tree().create_timer(14),"timeout")
 	fading = true
 	yield(get_tree().create_timer(4),"timeout")
-	get_tree().change_scene("res://scenes/init.tscn")
+	get_tree().change_scene("res://scenes/init3d.tscn")
 
 func _input(event):
 	if Input.is_action_just_pressed("pause") and can_skip:
-		get_tree().change_scene("res://scenes/init.tscn")
+		get_tree().change_scene("res://scenes/init3d.tscn")
 	elif OS.has_feature("Android") and can_skip:
-		get_tree().change_scene("res://scenes/init.tscn")
+		get_tree().change_scene("res://scenes/init3d.tscn")
 
 func _process(delta):
 	$Sprite3D.rotation_degrees.z += 16 * delta

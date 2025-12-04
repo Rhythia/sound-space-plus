@@ -1,0 +1,57 @@
+[gd_resource type="AnimatedTexture" load_steps=18 format=2]
+
+[ext_resource path="res://assets/notefx/explosion/explosion01.png" type="Texture" id=1]
+[ext_resource path="res://assets/notefx/explosion/explosion02.png" type="Texture" id=2]
+[ext_resource path="res://assets/notefx/explosion/explosion06.png" type="Texture" id=3]
+[ext_resource path="res://assets/notefx/explosion/explosion03.png" type="Texture" id=4]
+[ext_resource path="res://assets/notefx/explosion/explosion07.png" type="Texture" id=5]
+[ext_resource path="res://assets/notefx/explosion/explosion04.png" type="Texture" id=6]
+[ext_resource path="res://assets/notefx/explosion/explosion05.png" type="Texture" id=7]
+[ext_resource path="res://assets/notefx/explosion/explosion11.png" type="Texture" id=8]
+[ext_resource path="res://assets/notefx/explosion/explosion10.png" type="Texture" id=9]
+[ext_resource path="res://assets/notefx/explosion/explosion09.png" type="Texture" id=10]
+[ext_resource path="res://assets/notefx/explosion/explosion14.png" type="Texture" id=11]
+[ext_resource path="res://assets/notefx/explosion/explosion08.png" type="Texture" id=12]
+[ext_resource path="res://assets/notefx/explosion/explosion15.png" type="Texture" id=13]
+[ext_resource path="res://assets/notefx/explosion/explosion17.png" type="Texture" id=14]
+[ext_resource path="res://assets/notefx/explosion/explosion12.png" type="Texture" id=15]
+[ext_resource path="res://assets/notefx/explosion/explosion13.png" type="Texture" id=16]
+[ext_resource path="res://assets/notefx/explosion/explosion16.png" type="Texture" id=17]
+
+[resource]
+flags = 23
+frames = 17
+fps = 10.0
+frame_0/texture = ExtResource( 1 )
+frame_1/texture = ExtResource( 2 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 4 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 7 )
+frame_4/delay_sec = 0.0
+frame_5/texture = ExtResource( 3 )
+frame_5/delay_sec = 0.0
+frame_6/texture = ExtResource( 5 )
+frame_6/delay_sec = 0.0
+frame_7/texture = ExtResource( 12 )
+frame_7/delay_sec = 0.0
+frame_8/texture = ExtResource( 10 )
+frame_8/delay_sec = 0.0
+frame_9/texture = ExtResource( 9 )
+frame_9/delay_sec = 0.0
+frame_10/texture = ExtResource( 8 )
+frame_10/delay_sec = 0.0
+frame_11/texture = ExtResource( 15 )
+frame_11/delay_sec = 0.0
+frame_12/texture = ExtResource( 16 )
+frame_12/delay_sec = 0.0
+frame_13/texture = ExtResource( 11 )
+frame_13/delay_sec = 0.0
+frame_14/texture = ExtResource( 13 )
+frame_14/delay_sec = 0.0
+frame_15/texture = ExtResource( 17 )
+frame_15/delay_sec = 0.0
+frame_16/texture = ExtResource( 14 )
+frame_16/delay_sec = 0.0

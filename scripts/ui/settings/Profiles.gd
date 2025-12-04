@@ -55,7 +55,7 @@ func on_pressed(i):
 	# Rhythia.is_switch_profile = true
 	get_viewport().get_node("Menu").black_fade_target = true
 	yield(get_tree().create_timer(0.35),"timeout")
-	get_tree().change_scene("res://scenes/init.tscn")
+	get_tree().change_scene("res://scenes/init3d.tscn")
 	Rhythia.load_saved_settings(profile)
 	Rhythia.save_settings()
 

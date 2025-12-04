@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/phaser.ogg-53c2d8a1efcdf19e7be49f4dbb231e86.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/music/init3d/phaser.ogg"
+dest_files=[ "res://.import/phaser.ogg-53c2d8a1efcdf19e7be49f4dbb231e86.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -3,6 +3,7 @@ class_name SongPlayerManager
 
 signal hit
 signal miss
+signal failed
 
 var rawMapData:String
 var notes:Array
@@ -68,6 +69,17 @@ func end(end_type:int):
 		Rhythia.replay.store_sig($Spawn.rms,Globals.RS_GIVEUP)
 	if end_type != Globals.END_PASS:
 		Rhythia.fail_asp.play()
+		if !Rhythia.song_end_failed:
+			Rhythia.song_end_failed = true
+			var fail_ms = clamp($Spawn.ms,0,last_ms)
+			
+			var s = fail_ms / 1000.0
+			var m = floor(s / 60.0)
+			var rs = fmod(s, 60.0)
+			
+			Rhythia.song_end_fail_position = fail_ms
+			Rhythia.song_end_time_str = "%d:%02d" % [m,rs]
+		
 	get_tree().paused = true
 	if total_notes == 0: total_notes = 1
 	update_hud()
@@ -231,7 +243,8 @@ func hit(col):
 	emit_signal("hit",col)
 	hits += 1
 	total_notes += 1
-	if !Rhythia.mod_no_regen: energy = clamp(energy+energy_per_hit,0,max_energy)
+	if !Rhythia.mod_no_regen and not song_has_failed:
+		energy = clamp(energy+energy_per_hit,0,max_energy)
 	combo += 1
 
 	if combo > max_combo: max_combo = combo
@@ -266,12 +279,22 @@ func miss(col):
 	if combo_level != 1: combo_level -= 1
 	update_hud()
 	if energy == 0: 
-		if Rhythia.mod_nofail:
-			if not song_has_failed:
-				song_has_failed = true
+		if not song_has_failed:
+			song_has_failed = true
+			emit_signal("failed")
+			if Rhythia.mod_nofail:
 				Rhythia.fail_asp.play()
-		else:
-			end(Globals.END_FAIL)
+				var fail_ms = clamp($Spawn.ms,0,last_ms)
+				
+				var s = fail_ms / 1000.0
+				var m = floor(s / 60.0)
+				var rs = fmod(s, 60.0)
+				
+				Rhythia.song_end_fail_position = fail_ms
+				Rhythia.song_end_time_str = "%d:%02d" % [m,rs]
+			else:
+				end(Globals.END_FAIL)
+			Rhythia.song_end_failed = true
 
 
 func _ready():

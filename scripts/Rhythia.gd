@@ -121,6 +121,9 @@ var song_end_accuracy_str:String
 var song_end_time_str:String
 var song_end_length:float
 var song_end_combo:int
+var song_end_fail_time_str:String
+var song_end_fail_position:float
+var song_end_failed:bool
 # Replay data
 var replay:Replay
 var replay_path:String = ""
@@ -141,7 +144,8 @@ var first_init_done = false # Don't reload mods as that can cause problems
 var loaded_world = null # Holds the bg world for transit between songload and song player
 var was_map_screen_centered:bool = true
 var menu_target:String = ProjectSettings.get_setting("application/config/default_menu_target")
-var is_init:bool = true # Used to check if Onboarding is being used for game startup
+var is_init:bool = true # Should we start the initialization process?
+var init_running:bool = false # Is the initialization process currently running?
 
 # Song list position/search persistence
 var was_auto_play_switch:bool = true
@@ -351,12 +355,21 @@ func _process(delta):
 	# Global hotkeys
 	if Input.is_action_just_pressed("fullscreen"):
 		OS.window_fullscreen = not OS.window_fullscreen
+	
+	if OS.has_feature("debug"):
+		if init_running and Input.is_action_pressed("debug_devmenu"):
+			menu_target = "res://scenes/devmenu.tscn"
+		elif Input.is_action_just_pressed("debug_devmenu"):
+			get_tree().change_scene("res://scenes/devmenu.tscn")
 
 # Debug
 var desync_alerts:bool = false
 var disable_desync:bool = false
 func _console(cmd:String,args:String):
 	match cmd:
+		"devmenu":
+			menu_target = "res://scenes/devmenu.tscn"
+			get_tree().change_scene("res://scenes/devmenu.tscn")
 		"queue":
 			var ids = args.split(" ",false)
 			if ids.size() == 0:
@@ -423,7 +436,7 @@ func update_rpc_song(): # Discord RPC
 	if mod_flashlight: mods.append("Flashlight")
 	if mod_nearsighted: mods.append("Nearsight")
 	if mod_hardrock: mods.append("Hard Rock")
-	if replay.autoplayer: mods.append("Auto")
+	if replay and replay.autoplayer: mods.append("Auto")
 	
 	if mods.size() == 0: txt = "No modifiers"
 	else:
@@ -668,6 +681,7 @@ var visual_approach_follow:bool = false
 var billboard_score:bool = false
 var score_popup:bool = false
 var mirror_buttons:bool = false
+var show_full_combo_indicators:bool = true
 
 # Settings - HUD Colors
 var panel_bg:Color = Color("#9b000000") #9bcecece
@@ -697,6 +711,11 @@ var timer_fg_done:Color = Color("#25bf00") #25bf00
 var timer_bg_done:Color = Color("#af008f00") #af008f00
 var timer_fg_canskip:Color = Color("#b3ffff") #760070
 var timer_bg_canskip:Color = Color("#b0638f8f") #b02b172a
+
+var energy_fg:Color = Color("#3aa515")
+var energy_bg:Color = Color("#af942121")
+var energy_failed:Color = Color(0.3,0.3,0.3,0.5)
+var energy_failed_flash:Color = Color(1.0,0.25,0.25)
 
 var miss_flash_color:Color = Color("#ff0000") #ff0000
 var pause_used_color:Color = Color("#ff66ff") #2600c2
@@ -822,7 +841,7 @@ func generate_pb_str(for_pb:bool=false):
 		Globals.HP_OLD: pts.append("hp_old")
 		Globals.HP_SOUNDSPACE: pass # prevents wiping of old pbs
 	pts.append("hitw:%s" % String(floor(hitwindow_ms)))
-	var hb = note_hitbox_size
+#	var hb = note_hitbox_size
 	pts.append("hbox:%.02f" % note_hitbox_size)
 	pts.append("ar:%d" % sign(approach_rate))
 	if !for_pb and start_offset != 0: pts.append("so:%f" % start_offset)
@@ -1259,6 +1278,8 @@ func load_saved_settings(saveFile:String = Globals.p("user://settings.json")):
 			hit_pitch_max = data.hit_pitch_max
 		if data.has("half_ghost"):
 			half_ghost = data.half_ghost
+		if data.has("show_full_combo_indicators"):
+			show_full_combo_indicators = data.show_full_combo_indicators
 
 		if data.has("language"):
 			language = data.language
@@ -1291,6 +1312,10 @@ func load_saved_settings(saveFile:String = Globals.p("user://settings.json")):
 		lcol(data,"timer_bg_done")
 		lcol(data,"timer_fg_canskip")
 		lcol(data,"timer_bg_canskip")
+		lcol(data,"energy_fg")
+		lcol(data,"energy_bg")
+		lcol(data,"energy_failed")
+		lcol(data,"energy_failed_flash")
 		lcol(data,"miss_flash_color")
 		lcol(data,"pause_used_color")
 		lcol(data,"miss_text_color")
@@ -1634,6 +1659,7 @@ func save_settings(saveFile:String = Globals.p("user://settings.json")):
 			ignore_controller_detection = ignore_controller_detection,
 			expand_hud_onhr = expand_hud_onhr,
 			last_search_incl_online = last_search_incl_online,
+			show_full_combo_indicators = show_full_combo_indicators,
 			
 			master_volume = ser_float(clamp(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master")),-80,1000000)),
 			music_volume = ser_float(clamp(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Music")),-80,1000000)),
@@ -1939,6 +1965,13 @@ func register_effects():
 	registry_effect.add_item(NoteEffect.new(
 		"ssp_miss_w", "Miss* (no color)", "res://assets/notefx/miss/miss.tscn", "Chedski"
 	))
+	
+	registry_effect.add_item(NoteEffect.new(
+		"ssp_explosion", "Explosion", "res://assets/notefx/explosion/explosion.tscn", "Chedski"
+	))
+	registry_effect.add_item(NoteEffect.new(
+		"ssp_explosion_t", "Explosion (transparent)", "res://assets/notefx/explosion/explosion.tscn", "Chedski"
+	))
 
 
 
@@ -2016,6 +2049,8 @@ var single_map_mode_audio_path:String
 
 # Initialization
 func do_init(_ud=null):
+	init_running = true
+	is_init = false
 	installed_packs = []
 	yield(get_tree().create_timer(0.05),"timeout") # haha thread safety go brrrr
 	var lp:bool = false # load pause
@@ -2074,7 +2109,11 @@ func do_init(_ud=null):
 			single_map_mode_audio_path = Globals.cmdline.audio
 			
 	# Check for updates
-	if (OS.has_feature("Windows") or OS.has_feature("X11")) and !OS.has_feature("editor"):
+	if (
+		(OS.has_feature("Windows") or OS.has_feature("X11"))
+		and !OS.has_feature("editor")
+		and !ProjectSettings.get_setting("application/config/version").begins_with("dev-")
+		):
 		emit_signal("init_stage_reached","Check for updates")
 		emit_signal("init_stage_num",-1)
 		yield(get_tree(),"idle_frame")
@@ -2261,9 +2300,9 @@ func do_init(_ud=null):
 		var smaps:Array = []
 		emit_signal("init_stage_reached","Register content 1/4\nImport Rhythia maps\nLocating files")
 		yield(get_tree(),"idle_frame")
-		var sd:Array = []
+#		var sd:Array = []
 		dir.change_dir(user_map_dir)
-		var li = 0
+#		var li = 0
 		
 		var map_search_folders = [user_map_dir]
 		err = file.open(Globals.p("user://map_folders.txt"),File.READ)
@@ -2520,5 +2559,6 @@ func do_init(_ud=null):
 		Globals.confirm_prompt.s_next.play()
 		Globals.confirm_prompt.close()
 		yield(Globals.confirm_prompt,"done_closing")
-	is_init = false
+	init_running = false
+	print("Init done!")
 	emit_signal("init_stage_reached","Waiting for menu",true)

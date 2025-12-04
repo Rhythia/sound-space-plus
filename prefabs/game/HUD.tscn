@@ -34,22 +34,22 @@
 [ext_resource path="res://scripts/game/MobileButtons.gd" type="Script" id=32]
 [ext_resource path="res://assets/font/NotoColorEmoji.ttf" type="DynamicFontData" id=33]
 
-[sub_resource type="Gradient" id=86]
+[sub_resource type="Gradient" id=91]
 interpolation_mode = 1
 offsets = PoolRealArray( 1 )
 colors = PoolColorArray( 1, 1, 1, 1 )
 
 [sub_resource type="GradientTexture2D" id=87]
-gradient = SubResource( 86 )
+gradient = SubResource( 91 )
 use_hdr = true
 
-[sub_resource type="Gradient" id=88]
+[sub_resource type="Gradient" id=92]
 interpolation_mode = 1
 offsets = PoolRealArray( 1 )
 colors = PoolColorArray( 1, 1, 1, 1 )
 
 [sub_resource type="GradientTexture2D" id=89]
-gradient = SubResource( 88 )
+gradient = SubResource( 92 )
 
 [sub_resource type="DynamicFont" id=85]
 size = 48
@@ -347,9 +347,6 @@ to give up"
 [node name="Stats" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
 [node name="Label" type="Label" parent="Stats"]
 anchor_right = 1.0

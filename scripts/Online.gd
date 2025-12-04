@@ -1,6 +1,16 @@
 extends Node
 
 # https://cdn.rhythia.net/index.json
+enum STATUS {
+	OK = 0,
+	NOT_INITIALIZED,
+	CONNECTION_TEST_FAIL,
+	API_HTTP_FAIL,
+	CONFIG_ERROR,
+	INTERNAL_ERROR,
+	ANTI_TAMPER,
+}
+var netmaps_status:int = STATUS.NOT_INITIALIZED
 
 var mapdb_api:String = ""
 
@@ -38,19 +48,28 @@ func _on_ctest_request_completed(result:int,response_code:int,headers:PoolString
 		emit_signal("_connection_test",true)
 	else:
 		emit_signal("_connection_test",false)
+		netmaps_status = STATUS.CONNECTION_TEST_FAIL
 
 func test_connection():
 	var res = ctest_hr.request(ProjectSettings.get_setting("application/networking/test_url"))
-	if res != OK: emit_signal("_connection_test",false)
+	if res != OK:
+		emit_signal("_connection_test",false)
+		netmaps_status = STATUS.CONNECTION_TEST_FAIL
 
 func _mapdl_handler(id:String,map:Song):
 	print("[MapDB Download] Starting download of map %s" % map.id)
 	if !ProjectSettings.get_setting("application/networking/enabled"):
-		mapdl_error(id,"Networking is disabled",map); return
+		mapdl_error(id,"Networking is disabled",map)
+		netmaps_status = STATUS.CONFIG_ERROR
+		return
 	if mapdb_api == "":
-		mapdl_error(id,"MapDB API Invalid",map); return
+		mapdl_error(id,"MapDB API Invalid",map)
+		netmaps_status = STATUS.CONFIG_ERROR
+		return
 	if !Globals.is_valid_url(mapdb_api):
-		mapdl_error(id,"MapDB API Invalid",map); return
+		mapdl_error(id,"MapDB API Invalid",map)
+		netmaps_status = STATUS.CONFIG_ERROR
+		return
 	
 	call_deferred("test_connection")
 	if !yield(self,"_connection_test"):
@@ -199,24 +218,31 @@ func load_db_maps():
 		
 		if netmaps_res.result == HTTPRequest.RESULT_CANT_RESOLVE:
 			show_db_error("Map database download failed.\nError: Can't Resolve","Map Database Error")
+			netmaps_status = STATUS.API_HTTP_FAIL
 			yield(self,"error_done")
 		elif netmaps_res.result == HTTPRequest.RESULT_CANT_CONNECT:
 			show_db_error("Map database download failed.\nError: Can't Connect","Map Database Error")
+			netmaps_status = STATUS.API_HTTP_FAIL
 			yield(self,"error_done")
 		elif netmaps_res.result == HTTPRequest.RESULT_CONNECTION_ERROR:
 			show_db_error("Map database download failed.\nError: Connection Error","Map Database Error")
+			netmaps_status = STATUS.API_HTTP_FAIL
 			yield(self,"error_done")
 		elif netmaps_res.result == HTTPRequest.RESULT_SSL_HANDSHAKE_ERROR:
 			show_db_error("Map database download failed.\nError: SSL Handshake Error","Map Database Error")
+			netmaps_status = STATUS.API_HTTP_FAIL
 			yield(self,"error_done")
 		elif netmaps_res.result == HTTPRequest.RESULT_TIMEOUT:
 			show_db_error("Map database download failed.\nError: Timeout","Map Database Error")
+			netmaps_status = STATUS.API_HTTP_FAIL
 			yield(self,"error_done")
 		elif netmaps_res.result == HTTPRequest.RESULT_REDIRECT_LIMIT_REACHED:
 			show_db_error("Map database download failed.\nError: Redirect Limit Reached","Map Database Error")
+			netmaps_status = STATUS.API_HTTP_FAIL
 			yield(self,"error_done")
 			
 		elif netmaps_res.result == HTTPRequest.RESULT_SUCCESS:
+			netmaps_status = STATUS.OK
 			if netmaps_res.response_code == 200:
 				print("Cache miss!")
 				var res = file.open(Globals.p("user://.mapdb_cache.json"),File.WRITE)
@@ -285,23 +311,31 @@ func load_db_maps():
 				file.close()
 			else:
 				show_db_error("Map database download failed.\nError code: HTTP-%s" % netmaps_res.response_code,"Map Database Error")
+				netmaps_status = STATUS.API_HTTP_FAIL
 				yield(self,"error_done")
 		else: # Unknown error
 			show_db_error("Map database download failed.\nError code: HTTP-%s" % netmaps_res.response_code,"Map Database Error")
+			netmaps_status = STATUS.API_HTTP_FAIL
 			yield(self,"error_done")
 			
 	
 	emit_signal("db_maps_done")
 
+
+
 var latest_version_data
 signal latest_version
 var version_hr:HTTPRequest = HTTPRequest.new()
 func check_latest_version():
-	if !(OS.has_feature("Windows") or OS.has_feature("X11")) or !ProjectSettings.get_setting("application/networking/enabled"):
+	if (
+		!(OS.has_feature("Windows") or OS.has_feature("X11"))
+		or !ProjectSettings.get_setting("application/networking/enabled")
+		):
 		emit_signal("latest_version",ProjectSettings.get_setting("application/config/version"))
 		return
 	var github_url = "https://api.github.com/repos/%s/releases/latest"
 	version_hr.request(github_url % ProjectSettings.get_setting("application/networking/github_repo"))
+
 func _on_version_request_completed(result:int,response_code:int,headers:PoolStringArray,body:PoolByteArray):
 	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
 		emit_signal("latest_version",ProjectSettings.get_setting("application/config/version"))
@@ -310,7 +344,9 @@ func _on_version_request_completed(result:int,response_code:int,headers:PoolStri
 	var json = JSON.parse(string)
 	var data = json.result
 	latest_version_data = data
+	
 	emit_signal("latest_version",data.tag_name)
+
 signal update_finished
 signal _update_req
 var update_hr:HTTPRequest = HTTPRequest.new()
@@ -355,7 +391,7 @@ func _on_update_request_completed(result:int,response_code:int,headers:PoolStrin
 func _ready():
 	add_child(netmaps_hr)
 	netmaps_hr.use_threads = true
-	netmaps_hr.timeout = 80
+	netmaps_hr.timeout = 30#80
 	netmaps_hr.connect("request_completed",self,"_on_netmaps_request_completed")
 	
 	add_child(ctest_hr)

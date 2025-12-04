@@ -1,0 +1,554 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://uitheme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/font/Lato/Lato-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/font/Noto_Sans_JP/NotoSansJP-Medium.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/font/NotoColorEmoji.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://scripts/ui/menu/WarningBar.gd" type="Script" id=5]
+[ext_resource path="res://scripts/ui/menu/VersionNumber.gd" type="Script" id=6]
+[ext_resource path="res://assets/images/branding/icon.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/menu3d/badges/map_offline.svg" type="Texture" id=8]
+[ext_resource path="res://assets/images/menu3d/icons/online.svg" type="Texture" id=9]
+[ext_resource path="res://assets/images/menu3d/badges/contentcreator.svg" type="Texture" id=10]
+[ext_resource path="res://assets/images/menu3d/badges/map_online.svg" type="Texture" id=11]
+[ext_resource path="res://assets/images/menu3d/icons/online_no.svg" type="Texture" id=12]
+[ext_resource path="res://assets/images/menu3d/badges/developer.svg" type="Texture" id=13]
+[ext_resource path="res://assets/images/menu3d/icons/advanced.svg" type="Texture" id=14]
+[ext_resource path="res://assets/images/menu3d/badges/rct.svg" type="Texture" id=15]
+[ext_resource path="res://assets/images/menu3d/badges/map_ranked.svg" type="Texture" id=16]
+[ext_resource path="res://assets/images/menu3d/badges/map_unranked.svg" type="Texture" id=17]
+[ext_resource path="res://assets/images/menu3d/icons/account_signedout.svg" type="Texture" id=18]
+[ext_resource path="res://assets/images/menu3d/badges/mmt.svg" type="Texture" id=19]
+[ext_resource path="res://assets/images/menu3d/icons/maintenance.svg" type="Texture" id=20]
+[ext_resource path="res://assets/images/menu3d/icons/sword.svg" type="Texture" id=21]
+[ext_resource path="res://assets/images/menu3d/badges/moderator.svg" type="Texture" id=22]
+[ext_resource path="res://scripts/ui/devmenu/devmenu.gd" type="Script" id=23]
+[ext_resource path="res://assets/images/menu3d/badges/silenced.svg" type="Texture" id=24]
+[ext_resource path="res://assets/images/menu3d/badges/map_wip.svg" type="Texture" id=25]
+[ext_resource path="res://prefabs/menu/credits.tscn" type="PackedScene" id=26]
+[ext_resource path="res://prefabs/menu/settings_page.tscn" type="PackedScene" id=27]
+[ext_resource path="res://assets/sfx/menu_full.mp3" type="AudioStream" id=28]
+[ext_resource path="res://scripts/ui/menu/buttons/RunMapButton.gd" type="Script" id=29]
+[ext_resource path="res://scripts/ui/menu/buttons/Favorite.gd" type="Script" id=30]
+[ext_resource path="res://scripts/ui/menu/menu2.gd" type="Script" id=31]
+[ext_resource path="res://scripts/ui/menu/buttons/PlaySong.gd" type="Script" id=32]
+[ext_resource path="res://scripts/ui/settings/MusicVolumeSetter.gd" type="Script" id=33]
+[ext_resource path="res://assets/images/ui/settings_dark.png" type="Texture" id=34]
+[ext_resource path="res://scripts/ui/menu/buttons/MapActions.gd" type="Script" id=35]
+[ext_resource path="res://assets/images/devbg.png" type="Texture" id=36]
+[ext_resource path="res://assets/notefx/explosion/explosion.tres" type="Texture" id=37]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.498039, 0.894118, 1, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.129412, 0.129412, 0.129412, 0.568627 )
+
+[sub_resource type="DynamicFont" id=2]
+use_filter = true
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 4 )
+fallback/1 = ExtResource( 3 )
+
+[node name="Menu" type="TextureRect"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+texture = ExtResource( 36 )
+expand = true
+script = ExtResource( 31 )
+
+[node name="Menu" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 6
+custom_constants/margin_top = 6
+custom_constants/margin_left = 6
+custom_constants/margin_bottom = 6
+script = ExtResource( 23 )
+
+[node name="V" type="VBoxContainer" parent="Menu"]
+margin_left = 6.0
+margin_top = 6.0
+margin_right = 1274.0
+margin_bottom = 714.0
+
+[node name="Bar" type="HFlowContainer" parent="Menu/V"]
+margin_right = 1268.0
+margin_bottom = 32.0
+rect_pivot_offset = Vector2( -422, 4 )
+
+[node name="Quit" type="Button" parent="Menu/V/Bar"]
+margin_right = 64.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 64, 32 )
+theme = ExtResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+toggle_mode = true
+action_mode = 0
+text = "quit"
+icon = ExtResource( 37 )
+icon_align = 1
+expand_icon = true
+
+[node name="Logo" type="TextureRect" parent="Menu/V/Bar"]
+visible = false
+margin_left = 68.0
+margin_right = 100.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 1
+
+[node name="VersionNumber" type="Label" parent="Menu/V/Bar"]
+margin_left = 68.0
+margin_top = 6.0
+margin_right = 228.0
+margin_bottom = 26.0
+theme_type_variation = "DevMenuMonoLabel"
+text = "Rhythia [?????-????]"
+script = ExtResource( 6 )
+
+[node name="Debug" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 1, 0.239216, 0.988235, 1 )
+margin_left = 232.0
+margin_right = 256.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 6
+
+[node name="Release" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 0.239216, 0.87451, 1, 1 )
+margin_left = 260.0
+margin_right = 284.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 6
+
+[node name="OnlineServicesYes" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 0.0235294, 0.803922, 0.0901961, 1 )
+margin_left = 288.0
+margin_right = 312.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 6
+
+[node name="OnlineServicesNo" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 1, 0.752941, 0.435294, 1 )
+margin_left = 316.0
+margin_right = 340.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="OnlineMapsYes" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 0.0235294, 0.803922, 0.0901961, 1 )
+margin_left = 344.0
+margin_right = 368.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 6
+
+[node name="OnlineMapsNo" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 1, 0.752941, 0.435294, 1 )
+margin_left = 372.0
+margin_right = 396.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="ScoreSubYes" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 0.0235294, 0.803922, 0.0901961, 1 )
+margin_left = 400.0
+margin_right = 424.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 16 )
+expand = true
+stretch_mode = 6
+
+[node name="ScoreSubNo" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 1, 0.752941, 0.435294, 1 )
+margin_left = 428.0
+margin_right = 452.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 17 )
+expand = true
+stretch_mode = 6
+
+[node name="Silenced" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 1, 0.356863, 0.356863, 1 )
+margin_left = 456.0
+margin_right = 480.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 24 )
+expand = true
+stretch_mode = 6
+
+[node name="Banned" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 1, 0.356863, 0.356863, 1 )
+margin_left = 484.0
+margin_right = 508.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 22 )
+expand = true
+stretch_mode = 6
+
+[node name="AntiTamper" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 1, 0.356863, 0.356863, 1 )
+margin_left = 512.0
+margin_right = 536.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 25 )
+expand = true
+stretch_mode = 6
+
+[node name="ServerDown" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 1, 0.356863, 0.356863, 1 )
+margin_left = 540.0
+margin_right = 564.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 20 )
+expand = true
+stretch_mode = 6
+
+[node name="NoInternet" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 1, 0.356863, 0.356863, 1 )
+margin_left = 568.0
+margin_right = 592.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="SignedOut" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 1, 0.356863, 0.356863, 1 )
+margin_left = 596.0
+margin_right = 620.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 18 )
+expand = true
+stretch_mode = 6
+
+[node name="IsAdmin" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 0.356863, 0.607843, 1, 1 )
+margin_left = 624.0
+margin_right = 648.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 14 )
+expand = true
+stretch_mode = 6
+
+[node name="IsModerator" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 0.356863, 0.607843, 1, 1 )
+margin_left = 652.0
+margin_right = 676.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 21 )
+expand = true
+stretch_mode = 6
+
+[node name="IsMMT" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 0.356863, 0.607843, 1, 1 )
+margin_left = 680.0
+margin_right = 704.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 19 )
+expand = true
+stretch_mode = 6
+
+[node name="IsRCT" type="TextureRect" parent="Menu/V/Bar"]
+modulate = Color( 0.356863, 0.607843, 1, 1 )
+margin_left = 708.0
+margin_right = 732.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 24, 32 )
+texture = ExtResource( 15 )
+expand = true
+stretch_mode = 6
+
+[node name="DevMenuTag" type="Label" parent="Menu/V/Bar"]
+margin_left = 736.0
+margin_top = 6.0
+margin_right = 880.0
+margin_bottom = 26.0
+theme_type_variation = "DevMenuMonoLabel"
+text = "debug menu!!!! :3c"
+
+[node name="VSeparator" type="VSeparator" parent="Menu/V/Bar"]
+margin_left = 884.0
+margin_right = 888.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="Menu/V/Bar"]
+margin_left = 892.0
+margin_top = 6.0
+margin_right = 935.0
+margin_bottom = 26.0
+text = "Go to:"
+
+[node name="ToDevMenu" type="Button" parent="Menu/V/Bar"]
+margin_left = 939.0
+margin_right = 1003.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 32 )
+theme = ExtResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+toggle_mode = true
+action_mode = 0
+text = "devmenu"
+
+[node name="ToMenu2" type="Button" parent="Menu/V/Bar"]
+margin_left = 1007.0
+margin_right = 1055.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 32 )
+theme = ExtResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+toggle_mode = true
+action_mode = 0
+text = "menu2"
+
+[node name="ToMenu3" type="Button" parent="Menu/V/Bar"]
+margin_left = 1059.0
+margin_right = 1116.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 32 )
+theme = ExtResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+toggle_mode = true
+action_mode = 0
+text = "menu3d"
+
+[node name="ToInit3d" type="Button" parent="Menu/V/Bar"]
+margin_left = 1120.0
+margin_right = 1161.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 32 )
+theme = ExtResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+toggle_mode = true
+action_mode = 0
+text = "init3d"
+
+[node name="ToSongload" type="Button" parent="Menu/V/Bar"]
+margin_left = 1165.0
+margin_right = 1198.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 32 )
+theme = ExtResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+toggle_mode = true
+action_mode = 0
+text = "song"
+
+[node name="VSeparator2" type="VSeparator" parent="Menu/V/Bar"]
+margin_left = 1202.0
+margin_right = 1206.0
+margin_bottom = 32.0
+
+[node name="Main" type="TabContainer" parent="Menu/V"]
+margin_top = 36.0
+margin_right = 1268.0
+margin_bottom = 674.0
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+tab_align = 0
+
+[node name="Songs" type="MarginContainer" parent="Menu/V/Main"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 30.0
+
+[node name="Split" type="HSplitContainer" parent="Menu/V/Main/Songs"]
+margin_right = 1268.0
+margin_bottom = 608.0
+custom_constants/autohide = 0
+split_offset = 300
+
+[node name="Map" type="ScrollContainer" parent="Menu/V/Main/Songs/Split"]
+margin_right = 300.0
+margin_bottom = 608.0
+
+[node name="V" type="VBoxContainer" parent="Menu/V/Main/Songs/Split/Map"]
+margin_right = 300.0
+margin_bottom = 608.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DevMenuTag" type="Label" parent="Menu/V/Main/Songs/Split/Map/V"]
+margin_right = 300.0
+margin_bottom = 20.0
+theme_type_variation = "DevMenuMonoLabel"
+text = "DEBUG MENU"
+
+[node name="Run" type="Button" parent="Menu/V/Main/Songs/Split/Map/V"]
+margin_top = 24.0
+margin_right = 300.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 0, 48 )
+hint_tooltip = "(Spacebar, Xbox A)"
+size_flags_stretch_ratio = 3.0
+theme = ExtResource( 1 )
+toggle_mode = true
+action_mode = 0
+text = "Start!"
+script = ExtResource( 29 )
+
+[node name="Actions" type="MenuButton" parent="Menu/V/Main/Songs/Split/Map/V"]
+margin_top = 76.0
+margin_right = 300.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 32, 24 )
+focus_mode = 2
+theme = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Actions"
+icon = ExtResource( 34 )
+flat = false
+expand_icon = true
+script = ExtResource( 35 )
+
+[node name="Favorite" type="Button" parent="Menu/V/Main/Songs/Split/Map/V"]
+margin_top = 104.0
+margin_right = 300.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 0, 24 )
+theme = ExtResource( 1 )
+toggle_mode = true
+action_mode = 0
+text = "Favorite"
+script = ExtResource( 30 )
+
+[node name="PreviewMusic" type="Button" parent="Menu/V/Main/Songs/Split/Map/V"]
+margin_top = 132.0
+margin_right = 300.0
+margin_bottom = 156.0
+rect_min_size = Vector2( 0, 24 )
+theme = ExtResource( 1 )
+action_mode = 0
+text = "Play Music"
+script = ExtResource( 32 )
+
+[node name="Song" type="AudioStreamPlayer" parent="Menu/V/Main/Songs/Split/Map/V/PreviewMusic"]
+pause_mode = 2
+bus = "Music"
+script = ExtResource( 33 )
+
+[node name="MenuSong" type="AudioStreamPlayer" parent="Menu/V/Main/Songs/Split/Map/V/PreviewMusic"]
+pause_mode = 2
+stream = ExtResource( 28 )
+volume_db = -10.0
+bus = "Music"
+
+[node name="DevMenuTag2" type="Label" parent="Menu/V/Main/Songs/Split/Map/V"]
+margin_top = 160.0
+margin_right = 300.0
+margin_bottom = 180.0
+theme_type_variation = "DevMenuMonoLabel"
+text = "DEBUG MENU"
+
+[node name="List" type="ScrollContainer" parent="Menu/V/Main/Songs/Split"]
+margin_left = 312.0
+margin_right = 1268.0
+margin_bottom = 608.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/V/Main/Songs/Split/List"]
+margin_right = 956.0
+margin_bottom = 608.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Settings" type="ScrollContainer" parent="Menu/V/Main"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 30.0
+
+[node name="L" parent="Menu/V/Main/Settings" instance=ExtResource( 27 )]
+anchor_right = 0.0
+margin_right = 1268.0
+margin_bottom = 915.0
+
+[node name="Credits" type="ScrollContainer" parent="Menu/V/Main"]
+visible = false
+margin_right = 12.0
+margin_bottom = 12.0
+
+[node name="L" parent="Menu/V/Main/Credits" instance=ExtResource( 26 )]
+margin_right = 720.0
+margin_bottom = 1521.0
+
+[node name="WarningBar" type="ColorRect" parent="Menu/V"]
+margin_top = 678.0
+margin_right = 1268.0
+margin_bottom = 708.0
+rect_min_size = Vector2( 0, 30 )
+size_flags_vertical = 0
+color = Color( 0.278431, 0.490196, 0.580392, 1 )
+script = ExtResource( 5 )
+is_devmenu = true
+
+[node name="L" type="Label" parent="Menu/V/WarningBar"]
+anchor_bottom = 1.0
+margin_right = 201.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "This is a warning bar message"
+valign = 1
+
+[node name="L2" type="Label" parent="Menu/V/WarningBar"]
+anchor_bottom = 1.0
+margin_right = 201.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "This is a warning bar message"
+valign = 1
+
+[node name="Button" type="Button" parent="Menu/V/WarningBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+flat = true
+
+[node name="BlackFade" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

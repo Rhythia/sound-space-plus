@@ -123,8 +123,8 @@ const db_builtin_difficulty_names = [
 
 func load_from_db_data(data:Dictionary={
 		"id":"INVALID_id_that_doesnt_exist",
-		"download":"http://chedski.test/ssp/mapdb/api/download/INVALID_id_that_doesnt_exist",
-		"audio":"http://chedski.test/ssp/mapdb/api/audio/INVALID_id_that_doesnt_exist",
+		"download":"http://nonexistent.invalid",
+		"audio":"http://nonexistent.invalid",
 #		"id":"ss_archive_waterflame_-_geometrical_dominator",
 #		"download":"http://chedski.test/ssp/mapdb/api/download/ss_archive_waterflame_-_geometrical_dominator",
 #		"audio":"http://chedski.test/ssp/mapdb/api/audio/ss_archive_waterflame_-_geometrical_dominator",
@@ -216,7 +216,7 @@ func load_pbs():
 		
 		var amt:int = file.get_64() # number of bests stored
 		
-		for i in range(amt):
+		for _i in range(amt):
 			var pb:Dictionary = {}
 			var s:String = file.get_line()
 			# if sv == 1: s = s.replace("1.27","1.14") # handle the default hitbox change
@@ -260,7 +260,7 @@ func save_pbs():
 		else: file.store_32(floor(min(pb.length,pb.position)))
 		file.store_32(floor(pb.length))
 
-		file.store_16(pb.max_combo)		
+		file.store_16(pb.max_combo)
 		
 	file.close()
 

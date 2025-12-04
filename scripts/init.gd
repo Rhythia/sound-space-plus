@@ -31,7 +31,7 @@ func _ready():
 	black_fade = 1
 	$BlackFade.color = Color(0,0,0,black_fade)
 	Rhythia.connect("init_stage_reached",self,"stage")
-	var s = Globals.error_sound
+#	var s = Globals.error_sound
 #	var st = Rhythia.get_stream_with_default("user://loadingmusic",s)
 #	if st != s:
 #		$Music.stream = st

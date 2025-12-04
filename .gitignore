@@ -7,5 +7,7 @@ export_presets.cfg
 *.translation
 .mono/
 addons/discord_game_sdk/bin/**
-
+addons/discord_game_sdk/discord_game_sdk.dll
+addons/discord_game_sdk/discord_game_sdk.dylib
+override.cfg
 .vscode/settings.json

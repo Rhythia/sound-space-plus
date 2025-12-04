@@ -1,4 +1,4 @@
-[gd_scene load_steps=92 format=2]
+[gd_scene load_steps=93 format=2]
 
 [ext_resource path="res://uitheme.tres" type="Theme" id=1]
 [ext_resource path="res://assets/font/Lato/Lato-Regular.ttf" type="DynamicFontData" id=2]
@@ -41,6 +41,7 @@
 [ext_resource path="res://scripts/ui/settings/fov.gd" type="Script" id=39]
 [ext_resource path="res://assets/font/Lato/Lato-Bold.ttf" type="DynamicFontData" id=40]
 [ext_resource path="res://scripts/ui/settings/Bloom.gd" type="Script" id=41]
+[ext_resource path="res://assets/notefx/miss/miss.png" type="Texture" id=42]
 [ext_resource path="res://scripts/ui/settings/NoteScale.gd" type="Script" id=44]
 [ext_resource path="res://scripts/ui/settings/ReplaceCustomFile.gd" type="Script" id=45]
 [ext_resource path="res://addons/native_dialogs/bin/native_dialog_open_file.gdns" type="Script" id=46]
@@ -2350,11 +2351,11 @@ custom_styles/separator = SubResource( 55 )
 [node name="Cursor" type="VBoxContainer" parent="TabContainer/World & Cursor"]
 margin_top = 276.0
 margin_right = 1280.0
-margin_bottom = 700.0
+margin_bottom = 736.0
 
 [node name="Group" type="MarginContainer" parent="TabContainer/World & Cursor/Cursor"]
 margin_right = 1280.0
-margin_bottom = 424.0
+margin_bottom = 460.0
 mouse_filter = 1
 custom_constants/margin_left = 66
 custom_constants/margin_bottom = 12
@@ -2362,7 +2363,7 @@ custom_constants/margin_bottom = 12
 [node name="H" type="GridContainer" parent="TabContainer/World & Cursor/Cursor/Group"]
 margin_left = 66.0
 margin_right = 1280.0
-margin_bottom = 412.0
+margin_bottom = 448.0
 
 [node name="CustomCursor" type="Control" parent="TabContainer/World & Cursor/Cursor/Group/H"]
 margin_right = 316.0
@@ -2437,10 +2438,85 @@ disabled = true
 icon = ExtResource( 4 )
 expand_icon = true
 
-[node name="CursorColorType" type="HBoxContainer" parent="TabContainer/World & Cursor/Cursor/Group/H"]
+[node name="CursorTrailImg" type="Control" parent="TabContainer/World & Cursor/Cursor/Group/H"]
 margin_top = 36.0
 margin_right = 316.0
 margin_bottom = 68.0
+rect_min_size = Vector2( 200, 32 )
+
+[node name="CursorTrailImg" type="Button" parent="TabContainer/World & Cursor/Cursor/Group/H/CursorTrailImg"]
+margin_right = 200.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 200, 32 )
+rect_pivot_offset = Vector2( -432, 104 )
+hint_tooltip = "changes the image used by the cursor trail. uses the cursor image if unset"
+theme = ExtResource( 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Click to replace"
+script = ExtResource( 45 )
+target = "trail"
+default_image = ExtResource( 42 )
+
+[node name="Label" type="Label" parent="TabContainer/World & Cursor/Cursor/Group/H/CursorTrailImg/CursorTrailImg"]
+margin_left = 289.0
+margin_right = 462.0
+margin_bottom = 32.0
+hint_tooltip = "ah, the cursor. arguably the most important part of this game."
+focus_mode = 2
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.898039, 0.94902, 1, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Cursor Trail (optional)"
+valign = 1
+
+[node name="ImgPreview" type="TextureRect" parent="TabContainer/World & Cursor/Cursor/Group/H/CursorTrailImg/CursorTrailImg"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = 5.0
+margin_right = 37.0
+margin_bottom = 32.0
+texture = ExtResource( 42 )
+expand = true
+stretch_mode = 1
+
+[node name="Button" type="Button" parent="TabContainer/World & Cursor/Cursor/Group/H/CursorTrailImg/CursorTrailImg"]
+visible = false
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = 42.0
+margin_right = 74.0
+margin_bottom = 32.0
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/World & Cursor/Cursor/Group/H/CursorTrailImg/CursorTrailImg/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 4
+
+[node name="Clear" type="Button" parent="TabContainer/World & Cursor/Cursor/Group/H/CursorTrailImg/CursorTrailImg"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = 42.0
+margin_right = 74.0
+margin_bottom = 32.0
+theme = ExtResource( 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+disabled = true
+icon = ExtResource( 4 )
+expand_icon = true
+
+[node name="CursorColorType" type="HBoxContainer" parent="TabContainer/World & Cursor/Cursor/Group/H"]
+margin_top = 72.0
+margin_right = 316.0
+margin_bottom = 104.0
 hint_tooltip = "how the cursor will be colored"
 
 [node name="Effect" type="MenuButton" parent="TabContainer/World & Cursor/Cursor/Group/H/CursorColorType"]
@@ -2475,9 +2551,9 @@ align = 2
 valign = 1
 
 [node name="cursor_color" type="HBoxContainer" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 72.0
+margin_top = 108.0
 margin_right = 316.0
-margin_bottom = 104.0
+margin_bottom = 140.0
 hint_tooltip = "[def. #ffffff] color used for \"Single Color\""
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/World & Cursor/Cursor/Group/H/cursor_color"]
@@ -2509,9 +2585,9 @@ align = 2
 valign = 1
 
 [node name="CursorScale" type="HBoxContainer" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 108.0
+margin_top = 144.0
 margin_right = 316.0
-margin_bottom = 140.0
+margin_bottom = 176.0
 hint_tooltip = "[def. 1] cursor size multiplier (doesn't affect hitboxes)"
 
 [node name="CursorScale" type="SpinBox" parent="TabContainer/World & Cursor/Cursor/Group/H/CursorScale"]
@@ -2540,9 +2616,9 @@ align = 2
 valign = 1
 
 [node name="CursorSpin" type="HBoxContainer" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 144.0
+margin_top = 180.0
 margin_right = 316.0
-margin_bottom = 176.0
+margin_bottom = 212.0
 hint_tooltip = "[def. 0°] makes the cursor image rotate"
 
 [node name="CursorSpin" type="SpinBox" parent="TabContainer/World & Cursor/Cursor/Group/H/CursorSpin"]
@@ -2575,16 +2651,16 @@ align = 2
 valign = 1
 
 [node name="SEPARATOR7" type="HSeparator" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 180.0
+margin_top = 216.0
 margin_right = 316.0
-margin_bottom = 190.0
+margin_bottom = 226.0
 rect_min_size = Vector2( 0, 10 )
 custom_styles/separator = SubResource( 55 )
 
 [node name="CursorTrail" type="CheckBox" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 194.0
+margin_top = 230.0
 margin_right = 316.0
-margin_bottom = 222.0
+margin_bottom = 258.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "many of you have asked so i shall deliver"
 theme = ExtResource( 1 )
@@ -2602,9 +2678,9 @@ script = ExtResource( 54 )
 target = "cursor_trail"
 
 [node name="SmartTrail" type="CheckBox" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 226.0
+margin_top = 262.0
 margin_right = 316.0
-margin_bottom = 254.0
+margin_bottom = 290.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "makes the trail smooth by using distance moved to spawn particles instead of having a constant number"
 theme = ExtResource( 1 )
@@ -2622,9 +2698,9 @@ script = ExtResource( 54 )
 target = "smart_trail"
 
 [node name="CursorTrailMode" type="HBoxContainer" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 258.0
+margin_top = 294.0
 margin_right = 316.0
-margin_bottom = 290.0
+margin_bottom = 326.0
 hint_tooltip = "how the trail will fade out"
 
 [node name="Effect" type="MenuButton" parent="TabContainer/World & Cursor/Cursor/Group/H/CursorTrailMode"]
@@ -2657,9 +2733,9 @@ align = 2
 valign = 1
 
 [node name="TrailDetail" type="HBoxContainer" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 294.0
+margin_top = 330.0
 margin_right = 316.0
-margin_bottom = 326.0
+margin_bottom = 362.0
 hint_tooltip = "[def. 10] number of particles in the cursor trail / (smart trail) number spawned per grid unit"
 
 [node name="TrailDetail" type="SpinBox" parent="TabContainer/World & Cursor/Cursor/Group/H/TrailDetail"]
@@ -2690,9 +2766,9 @@ align = 2
 valign = 1
 
 [node name="TrailTime" type="HBoxContainer" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 330.0
+margin_top = 366.0
 margin_right = 316.0
-margin_bottom = 362.0
+margin_bottom = 398.0
 hint_tooltip = "[def. 0.15] how long the cursor trail lasts in seconds"
 
 [node name="TrailTime" type="SpinBox" parent="TabContainer/World & Cursor/Cursor/Group/H/TrailTime"]
@@ -2724,16 +2800,16 @@ align = 2
 valign = 1
 
 [node name="SEPARATOR3" type="HSeparator" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 366.0
+margin_top = 402.0
 margin_right = 316.0
-margin_bottom = 376.0
+margin_bottom = 412.0
 rect_min_size = Vector2( 0, 10 )
 custom_styles/separator = SubResource( 55 )
 
 [node name="TouchIndicator" type="Control" parent="TabContainer/World & Cursor/Cursor/Group/H"]
-margin_top = 380.0
+margin_top = 416.0
 margin_right = 316.0
-margin_bottom = 412.0
+margin_bottom = 448.0
 rect_min_size = Vector2( 200, 32 )
 
 [node name="TouchIndicator" type="Button" parent="TabContainer/World & Cursor/Cursor/Group/H/TouchIndicator"]
@@ -2791,9 +2867,9 @@ icon = ExtResource( 4 )
 expand_icon = true
 
 [node name="SEPARATOR" type="HSeparator" parent="TabContainer/World & Cursor"]
-margin_top = 700.0
+margin_top = 736.0
 margin_right = 1280.0
-margin_bottom = 730.0
+margin_bottom = 766.0
 rect_min_size = Vector2( 0, 10 )
 custom_constants/separation = 30
 custom_styles/separator = SubResource( 55 )
@@ -2816,21 +2892,21 @@ custom_styles/separator = SubResource( 55 )
 [node name="UI" type="VBoxContainer" parent="TabContainer/UI"]
 margin_top = 30.0
 margin_right = 1280.0
-margin_bottom = 562.0
+margin_bottom = 594.0
 
 [node name="Group" type="MarginContainer" parent="TabContainer/UI/UI"]
 margin_right = 1280.0
-margin_bottom = 532.0
+margin_bottom = 564.0
 mouse_filter = 1
 custom_constants/margin_left = 66
 
 [node name="H" type="GridContainer" parent="TabContainer/UI/UI/Group"]
 margin_left = 66.0
 margin_right = 1280.0
-margin_bottom = 532.0
+margin_bottom = 564.0
 
 [node name="Grid" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_right = 170.0
+margin_right = 214.0
 margin_bottom = 28.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "turns the note grid on or off"
@@ -2854,7 +2930,7 @@ target = "enable_grid"
 
 [node name="Border" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
 margin_top = 32.0
-margin_right = 170.0
+margin_right = 214.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "turns the note grid border on or off"
@@ -2878,7 +2954,7 @@ target = "enable_border"
 
 [node name="SimpleHud" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
 margin_top = 64.0
-margin_right = 170.0
+margin_right = 214.0
 margin_bottom = 92.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "changes the side panels to show only your misses and pauses"
@@ -2902,7 +2978,7 @@ target = "simple_hud"
 
 [node name="LetterGrade" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
 margin_top = 96.0
-margin_right = 170.0
+margin_right = 214.0
 margin_bottom = 124.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "shows a letter grade (SS, S, A, etc.) above your accuracy"
@@ -2926,7 +3002,7 @@ target = "show_letter_grade"
 
 [node name="Config" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
 margin_top = 128.0
-margin_right = 170.0
+margin_right = 214.0
 margin_bottom = 156.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "shows your approach rate, hit window, and camera config at the start of songs (to show off)"
@@ -2950,7 +3026,7 @@ target = "show_config"
 
 [node name="DisplayTrueCombo" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
 margin_top = 160.0
-margin_right = 170.0
+margin_right = 214.0
 margin_bottom = 188.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "displays the real value of your combo behind the grid"
@@ -2969,10 +3045,31 @@ flat = true
 script = ExtResource( 54 )
 target = "display_true_combo"
 
-[node name="ShowHealth" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
+[node name="FullComboIndicators" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
 margin_top = 192.0
-margin_right = 170.0
+margin_right = 214.0
 margin_bottom = 220.0
+rect_min_size = Vector2( 0, 28 )
+hint_tooltip = "highlights the letter grade and combo number (if visible) when you have 100% accuracy"
+theme = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_focus = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_hover_pressed = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_hover = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.898039, 0.94902, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+pressed = true
+action_mode = 0
+text = "Show Full Combo Indicators"
+flat = true
+script = ExtResource( 54 )
+target = "show_full_combo_indicators"
+
+[node name="ShowHealth" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
+margin_top = 224.0
+margin_right = 214.0
+margin_bottom = 252.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "i don't understand why you'd turn this off but people have asked so here you go"
 theme = ExtResource( 1 )
@@ -2991,9 +3088,9 @@ script = ExtResource( 54 )
 target = "show_hp_bar"
 
 [node name="ShowTimer" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_top = 224.0
-margin_right = 170.0
-margin_bottom = 252.0
+margin_top = 256.0
+margin_right = 214.0
+margin_bottom = 284.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "tells you how far into a song you are (and the name of the song)"
 theme = ExtResource( 1 )
@@ -3012,9 +3109,9 @@ script = ExtResource( 54 )
 target = "show_timer"
 
 [node name="AccuracyBar" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_top = 256.0
-margin_right = 170.0
-margin_bottom = 284.0
+margin_top = 288.0
+margin_right = 214.0
+margin_bottom = 316.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "shows your accuracy on a progress bar"
 theme = ExtResource( 1 )
@@ -3033,9 +3130,9 @@ script = ExtResource( 54 )
 target = "show_accuracy_bar"
 
 [node name="ShowLeftPanel" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_top = 288.0
-margin_right = 170.0
-margin_bottom = 316.0
+margin_top = 320.0
+margin_right = 214.0
+margin_bottom = 348.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "contains: combo meter, pause counter, accuracy"
 theme = ExtResource( 1 )
@@ -3054,9 +3151,9 @@ script = ExtResource( 54 )
 target = "show_left_panel"
 
 [node name="ShowRightPanel" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_top = 320.0
-margin_right = 170.0
-margin_bottom = 348.0
+margin_top = 352.0
+margin_right = 214.0
+margin_bottom = 380.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "contains: framerate, miss counter, notes hit / total notes"
 theme = ExtResource( 1 )
@@ -3075,9 +3172,9 @@ script = ExtResource( 54 )
 target = "show_right_panel"
 
 [node name="ShowCursor" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_top = 352.0
-margin_right = 170.0
-margin_bottom = 380.0
+margin_top = 384.0
+margin_right = 214.0
+margin_bottom = 412.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "to prevent issues where people forget they turned the cursor off, this doesn't save"
 theme = ExtResource( 1 )
@@ -3096,9 +3193,9 @@ script = ExtResource( 54 )
 target = "show_cursor"
 
 [node name="AttachHpToGrid" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_top = 384.0
-margin_right = 170.0
-margin_bottom = 412.0
+margin_top = 416.0
+margin_right = 214.0
+margin_bottom = 444.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "attaches your health bar + modifiers to the note grid"
 theme = ExtResource( 1 )
@@ -3116,9 +3213,9 @@ script = ExtResource( 54 )
 target = "attach_hp_to_grid"
 
 [node name="AttachTimerToGrid" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_top = 416.0
-margin_right = 170.0
-margin_bottom = 444.0
+margin_top = 448.0
+margin_right = 214.0
+margin_bottom = 476.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "attaches the timer + song name to the note grid"
 theme = ExtResource( 1 )
@@ -3136,9 +3233,9 @@ script = ExtResource( 54 )
 target = "attach_timer_to_grid"
 
 [node name="Score Popup" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_top = 448.0
-margin_right = 170.0
-margin_bottom = 476.0
+margin_top = 480.0
+margin_right = 214.0
+margin_bottom = 508.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "show the score you get from hitting a note at the bottom of the grid"
 theme = ExtResource( 1 )
@@ -3157,9 +3254,9 @@ script = ExtResource( 54 )
 target = "score_popup"
 
 [node name="BillboardScore2" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_top = 480.0
-margin_right = 170.0
-margin_bottom = 508.0
+margin_top = 512.0
+margin_right = 214.0
+margin_bottom = 540.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "apply a billboard effect to the score popup"
 theme = ExtResource( 1 )
@@ -3210,9 +3307,9 @@ valign = 1
 clip_text = true
 
 [node name="ExpandHUDonHR" type="CheckBox" parent="TabContainer/UI/UI/Group/H"]
-margin_top = 512.0
-margin_right = 170.0
-margin_bottom = 532.0
+margin_top = 544.0
+margin_right = 214.0
+margin_bottom = 564.0
 hint_tooltip = "expands the HUD when using Hard Rock"
 theme = ExtResource( 1 )
 custom_colors/font_color_disabled = Color( 0.898039, 0.94902, 1, 1 )
@@ -3230,20 +3327,20 @@ script = ExtResource( 54 )
 target = "expand_hud_onhr"
 
 [node name="UIColor" type="VBoxContainer" parent="TabContainer/UI"]
-margin_top = 562.0
+margin_top = 594.0
 margin_right = 1280.0
-margin_bottom = 2194.0
+margin_bottom = 2384.0
 
 [node name="Group" type="MarginContainer" parent="TabContainer/UI/UIColor"]
 margin_right = 1280.0
-margin_bottom = 1632.0
+margin_bottom = 1790.0
 mouse_filter = 1
 custom_constants/margin_left = 66
 
 [node name="H" type="GridContainer" parent="TabContainer/UI/UIColor/Group"]
 margin_left = 66.0
 margin_right = 1280.0
-margin_bottom = 1632.0
+margin_bottom = 1790.0
 
 [node name="Presets" type="Control" parent="TabContainer/UI/UIColor/Group/H"]
 margin_right = 500.0
@@ -4170,10 +4267,153 @@ margin_bottom = 1072.0
 rect_min_size = Vector2( 500, 10 )
 custom_styles/separator = SubResource( 55 )
 
-[node name="miss_text_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
+[node name="energy_fg" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
 margin_top = 1076.0
 margin_right = 500.0
 margin_bottom = 1108.0
+hint_tooltip = "[def. ##DEFAULT##] fill color of timer progress bar (when skipping is possible)"
+
+[node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/energy_fg"]
+margin_right = 100.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 100, 32 )
+rect_pivot_offset = Vector2( 286, -36 )
+hint_tooltip = "[def. ##DEFAULT##] fill color of energy bar"
+theme = ExtResource( 1 )
+custom_styles/hover = SubResource( 50 )
+custom_styles/pressed = SubResource( 51 )
+custom_styles/focus = SubResource( 52 )
+custom_styles/disabled = SubResource( 53 )
+custom_styles/normal = SubResource( 54 )
+script = ExtResource( 51 )
+target = "energy_fg"
+
+[node name="Label" type="Label" parent="TabContainer/UI/UIColor/Group/H/energy_fg"]
+margin_left = 104.0
+margin_top = 6.0
+margin_right = 212.0
+margin_bottom = 26.0
+focus_mode = 2
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.898039, 0.94902, 1, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Energy Bar - Fill"
+align = 2
+valign = 1
+
+[node name="energy_bg" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
+margin_top = 1112.0
+margin_right = 500.0
+margin_bottom = 1144.0
+hint_tooltip = "[def. ##DEFAULT##] fill color of timer progress bar (when skipping is possible)"
+
+[node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/energy_bg"]
+margin_right = 100.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 100, 32 )
+rect_pivot_offset = Vector2( 286, -36 )
+hint_tooltip = "[def. ##DEFAULT##] empty color of energy bar"
+theme = ExtResource( 1 )
+custom_styles/hover = SubResource( 50 )
+custom_styles/pressed = SubResource( 51 )
+custom_styles/focus = SubResource( 52 )
+custom_styles/disabled = SubResource( 53 )
+custom_styles/normal = SubResource( 54 )
+script = ExtResource( 51 )
+target = "energy_bg"
+
+[node name="Label" type="Label" parent="TabContainer/UI/UIColor/Group/H/energy_bg"]
+margin_left = 104.0
+margin_top = 6.0
+margin_right = 236.0
+margin_bottom = 26.0
+focus_mode = 2
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.898039, 0.94902, 1, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Energy Bar - Empty"
+align = 2
+valign = 1
+
+[node name="energy_failed" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
+margin_top = 1148.0
+margin_right = 500.0
+margin_bottom = 1180.0
+hint_tooltip = "[def. ##DEFAULT##] color of the energy bar after failing"
+
+[node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/energy_failed"]
+margin_right = 100.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 100, 32 )
+rect_pivot_offset = Vector2( 286, -36 )
+hint_tooltip = "[def. ##DEFAULT##] color of the energy bar after failing when playing with nofail"
+theme = ExtResource( 1 )
+custom_styles/hover = SubResource( 50 )
+custom_styles/pressed = SubResource( 51 )
+custom_styles/focus = SubResource( 52 )
+custom_styles/disabled = SubResource( 53 )
+custom_styles/normal = SubResource( 54 )
+script = ExtResource( 51 )
+target = "energy_failed"
+
+[node name="Label" type="Label" parent="TabContainer/UI/UIColor/Group/H/energy_failed"]
+margin_left = 104.0
+margin_top = 6.0
+margin_right = 233.0
+margin_bottom = 26.0
+focus_mode = 2
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.898039, 0.94902, 1, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Energy Bar - Failed"
+align = 2
+valign = 1
+
+[node name="energy_failed_flash" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
+margin_top = 1184.0
+margin_right = 500.0
+margin_bottom = 1216.0
+hint_tooltip = "[def. ##DEFAULT##] color of the energy bar after failing"
+
+[node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/energy_failed_flash"]
+margin_right = 100.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 100, 32 )
+rect_pivot_offset = Vector2( 286, -36 )
+hint_tooltip = "[def. ##DEFAULT##] color that the energy bar flashes when you fail with nofail on"
+theme = ExtResource( 1 )
+custom_styles/hover = SubResource( 50 )
+custom_styles/pressed = SubResource( 51 )
+custom_styles/focus = SubResource( 52 )
+custom_styles/disabled = SubResource( 53 )
+custom_styles/normal = SubResource( 54 )
+script = ExtResource( 51 )
+target = "energy_failed_flash"
+
+[node name="Label" type="Label" parent="TabContainer/UI/UIColor/Group/H/energy_failed_flash"]
+margin_left = 104.0
+margin_top = 6.0
+margin_right = 283.0
+margin_bottom = 26.0
+focus_mode = 2
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.898039, 0.94902, 1, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Energy Bar - Failed (Flash)"
+align = 2
+valign = 1
+
+[node name="SEPARATOR15" type="HSeparator" parent="TabContainer/UI/UIColor/Group/H"]
+margin_top = 1220.0
+margin_right = 500.0
+margin_bottom = 1230.0
+rect_min_size = Vector2( 500, 10 )
+custom_styles/separator = SubResource( 55 )
+
+[node name="miss_text_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
+margin_top = 1234.0
+margin_right = 500.0
+margin_bottom = 1266.0
 hint_tooltip = "[def. ##DEFAULT##] text color of the miss counter"
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/miss_text_color"]
@@ -4205,9 +4445,9 @@ align = 2
 valign = 1
 
 [node name="miss_flash_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1112.0
+margin_top = 1270.0
 margin_right = 500.0
-margin_bottom = 1144.0
+margin_bottom = 1302.0
 hint_tooltip = "[def. ##DEFAULT##] miss counter text briefly flashes this color when you get a miss"
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/miss_flash_color"]
@@ -4239,16 +4479,16 @@ align = 2
 valign = 1
 
 [node name="SEPARATOR11" type="HSeparator" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1148.0
+margin_top = 1306.0
 margin_right = 500.0
-margin_bottom = 1158.0
+margin_bottom = 1316.0
 rect_min_size = Vector2( 500, 10 )
 custom_styles/separator = SubResource( 55 )
 
 [node name="pause_text_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1162.0
+margin_top = 1320.0
 margin_right = 500.0
-margin_bottom = 1194.0
+margin_bottom = 1352.0
 hint_tooltip = "[def. ##DEFAULT##] color of the pause counter (with no pauses)"
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/pause_text_color"]
@@ -4280,9 +4520,9 @@ align = 2
 valign = 1
 
 [node name="pause_used_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1198.0
+margin_top = 1356.0
 margin_right = 500.0
-margin_bottom = 1230.0
+margin_bottom = 1388.0
 hint_tooltip = "[def. ##DEFAULT##] color of the pause counter (with at least 1 pause)"
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/pause_used_color"]
@@ -4314,16 +4554,16 @@ align = 2
 valign = 1
 
 [node name="SEPARATOR12" type="HSeparator" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1234.0
+margin_top = 1392.0
 margin_right = 500.0
-margin_bottom = 1244.0
+margin_bottom = 1402.0
 rect_min_size = Vector2( 500, 10 )
 custom_styles/separator = SubResource( 55 )
 
 [node name="grade_ss_saturation" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1248.0
+margin_top = 1406.0
 margin_right = 500.0
-margin_bottom = 1280.0
+margin_bottom = 1438.0
 hint_tooltip = "[def. ##DEFAULT##] hsv saturation of rainbow effect on grade SS"
 
 [node name="SpinBox" type="SpinBox" parent="TabContainer/UI/UIColor/Group/H/grade_ss_saturation"]
@@ -4354,9 +4594,9 @@ align = 2
 valign = 1
 
 [node name="grade_ss_value" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1284.0
+margin_top = 1442.0
 margin_right = 500.0
-margin_bottom = 1316.0
+margin_bottom = 1474.0
 hint_tooltip = "[def. ##DEFAULT##] hsv value of rainbow effect on grade SS"
 
 [node name="SpinBox" type="SpinBox" parent="TabContainer/UI/UIColor/Group/H/grade_ss_value"]
@@ -4387,9 +4627,9 @@ align = 2
 valign = 1
 
 [node name="grade_ss_shine" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1320.0
+margin_top = 1478.0
 margin_right = 500.0
-margin_bottom = 1352.0
+margin_bottom = 1510.0
 hint_tooltip = "[def. ##DEFAULT##] level of shine shader when grade is SS"
 
 [node name="SpinBox" type="SpinBox" parent="TabContainer/UI/UIColor/Group/H/grade_ss_shine"]
@@ -4420,16 +4660,16 @@ align = 2
 valign = 1
 
 [node name="SEPARATOR13" type="HSeparator" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1356.0
+margin_top = 1514.0
 margin_right = 500.0
-margin_bottom = 1366.0
+margin_bottom = 1524.0
 rect_min_size = Vector2( 500, 10 )
 custom_styles/separator = SubResource( 55 )
 
 [node name="grade_s_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1370.0
+margin_top = 1528.0
 margin_right = 500.0
-margin_bottom = 1402.0
+margin_bottom = 1560.0
 hint_tooltip = "[def. ##DEFAULT##] color of text when grade is S"
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/grade_s_color"]
@@ -4461,9 +4701,9 @@ align = 2
 valign = 1
 
 [node name="grade_s_shine" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1406.0
+margin_top = 1564.0
 margin_right = 500.0
-margin_bottom = 1438.0
+margin_bottom = 1596.0
 hint_tooltip = "[def. ##DEFAULT##] level of shine shader when grade is S"
 
 [node name="SpinBox" type="SpinBox" parent="TabContainer/UI/UIColor/Group/H/grade_s_shine"]
@@ -4494,16 +4734,16 @@ align = 2
 valign = 1
 
 [node name="SEPARATOR14" type="HSeparator" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1442.0
+margin_top = 1600.0
 margin_right = 500.0
-margin_bottom = 1452.0
+margin_bottom = 1610.0
 rect_min_size = Vector2( 500, 10 )
 custom_styles/separator = SubResource( 55 )
 
 [node name="grade_a_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1456.0
+margin_top = 1614.0
 margin_right = 500.0
-margin_bottom = 1488.0
+margin_bottom = 1646.0
 hint_tooltip = "[def. ##DEFAULT##] color of text when grade is A"
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/grade_a_color"]
@@ -4535,9 +4775,9 @@ align = 2
 valign = 1
 
 [node name="grade_b_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1492.0
+margin_top = 1650.0
 margin_right = 500.0
-margin_bottom = 1524.0
+margin_bottom = 1682.0
 hint_tooltip = "[def. ##DEFAULT##] color of text when grade is B"
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/grade_b_color"]
@@ -4569,9 +4809,9 @@ align = 2
 valign = 1
 
 [node name="grade_c_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1528.0
+margin_top = 1686.0
 margin_right = 500.0
-margin_bottom = 1560.0
+margin_bottom = 1718.0
 hint_tooltip = "[def. ##DEFAULT##] color of text when grade is C"
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/grade_c_color"]
@@ -4603,9 +4843,9 @@ align = 2
 valign = 1
 
 [node name="grade_d_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1564.0
+margin_top = 1722.0
 margin_right = 500.0
-margin_bottom = 1596.0
+margin_bottom = 1754.0
 hint_tooltip = "[def. ##DEFAULT##] color of text when grade is D"
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/grade_d_color"]
@@ -4637,9 +4877,9 @@ align = 2
 valign = 1
 
 [node name="grade_f_color" type="HBoxContainer" parent="TabContainer/UI/UIColor/Group/H"]
-margin_top = 1600.0
+margin_top = 1758.0
 margin_right = 500.0
-margin_bottom = 1632.0
+margin_bottom = 1790.0
 hint_tooltip = "[def. ##DEFAULT##] color of text when grade is F"
 
 [node name="Color" type="ColorPickerButton" parent="TabContainer/UI/UIColor/Group/H/grade_f_color"]
@@ -4671,9 +4911,9 @@ align = 2
 valign = 1
 
 [node name="SEPARATOR" type="HSeparator" parent="TabContainer/UI"]
-margin_top = 2194.0
+margin_top = 2384.0
 margin_right = 1280.0
-margin_bottom = 2224.0
+margin_bottom = 2414.0
 rect_min_size = Vector2( 0, 10 )
 custom_constants/separation = 30
 custom_styles/separator = SubResource( 55 )

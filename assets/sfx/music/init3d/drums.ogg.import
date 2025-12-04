@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/drums.ogg-24d114ce7e004ccd16d3da77a5aac83a.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/music/init3d/drums.ogg"
+dest_files=[ "res://.import/drums.ogg-24d114ce7e004ccd16d3da77a5aac83a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

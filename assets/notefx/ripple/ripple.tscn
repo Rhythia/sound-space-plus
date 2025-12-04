@@ -3,8 +3,6 @@
 [ext_resource path="res://assets/notefx/ripple/ripple.png" type="Texture" id=1]
 [ext_resource path="res://assets/notefx/ripple/ripple.gd" type="Script" id=2]
 
-
-
 [sub_resource type="SpatialMaterial" id=2]
 flags_transparent = true
 flags_unshaded = true

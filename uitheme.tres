@@ -1,8 +1,9 @@
-[gd_resource type="Theme" load_steps=23 format=2]
+[gd_resource type="Theme" load_steps=25 format=2]
 
 [ext_resource path="res://assets/font/Lato/Lato-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/font/Noto_Sans_JP/NotoSansJP-Medium.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://assets/font/NotoColorEmoji.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/font/NotoSansMono/NotoSansMono-Medium.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=17]
 use_filter = true
@@ -47,6 +48,12 @@ corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
+
+[sub_resource type="DynamicFont" id=20]
+size = 14
+font_data = ExtResource( 4 )
+fallback/0 = ExtResource( 2 )
+fallback/1 = ExtResource( 3 )
 
 [sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0.87451, 0.87451, 0.87451, 1 )
@@ -251,6 +258,8 @@ ColorPickerButton/styles/focus = null
 ColorPickerButton/styles/hover = null
 ColorPickerButton/styles/normal = null
 ColorPickerButton/styles/pressed = null
+DevMenuMonoLabel/base_type = "Label"
+DevMenuMonoLabel/fonts/font = SubResource( 20 )
 Dialogs/constants/button_margin = 32
 Dialogs/constants/margin = 8
 FileDialog/colors/file_icon_modulate = Color( 1, 1, 1, 1 )
