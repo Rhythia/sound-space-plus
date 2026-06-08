@@ -13,8 +13,9 @@ dest_files=[ "res://.import/grid.obj-07e7e20ab6f25556408594e62f963c97.mesh", "re
 
 [params]
 
-generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
 offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
 optimize_mesh_flags=4286
+generate_tangents=true
+vertex_cache_optimization=true
+octahedral_compression=true

@@ -13,8 +13,9 @@ dest_files=[ "res://.import/default.obj-b57034dadb280cbcf72661322168b71b.mesh", 
 
 [params]
 
-generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
 offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
 optimize_mesh_flags=4286
+generate_tangents=true
+vertex_cache_optimization=true
+octahedral_compression=true

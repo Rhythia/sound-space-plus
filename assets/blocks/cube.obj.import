@@ -13,8 +13,9 @@ dest_files=[ "res://.import/cube.obj-814203342dbb898be1835db763e87b9d.mesh", "re
 
 [params]
 
-generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
 offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
 optimize_mesh_flags=4286
+generate_tangents=true
+vertex_cache_optimization=true
+octahedral_compression=true
