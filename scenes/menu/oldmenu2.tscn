@@ -1,4 +1,4 @@
-[gd_scene load_steps=216 format=2]
+[gd_scene load_steps=214 format=2]
 
 [ext_resource path="res://uitheme.tres" type="Theme" id=1]
 [ext_resource path="res://assets/font/Lato/Lato-Regular.ttf" type="DynamicFontData" id=2]
@@ -6,30 +6,30 @@
 [ext_resource path="res://assets/images/branding/icon.png" type="Texture" id=4]
 [ext_resource path="res://assets/sfx/hit.wav" type="AudioStream" id=5]
 [ext_resource path="res://scripts/ui/menu/buttons/Quit.gd" type="Script" id=6]
-[ext_resource path="res://assets/images/branding/logo.png" type="Texture" id=7]
+[ext_resource path="res://prefabs/menu/credits.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scripts/ui/menu/buttons/ContentMgrAddMap.gd" type="Script" id=8]
 [ext_resource path="res://scripts/ui/menu/buttons/PlaySong.gd" type="Script" id=9]
 [ext_resource path="res://scripts/ui/settings/MusicVolumeSetter.gd" type="Script" id=10]
 [ext_resource path="res://assets/sfx/menu_full.mp3" type="AudioStream" id=11]
-[ext_resource path="res://scripts/ui/menu/Sidebar.gd" type="Script" id=12]
+[ext_resource path="res://scripts/ui/legacymenu/Sidebar.gd" type="Script" id=12]
 [ext_resource path="res://scripts/ui/menu/menu2.gd" type="Script" id=13]
 [ext_resource path="res://assets/font/Lato/Lato-Black.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://assets/font/Noto_Sans_JP/NotoSansJP-Medium.otf" type="DynamicFontData" id=15]
 [ext_resource path="res://assets/images/tiles.png" type="Texture" id=16]
-[ext_resource path="res://scripts/ui/menu/buttons/DifficultySort.gd" type="Script" id=17]
+[ext_resource path="res://scripts/ui/legacymenu/buttons/DifficultySort.gd" type="Script" id=17]
 [ext_resource path="res://scripts/ui/menu/buttons/MapIcon.gd" type="Script" id=18]
-[ext_resource path="res://scripts/ui/menu/buttons/MapIncludeBroken.gd" type="Script" id=19]
-[ext_resource path="res://scripts/ui/menu/buttons/diffSort.gd" type="Script" id=20]
-[ext_resource path="res://scripts/ui/menu/buttons/MapSearch.gd" type="Script" id=21]
+[ext_resource path="res://scripts/ui/legacymenu/buttons/MapIncludeBroken.gd" type="Script" id=19]
+[ext_resource path="res://scripts/ui/legacymenu/buttons/diffSort.gd" type="Script" id=20]
+[ext_resource path="res://scripts/ui/legacymenu/buttons/MapSearch.gd" type="Script" id=21]
 [ext_resource path="res://scripts/ui/menu/buttons/v2MapList.gd" type="Script" id=22]
-[ext_resource path="res://scripts/ui/menu/buttons/NameSort.gd" type="Script" id=23]
+[ext_resource path="res://scripts/ui/legacymenu/buttons/NameSort.gd" type="Script" id=23]
 [ext_resource path="res://assets/images/ui/arrow_down.png" type="Texture" id=24]
 [ext_resource path="res://assets/images/ui/arrow_up.png" type="Texture" id=25]
 [ext_resource path="res://assets/images/ui/favorite.png" type="Texture" id=26]
 [ext_resource path="res://assets/font/Lato/Lato-Bold.ttf" type="DynamicFontData" id=27]
-[ext_resource path="res://scripts/ui/menu/SongInfoScreen.gd" type="Script" id=28]
-[ext_resource path="res://scripts/ui/menu/buttons/EndInfo.gd" type="Script" id=29]
-[ext_resource path="res://scripts/ui/menu/buttons/RunMapButton.gd" type="Script" id=30]
+[ext_resource path="res://scripts/ui/legacymenu/SongInfoScreen.gd" type="Script" id=28]
+[ext_resource path="res://scripts/ui/legacymenu/buttons/EndInfo.gd" type="Script" id=29]
+[ext_resource path="res://scripts/ui/legacymenu/buttons/RunMapButton.gd" type="Script" id=30]
 [ext_resource path="res://assets/sfx/new_best.wav" type="AudioStream" id=31]
 [ext_resource path="res://scripts/ui/menu/buttons/SpeedMod.gd" type="Script" id=32]
 [ext_resource path="res://scripts/ui/menu/buttons/NoFail.gd" type="Script" id=33]
@@ -58,7 +58,7 @@
 [ext_resource path="res://assets/images/ui/quit_to_desktop.png" type="Texture" id=56]
 [ext_resource path="res://addons/native_dialogs/bin/native_dialog_save_file.gdns" type="Script" id=57]
 [ext_resource path="res://scripts/ui/menu/buttons/ExportTxt.gd" type="Script" id=58]
-[ext_resource path="res://scripts/ui/menu/StartOffset.gd" type="Script" id=59]
+[ext_resource path="res://scripts/ui/legacymenu/StartOffset.gd" type="Script" id=59]
 [ext_resource path="res://scripts/ui/menu/buttons/ModChaos.gd" type="Script" id=60]
 [ext_resource path="res://assets/images/ui/placeholder.jpg" type="Texture" id=61]
 [ext_resource path="res://scripts/ui/menu/GradeSystem.gd" type="Script" id=62]
@@ -90,8 +90,8 @@
 [ext_resource path="res://assets/images/modifiers/128/speed_pp.png" type="Texture" id=88]
 [ext_resource path="res://scripts/ui/menu/buttons/MapActions.gd" type="Script" id=89]
 [ext_resource path="res://assets/images/ui/settings_dark.png" type="Texture" id=90]
-[ext_resource path="res://scripts/ui/menu/AuthorSearch.gd" type="Script" id=91]
-[ext_resource path="res://scripts/ui/menu/SearchOnline.gd" type="Script" id=92]
+[ext_resource path="res://scripts/ui/legacymenu/buttons/AuthorSearch.gd" type="Script" id=91]
+[ext_resource path="res://scripts/ui/legacymenu/buttons/SearchOnline.gd" type="Script" id=92]
 [ext_resource path="res://scripts/ui/menu/ResultsHolder.gd" type="Script" id=93]
 [ext_resource path="res://scripts/ui/menu/buttons/ModEarthquake.gd" type="Script" id=94]
 [ext_resource path="res://scripts/ui/menu/WarningBar.gd" type="Script" id=95]
@@ -102,6 +102,9 @@
 [ext_resource path="res://scripts/ui/settings/CustomSpeed.gd" type="Script" id=100]
 [ext_resource path="res://scripts/ui/menu/buttons/ModHardRock.gd" type="Script" id=101]
 [ext_resource path="res://assets/images/ui/localization.png" type="Texture" id=102]
+[ext_resource path="res://scenes/menu/contentmgr.tscn" type="PackedScene" id=103]
+[ext_resource path="res://scenes/menu/language.tscn" type="PackedScene" id=104]
+[ext_resource path="res://scenes/menu/rhythiarewrite.tscn" type="PackedScene" id=105]
 
 [sub_resource type="Gradient" id=163]
 offsets = PoolRealArray( 0, 0.5, 1 )
@@ -571,56 +574,6 @@ size = 24
 use_filter = true
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=158]
-size = 36
-use_filter = true
-font_data = ExtResource( 27 )
-
-[sub_resource type="DynamicFont" id=159]
-size = 24
-use_filter = true
-font_data = ExtResource( 27 )
-
-[sub_resource type="DynamicFont" id=109]
-size = 24
-use_filter = true
-font_data = ExtResource( 27 )
-
-[sub_resource type="DynamicFont" id=110]
-size = 20
-use_filter = true
-font_data = ExtResource( 27 )
-
-[sub_resource type="DynamicFont" id=111]
-size = 22
-use_filter = true
-font_data = ExtResource( 27 )
-
-[sub_resource type="DynamicFont" id=112]
-size = 18
-use_filter = true
-font_data = ExtResource( 27 )
-
-[sub_resource type="DynamicFont" id=113]
-size = 22
-use_filter = true
-font_data = ExtResource( 27 )
-
-[sub_resource type="DynamicFont" id=114]
-size = 18
-use_filter = true
-extra_spacing_top = -2
-extra_spacing_bottom = -2
-font_data = ExtResource( 27 )
-
-[sub_resource type="DynamicFont" id=160]
-size = 20
-use_filter = true
-font_data = ExtResource( 27 )
-
-[sub_resource type="StyleBoxLine" id=161]
-color = Color( 0.878431, 0.858824, 0.682353, 0.364706 )
-
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 1 )
 border_width_right = 2
@@ -643,6 +596,22 @@ font_data = ExtResource( 2 )
 fallback/0 = ExtResource( 15 )
 
 [sub_resource type="DynamicFont" id=8]
+size = 18
+use_filter = true
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 15 )
+
+[sub_resource type="StyleBoxFlat" id=176]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=177]
+bg_color = Color( 0.0588235, 0.0588235, 0.0588235, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=178]
+
+[sub_resource type="ButtonGroup" id=179]
+
+[sub_resource type="DynamicFont" id=180]
 size = 18
 use_filter = true
 font_data = ExtResource( 2 )
@@ -779,9 +748,6 @@ theme = ExtResource( 1 )
 clear_button_enabled = true
 placeholder_text = "Search"
 script = ExtResource( 21 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="AuthorSearch" type="LineEdit" parent="Main/MapRegistry/T"]
 margin_left = 185.0
@@ -798,9 +764,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -202.0
 script = ExtResource( 20 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="NODIF" type="Panel" parent="Main/MapRegistry/T/D"]
 margin_right = 32.0
@@ -909,9 +872,6 @@ custom_styles/disabled = SubResource( 65 )
 custom_styles/normal = SubResource( 66 )
 action_mode = 0
 group = SubResource( 67 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="MEDIUM" type="Panel" parent="Main/MapRegistry/T/D"]
 self_modulate = Color( 1, 0.72549, 0, 1 )
@@ -966,9 +926,6 @@ custom_styles/disabled = SubResource( 65 )
 custom_styles/normal = SubResource( 66 )
 action_mode = 0
 group = SubResource( 67 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="HARD" type="Panel" parent="Main/MapRegistry/T/D"]
 self_modulate = Color( 1, 0, 0, 1 )
@@ -1234,9 +1191,6 @@ action_mode = 0
 text = "name"
 flat = true
 script = ExtResource( 23 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="S" type="Control" parent="Main/MapRegistry"]
 anchor_right = 1.0
@@ -1265,9 +1219,6 @@ custom_constants/vseparation = 4
 custom_constants/hseparation = 4
 columns = 5
 script = ExtResource( 22 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Press" type="AudioStreamPlayer" parent="Main/MapRegistry/S/G"]
 stream = ExtResource( 5 )
@@ -3156,7 +3107,6 @@ custom_colors/font_color_hover = Color( 0.670588, 0.556863, 0.556863, 1 )
 custom_colors/font_color_pressed = Color( 0.670588, 0.556863, 0.556863, 1 )
 custom_fonts/font = SubResource( 96 )
 action_mode = 0
-text = "Easy Mode"
 flat = true
 script = ExtResource( 35 )
 
@@ -3185,7 +3135,6 @@ custom_colors/font_color_hover = Color( 0.670588, 0.556863, 0.556863, 1 )
 custom_colors/font_color_pressed = Color( 0.670588, 0.556863, 0.556863, 1 )
 custom_fonts/font = SubResource( 96 )
 action_mode = 0
-text = "Hard Mode"
 flat = true
 script = ExtResource( 34 )
 
@@ -3369,7 +3318,7 @@ focus_mode = 2
 theme = ExtResource( 1 )
 custom_colors/font_color = Color( 0.960784, 1, 0.478431, 1 )
 custom_fonts/font = SubResource( 91 )
-text = "Masked"
+text = "Flashlight"
 align = 2
 valign = 1
 clip_text = true
@@ -4197,9 +4146,6 @@ anchor_bottom = 1.0
 margin_left = 4.0
 margin_top = 4.0
 border_color = Color( 1, 0, 0, 0 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="C" type="HBoxContainer" parent="Main/Credits"]
 anchor_right = 1.0
@@ -4216,425 +4162,45 @@ follow_focus = true
 scroll_horizontal_enabled = false
 scroll_deadzone = 45
 
-[node name="L" type="VBoxContainer" parent="Main/Credits/C/S"]
-margin_right = 1216.0
-margin_bottom = 1115.0
-grow_horizontal = 2
-rect_min_size = Vector2( 700, 0 )
-size_flags_horizontal = 3
-custom_constants/separation = 12
-alignment = 1
+[node name="L" parent="Main/Credits/C/S" instance=ExtResource( 7 )]
+margin_bottom = 1662.0
 
-[node name="Logo" type="MarginContainer" parent="Main/Credits/C/S/L"]
-margin_right = 1204.0
-margin_bottom = 260.0
-rect_min_size = Vector2( 0, 200 )
-custom_constants/margin_top = -50
-custom_constants/margin_bottom = -50
-
-[node name="TextureRect" type="TextureRect" parent="Main/Credits/C/S/L/Logo"]
-margin_top = -50.0
-margin_right = 1204.0
-margin_bottom = 310.0
-rect_min_size = Vector2( 128, 360 )
-texture = ExtResource( 7 )
-expand = true
-stretch_mode = 6
-
-[node name="DevTeam" type="VBoxContainer" parent="Main/Credits/C/S/L"]
-margin_top = 272.0
-margin_right = 1204.0
-margin_bottom = 392.0
-grow_horizontal = 2
-custom_constants/separation = 8
-alignment = 1
-
-[node name="DevTitle2" type="Label" parent="Main/Credits/C/S/L/DevTeam"]
-margin_right = 1204.0
-margin_bottom = 44.0
-custom_colors/font_color = Color( 0.447059, 0.72549, 1, 1 )
-custom_fonts/font = SubResource( 158 )
-text = "-- development team --"
-align = 1
-
-[node name="C" type="CenterContainer" parent="Main/Credits/C/S/L/DevTeam"]
-margin_top = 52.0
-margin_right = 1204.0
-margin_bottom = 82.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/DevTeam/C"]
-margin_left = 530.0
-margin_right = 673.0
-margin_bottom = 30.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/DevTeam/C/H"]
-margin_right = 143.0
-margin_bottom = 30.0
-custom_colors/font_color = Color( 0.670588, 0.901961, 0.898039, 1 )
-custom_fonts/font = SubResource( 159 )
-text = "Jayden Jones"
-align = 1
-
-[node name="C2" type="CenterContainer" parent="Main/Credits/C/S/L/DevTeam"]
-margin_top = 90.0
-margin_right = 1204.0
-margin_bottom = 120.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/DevTeam/C2"]
-margin_left = 530.0
-margin_right = 673.0
-margin_bottom = 30.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/DevTeam/C2/H"]
-margin_right = 143.0
-margin_bottom = 30.0
-custom_colors/font_color = Color( 0.670588, 0.901961, 0.898039, 1 )
-custom_fonts/font = SubResource( 159 )
-text = "David (kiwie)"
-align = 1
-
-[node name="PatronTitle" type="Label" parent="Main/Credits/C/S/L"]
-margin_top = 404.0
-margin_right = 1204.0
-margin_bottom = 448.0
-custom_colors/font_color = Color( 1, 0.258824, 0.301961, 1 )
-custom_fonts/font = SubResource( 158 )
-text = "-- patreon supporters --"
-align = 1
-
-[node name="T3" type="VBoxContainer" parent="Main/Credits/C/S/L"]
-margin_top = 460.0
-margin_right = 1204.0
-margin_bottom = 490.0
-grow_horizontal = 2
-custom_constants/separation = 8
-alignment = 1
-
-[node name="Title" type="Label" parent="Main/Credits/C/S/L/T3"]
-margin_right = 1204.0
-margin_bottom = 30.0
-custom_colors/font_color = Color( 0.835294, 0.309804, 1, 1 )
-custom_fonts/font = SubResource( 109 )
-text = "- big money! -"
-align = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/T3"]
+[node name="Content" type="ReferenceRect" parent="Main"]
 visible = false
-margin_top = 38.0
-margin_right = 1204.0
-margin_bottom = 63.0
-custom_colors/font_color = Color( 0.972549, 0.721569, 1, 1 )
-custom_fonts/font = SubResource( 110 )
-text = "patron name 1"
-align = 1
-autowrap = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+border_color = Color( 1, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="T2" type="VBoxContainer" parent="Main/Credits/C/S/L"]
-margin_top = 502.0
-margin_right = 1204.0
-margin_bottom = 529.0
-grow_horizontal = 2
-custom_constants/separation = 8
-alignment = 1
+[node name="Menu" parent="Main/Content" instance=ExtResource( 103 )]
+script = null
 
-[node name="Title" type="Label" parent="Main/Credits/C/S/L/T2"]
-margin_right = 1204.0
-margin_bottom = 27.0
-custom_colors/font_color = Color( 0.34902, 0.937255, 0.380392, 1 )
-custom_fonts/font = SubResource( 111 )
-text = "- extra support! -"
-align = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/T2"]
+[node name="Language" type="ReferenceRect" parent="Main"]
 visible = false
-margin_top = 35.0
-margin_right = 1204.0
-margin_bottom = 57.0
-custom_colors/font_color = Color( 0.721569, 1, 0.737255, 1 )
-custom_fonts/font = SubResource( 112 )
-text = "patron name 2"
-align = 1
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+border_color = Color( 1, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="T1" type="VBoxContainer" parent="Main/Credits/C/S/L"]
-margin_top = 541.0
-margin_right = 1204.0
-margin_bottom = 568.0
-grow_horizontal = 2
-custom_constants/separation = 8
-alignment = 1
+[node name="LanguageMenu" parent="Main/Language" instance=ExtResource( 104 )]
 
-[node name="Title" type="Label" parent="Main/Credits/C/S/L/T1"]
-margin_right = 1204.0
-margin_bottom = 27.0
-custom_colors/font_color = Color( 0.45098, 0.854902, 0.847059, 1 )
-custom_fonts/font = SubResource( 113 )
-text = "- thank you! -"
-align = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/T1"]
+[node name="RhythiaRewrite" type="ReferenceRect" parent="Main"]
 visible = false
-margin_top = 35.0
-margin_right = 1204.0
-margin_bottom = 53.0
-rect_min_size = Vector2( 400, 0 )
-custom_colors/font_color = Color( 0.803922, 0.972549, 1, 1 )
-custom_fonts/font = SubResource( 114 )
-text = "patron name 3"
-align = 1
-autowrap = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+border_color = Color( 1, 0, 0, 0 )
 
-[node name="SpecialThanks" type="VBoxContainer" parent="Main/Credits/C/S/L"]
-margin_top = 580.0
-margin_right = 1204.0
-margin_bottom = 978.0
-grow_horizontal = 2
-custom_constants/separation = 8
-alignment = 1
-
-[node name="Title" type="Label" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_right = 1204.0
-margin_bottom = 44.0
-custom_colors/font_color = Color( 0.917647, 1, 0.447059, 1 )
-custom_fonts/font = SubResource( 158 )
-text = "-- special thanks --"
-align = 1
-
-[node name="C13" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 52.0
-margin_right = 1204.0
-margin_bottom = 77.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C13"]
-margin_left = 253.0
-margin_right = 950.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C13/H"]
-margin_right = 697.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "Basil \"Chedski\" Cyathea - The person that started it all; unfortunately gone now"
-align = 1
-
-[node name="C7" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 85.0
-margin_right = 1204.0
-margin_bottom = 110.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C7"]
-margin_left = 398.0
-margin_right = 805.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C7/H"]
-margin_right = 407.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "Morphox - Creator of the original Sound Space"
-align = 1
-
-[node name="C12" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 118.0
-margin_right = 1204.0
-margin_bottom = 143.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C12"]
-margin_left = 318.0
-margin_right = 885.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C12/H"]
-margin_right = 567.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "ARCW - Singlehandedly starting a new era of community growth"
-align = 1
-
-[node name="C11" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 151.0
-margin_right = 1204.0
-margin_bottom = 176.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C11"]
-margin_left = 336.0
-margin_right = 867.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C11/H"]
-margin_right = 531.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "frostlines - Provided massive amounts of feedback and ideas"
-align = 1
-
-[node name="C4" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 184.0
-margin_right = 1204.0
-margin_bottom = 209.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C4"]
-margin_left = 389.0
-margin_right = 814.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C4/H"]
-margin_right = 425.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "Jayden Jones - Feedback and code contributions"
-align = 1
-
-[node name="C8" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 217.0
-margin_right = 1204.0
-margin_bottom = 242.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C8"]
-margin_left = 312.0
-margin_right = 892.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C8/H"]
-margin_right = 580.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "David \"kiwie\" Guy - Created SSQE (map editor) and gave feedback"
-align = 1
-
-[node name="C9" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 250.0
-margin_right = 1204.0
-margin_bottom = 275.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C9"]
-margin_left = 380.0
-margin_right = 824.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C9/H"]
-margin_right = 444.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "aixeria - Help with backend server code & security"
-align = 1
-
-[node name="C10" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-visible = false
-margin_top = 283.0
-margin_right = 1204.0
-margin_bottom = 308.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C10"]
-margin_left = 396.0
-margin_right = 808.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C10/H"]
-margin_right = 412.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "Omega - Created the Circuit background world"
-align = 1
-
-[node name="C6" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 283.0
-margin_right = 1204.0
-margin_bottom = 299.0
-
-[node name="MarginContainer" type="MarginContainer" parent="Main/Credits/C/S/L/SpecialThanks/C6"]
-margin_left = 242.0
-margin_right = 962.0
-margin_bottom = 16.0
-custom_constants/margin_top = 8
-custom_constants/margin_bottom = 8
-
-[node name="H" type="Panel" parent="Main/Credits/C/S/L/SpecialThanks/C6/MarginContainer"]
-margin_top = 8.0
-margin_right = 720.0
-margin_bottom = 8.0
-rect_min_size = Vector2( 720, 0 )
-custom_styles/panel = SubResource( 161 )
-
-[node name="C5" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 307.0
-margin_right = 1204.0
-margin_bottom = 332.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C5"]
-margin_left = 294.0
-margin_right = 909.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C5/H"]
-margin_right = 615.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "Past and present patrons - Quite literally paying for our Steam release"
-align = 1
-
-[node name="C" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 340.0
-margin_right = 1204.0
-margin_bottom = 365.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C"]
-margin_left = 276.0
-margin_right = 927.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C/H"]
-margin_right = 651.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "Community staff - Helping people & keeping the community under control"
-align = 1
-
-[node name="C2" type="CenterContainer" parent="Main/Credits/C/S/L/SpecialThanks"]
-margin_top = 373.0
-margin_right = 1204.0
-margin_bottom = 398.0
-
-[node name="H" type="HBoxContainer" parent="Main/Credits/C/S/L/SpecialThanks/C2"]
-margin_left = 289.0
-margin_right = 915.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="Main/Credits/C/S/L/SpecialThanks/C2/H"]
-margin_right = 626.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "The playtester team - Catching major bugs before they reach the public"
-align = 1
-
-[node name="SPACER" type="Control" parent="Main/Credits/C/S/L"]
-margin_top = 990.0
-margin_right = 1204.0
-margin_bottom = 1115.0
-rect_min_size = Vector2( 0, 125 )
+[node name="RhythiaRewriteMenu" parent="Main/RhythiaRewrite" instance=ExtResource( 105 )]
 
 [node name="Quit" type="Button" parent="."]
 visible = false
@@ -4975,6 +4541,37 @@ anchor_bottom = 1.0
 margin_left = 64.0
 custom_fonts/font = SubResource( 8 )
 text = "Quit to Desktop"
+valign = 1
+
+[node name="RhythiaRewrite" type="Button" parent="Sidebar/L"]
+margin_top = 406.0
+margin_right = 58.0
+margin_bottom = 464.0
+rect_min_size = Vector2( 0, 58 )
+custom_styles/hover = SubResource( 176 )
+custom_styles/pressed = SubResource( 177 )
+custom_styles/focus = SubResource( 178 )
+custom_styles/disabled = SubResource( 176 )
+custom_styles/normal = SubResource( 176 )
+toggle_mode = true
+action_mode = 0
+group = SubResource( 179 )
+
+[node name="Tex" type="TextureRect" parent="Sidebar/L/RhythiaRewrite"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 53.0
+margin_bottom = 53.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="Sidebar/L/RhythiaRewrite"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 64.0
+custom_fonts/font = SubResource( 180 )
+text = "Rhythia Rewrite"
 valign = 1
 
 [node name="Click" type="ColorRect" parent="Sidebar"]

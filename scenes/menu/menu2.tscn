@@ -1,4 +1,4 @@
-[gd_scene load_steps=206 format=2]
+[gd_scene load_steps=207 format=2]
 
 [ext_resource path="res://uitheme.tres" type="Theme" id=1]
 [ext_resource path="res://assets/font/Lato/Lato-Regular.ttf" type="DynamicFontData" id=2]
@@ -46,6 +46,7 @@
 [ext_resource path="res://scripts/ui/menu/buttons/SuddenDeath.gd" type="Script" id=44]
 [ext_resource path="res://scripts/ui/menu/buttons/Ghost.gd" type="Script" id=45]
 [ext_resource path="res://scripts/ui/menu/rainbow.gd" type="Script" id=46]
+[ext_resource path="res://scenes/menu/rhythiarewrite.tscn" type="PackedScene" id=47]
 [ext_resource path="res://scripts/ui/menu/buttons/PatreonCredits.gd" type="Script" id=48]
 [ext_resource path="res://prefabs/menu/settings_page.tscn" type="PackedScene" id=49]
 [ext_resource path="res://assets/font/UbuntuMono/Regular.ttf" type="DynamicFontData" id=50]
@@ -4379,9 +4380,6 @@ anchor_bottom = 1.0
 margin_left = 4.0
 margin_top = 4.0
 border_color = Color( 1, 0, 0, 0 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="C" type="HBoxContainer" parent="Main/Credits"]
 anchor_right = 1.0
@@ -4399,7 +4397,7 @@ scroll_horizontal_enabled = false
 scroll_deadzone = 45
 
 [node name="L" parent="Main/Credits/C/S" instance=ExtResource( 7 )]
-margin_bottom = 1521.0
+margin_bottom = 1662.0
 
 [node name="Content" type="ReferenceRect" parent="Main"]
 visible = false
@@ -4427,6 +4425,16 @@ __meta__ = {
 }
 
 [node name="LanguageMenu" parent="Main/Language" instance=ExtResource( 104 )]
+
+[node name="RhythiaRewrite" type="ReferenceRect" parent="Main"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+border_color = Color( 1, 0, 0, 0 )
+
+[node name="RhythiaRewriteMenu" parent="Main/RhythiaRewrite" instance=ExtResource( 47 )]
 
 [node name="Quit" type="Button" parent="."]
 visible = false
@@ -4709,9 +4717,9 @@ valign = 1
 
 [node name="OldMenu" type="Button" parent="Sidebar/L"]
 visible = false
-margin_top = 348.0
+margin_top = 290.0
 margin_right = 58.0
-margin_bottom = 406.0
+margin_bottom = 348.0
 rect_min_size = Vector2( 0, 58 )
 custom_styles/hover = SubResource( 4 )
 custom_styles/pressed = SubResource( 2 )
@@ -4768,6 +4776,37 @@ anchor_bottom = 1.0
 margin_left = 64.0
 custom_fonts/font = SubResource( 8 )
 text = "Quit to Desktop"
+valign = 1
+
+[node name="RhythiaRewrite" type="Button" parent="Sidebar/L"]
+margin_top = 348.0
+margin_right = 58.0
+margin_bottom = 406.0
+rect_min_size = Vector2( 0, 58 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 4 )
+toggle_mode = true
+action_mode = 0
+group = SubResource( 5 )
+
+[node name="Tex" type="TextureRect" parent="Sidebar/L/RhythiaRewrite"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 53.0
+margin_bottom = 53.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="Sidebar/L/RhythiaRewrite"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 64.0
+custom_fonts/font = SubResource( 6 )
+text = "Rhythia Rewrite"
 valign = 1
 
 [node name="Click" type="ColorRect" parent="Sidebar"]

@@ -9,6 +9,9 @@ func stage(text:String,done:bool=false):
 	if done:
 #		black_fade_target = true
 		$Label2.text = "Loading menu"
+		if Rhythia.enable_oldmenu:
+			Rhythia.menu_target = "res://scenes/menu/oldmenu2.tscn"
+			target = Rhythia.menu_target # re-initializing so it updates everywhere else -fog
 		var res = RQueue.queue_resource(target)
 		if res != OK:
 			Rhythia.errorstr = "queue_resource returned %s" % res
@@ -23,7 +26,7 @@ func _ready():
 #	var VR = ARVRServer.find_interface("OpenVR")
 #	if VR and VR.initialize():
 #		target = "res://vrmenudemo.tscn"
-	
+
 #	VisualServer.set_debug_generate_wireframes(true)
 #	get_viewport().debug_draw = get_viewport().DEBUG_DRAW_OVERDRAW
 	get_tree().paused = false
@@ -41,27 +44,27 @@ func _ready():
 	if ProjectSettings.get_setting("application/config/auto_maximize") and Rhythia.auto_maximize: OS.window_maximized = true
 	yield(get_tree().create_timer(0.5),"timeout")
 #	$AudioStreamPlayer.play()
-	
+
 	if not Rhythia.is_init:
 		stage("",true)
 		return
 	elif Rhythia.first_init_done:
 		thread.start(Rhythia,"do_init")
-	
+
 	Rhythia.is_init = false
-	
+
 	if ProjectSettings.get_setting("application/config/discord_rpc"):
 		var activity = Discord.Activity.new()
 		activity.set_type(Discord.ActivityType.Playing)
 		activity.set_details("Initialization")
-		
+
 		if Rhythia.do_archive_convert: activity.set_state("Mass-converting songs")
 		elif Rhythia.first_init_done: activity.set_state("Reloading content")
 		else: activity.set_state("Starting the game")
 
 		var assets = activity.get_assets()
 		assets.set_large_image("icon-bg")
-		
+
 		Discord.activity_manager.update_activity(activity)
 
 func _exit_tree():
@@ -79,7 +82,7 @@ func _process(delta):
 	elif !black_fade_target && black_fade != 0:
 		black_fade = max(black_fade - (delta/0.3),0)
 		$BlackFade.color = Color(0,0,0,black_fade)
-	
+
 	if !leaving:
 		if RQueue.is_ready(target):
 			result = RQueue.get_resource(target)
@@ -88,7 +91,6 @@ func _process(delta):
 			if !(result is Object):
 				Rhythia.errorstr = "get_resource returned non-object (probably null)"
 				get_tree().change_scene("res://scenes/errors/menuload.tscn")
-	
+
 	if leaving and result and black_fade == 1:
 		get_tree().change_scene_to(result)
-	

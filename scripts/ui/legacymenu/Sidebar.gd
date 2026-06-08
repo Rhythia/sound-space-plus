@@ -4,8 +4,8 @@ var open:bool = false
 var open_amt:float = 1
 
 onready var pages:Array = [
-#	get_node("../Main/Results"),
-	get_node("../Main/Maps"),
+	get_node("../Main/Results"),
+	get_node("../Main/MapRegistry"),
 	get_node("../Main/Settings"),
 	get_node("../Main/Credits"),
 	get_node("../Main/Content"),
@@ -14,7 +14,7 @@ onready var pages:Array = [
 ]
 onready var buttons:Array = [
 	$L/Results,
-#	$L/MapSelect,
+	$L/MapSelect,
 	$L/Settings,
 	$L/Credits,
 	$L/ContentMgr,
@@ -23,7 +23,7 @@ onready var buttons:Array = [
 ]
 var use_ver_b:Array = [
 	false,
-#	false,
+	false,
 	true,
 	false,
 	false,
@@ -32,7 +32,7 @@ var use_ver_b:Array = [
 ]
 var hide_ver:Array = [
 	false,
-#	false,
+	false,
 	false,
 	true,
 	false,
@@ -41,7 +41,7 @@ var hide_ver:Array = [
 ]
 onready var smm_visibility:Dictionary = {
 	$L/Results: true,
-#	$L/MapSelect: true,
+	$L/MapSelect: false,
 	$L/Settings: true,
 	$L/Credits: true,
 	$L/ContentMgr: true,
@@ -58,16 +58,15 @@ func press(bi:int,q:bool=false):
 		pages[i].visible = i == bi
 		buttons[i].pressed = i == bi
 	yield(get_tree(),"idle_frame")
-
+	# open = false
 	get_node("../VersionNumber").visible = !use_ver_b[bi]
 	get_node("../VersionNumberB").visible = use_ver_b[bi]
 	if (hide_ver[bi]):
 		get_node("../VersionNumber").self_modulate = Color(1,1,1,0)
 	else:
 		get_node("../VersionNumber").self_modulate = Color(1,1,1,1)
-#	open = false
-#	get_node("Click").visible = !open
-#	get_node("../SidebarClick").visible = open
+	# get_node("Click").visible = !open
+	# get_node("../SidebarClick").visible = open
 
 func to_old_menu():
 	get_node("../Press").play()
@@ -93,11 +92,15 @@ func quit():
 	yield(get_tree().create_timer(0.35),"timeout")
 	get_tree().quit()
 
+
 func _ready():
 	for i in range(buttons.size()):
 		buttons[i].connect("pressed",self,"press",[i])
 
-	press(0,true)
+	if Rhythia.just_ended_song || Rhythia.single_map_mode: press(0,true)
+	else: press(1,true)
+	# press(0,true)
+
 	$Click.connect("mouse_entered",self,"_on_Sidebar", [true])
 	$L.connect("mouse_entered",self,"_on_Sidebar", [true])
 	connect("mouse_exited",self,"_on_Sidebar", [false])
@@ -113,6 +116,7 @@ func _ready():
 	if Rhythia.single_map_mode:
 		for n in $L.get_children():
 			n.visible = smm_visibility.get(n,false)
+
 
 func _process(delta:float):
 	if open and not Rect2(get_global_rect()).has_point(get_global_mouse_position()): # mouse_exited is not reliable
@@ -146,3 +150,9 @@ func _on_Sidebar(isEntered: bool):
 	open = isEntered
 	get_node("Click").visible = !open
 	get_node("../SidebarClick").visible = open
+
+# func _on_Sidebar_mouse_entered():
+# 	open = true
+# 	# yield(get_tree(),"idle_frame")
+# 	get_node("Click").visible = !open
+# 	get_node("../SidebarClick").visible = open
