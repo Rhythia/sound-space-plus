@@ -11,7 +11,7 @@ func _ready():
 	connect("pressed", self, "_button_pressed")
 
 func _button_pressed():
-	OS.shell_open("https://github.com/Rhythia/Client/releases")
+	OS.shell_open("https://www.github.com/Rhythia/Client/releases/latest")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
