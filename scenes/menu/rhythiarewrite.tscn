@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/font/Lato/Lato-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://uitheme.tres" type="Theme" id=2]
@@ -15,6 +15,12 @@ corner_radius_bottom_left = 8
 
 [sub_resource type="DynamicFont" id=71]
 size = 22
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=72]
+size = 18
 use_filter = true
 font_data = ExtResource( 1 )
 fallback/0 = ExtResource( 7 )
@@ -58,10 +64,10 @@ valign = 1
 
 [node name="Description" type="Label" parent="P"]
 margin_left = 18.0
-margin_top = 1.0
+margin_top = 36.0
 margin_right = 864.0
 margin_bottom = 342.0
-custom_fonts/font = SubResource( 71 )
+custom_fonts/font = SubResource( 72 )
 text = "Hi! We are no longer updating the version of Rhythia that you're on. This version was made with a now outdated engine, and working on it has become increasingly hard.
 
 We have been working on a new client, called \"Rewrite\", which you may check out by pressing the \"Download\" button. 
@@ -71,13 +77,21 @@ align = 1
 valign = 1
 autowrap = true
 
-[node name="Author" type="Label" parent="P"]
+[node name="ty" type="Label" parent="P"]
 margin_top = 333.0
 margin_right = 882.0
 margin_bottom = 390.0
 custom_fonts/font = SubResource( 71 )
-text = "Thank you!
--noobour, fog & nyuwaea"
+text = "Thank you!"
+align = 1
+valign = 1
+
+[node name="ty2" type="Label" parent="P"]
+margin_top = 362.0
+margin_right = 882.0
+margin_bottom = 419.0
+custom_fonts/font = SubResource( 71 )
+text = "-noobour, fog & nyuwaea"
 align = 1
 valign = 1
 
