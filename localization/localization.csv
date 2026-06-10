@@ -4,7 +4,7 @@ JAPANESE,日本語,日本語,日本語,日本語,日本語,日本語,日本語,�
 FRENCH,Français,Français,Français,Français,Français,Français,Français,Français
 SPANISH,Español,Español,Español,Español,Español,Español,Español,Español
 GERMAN,Deutsch,Deutsch,Deutsch,Deutsch,Deutsch,Deutsch,Deutsch,Deutsch
-POLISH,Polski,Polski,Polski,Polski,Polski,Polski,Polski,Polski
+POLISH,Polski (Prace w toku),Polski (Prace w toku),Polski (Prace w toku),Polski (Prace w toku),Polski (Prace w toku),Polski (Prace w toku),Polski (Prace w toku),Polski (Prace w toku)
 ITALIAN,Italiano,Italiano,Italiano,Italiano,Italiano,Italiano,Italiano,Italiano
 Select Language,Select Language,言語を選択,Sélectionner la langue,Seleccione su idioma,Seleccione su idioma,Suche die Sprache aus,Wybierz Język,Seleziona lingua
 Back,Back,戻る,Retour,Retroceder,,Zurück,Wróć,Indietro
@@ -136,7 +136,7 @@ Miss* (no color),Miss* (no color),ミス* (無色),Raté* (sans couleurs),Fallo*
 Show Miss Effect,Show Miss Effect,ミスエフェクトを表示,Afficher miss effect,Mostrar efecto visual de fallo,,,Włącz efekt pudłowania,Mostra effetto miss
 "replace ""hit"" with ""miss"" in the description of the setting above this one","replace ""hit"" with ""miss"" in the description of the setting above this one",この上の設定の説明の「ヒット」を「ミス」に置き換える。,"remplace ""hit"" avec ""miss"" dans la description du paramètre","sustituye ""golpe"" por ""fallo"" en la descripción del ajuste superior",,,zamień „trafienie” na „pudło” w opisie ustawienia powyżej tego,sostituisci “hit” con “miss” nella descrizione dell'impostazione sopra questa
 Replays & Recording,Replays & Recording,録画とリプレイ,Replays et enregistrement,Repeticiones y grabación,,,Powtórki i nagrywanie,Replays e registrazione
-Enable Legacy Menu,Enable Legacy Menu,古いのメニューを使う,Utiliser le menu classique,,,,,
+Enable Legacy Menu,Enable Legacy Menu,古いのメニューを使う,Utiliser le menu classique,,,,,Attiva Menu Legacy
 Record Replays,Record Replays,リプレイを録画,Enregistrer replays,Grabar repeticiones,,,Nagrywaj Powtórki,Registra replay
 records replays. what else did you expect...? (drag a replay file into the game to view),records replays. what else did you expect...? (drag a replay file into the game to view),リプレイを録画 (リプレイファイルをゲームにドラッグして表示する）,déposez un fichier replay sur le jeu pour le visionner,permite grabar repeticiones (desplaza un fichero sobre la ventana del juego para visualizar),,,nagrywa powtórki.... co innego myslałes? (wrzuć plik powtórki do okna gry aby odtworzyć),registra i replay. Cos'altro ti aspettavi...? (trascina un file di replay nel gioco per visualizzarlo)
 Alt. Replay Camera,Alt. Replay Camera,カメラアングルを追加,Caméra replay alternative,Repetición en cámara alternativa,,,Alternatywna kamera powtórki,Alt. Replay Camera
@@ -545,10 +545,23 @@ We would like your help! We need feedback as we plan on introducing brand new, l
 
 We have been working on a new client, called ""Rewrite"", which you may check out by pressing the ""Download"" button. 
 
-We would like your help! We need feedback as we plan on introducing brand new, long awaited, features like: online, in-game map editor, modcharts, and more.",,"Salut! Cette version de Rhythia ne reçois plus de mises à jour car elle est sur un vieux moteur de jeu et la maintenir est devenu de plus en plus difficile.
+We would like your help! We need feedback as we plan on introducing brand new, long awaited, features like: online, in-game map editor, modcharts, and more.","フォグです。日本語が下手で申し訳ありません。このRhythiaバージョンはもうアップデートをしていません。その理由は、このバージョンが時代遅れのエンジンで作られたからです。というわけで、開発がもっと難しくなりました
+
+新しいクライアントを開発しています。「Rhythia Rewrite」という名前です。ダウンロードボタンを押して試してみてください！
+
+ぜひフィードバックをください！！これから、新しいクライアントのために新機能を開発します。今後、オンライン、マルチプレイヤー、マップエディター、MODチャートなどを追加する予定です！","Salut! Cette version de Rhythia ne reçois plus de mises à jour car elle est sur un vieux moteur de jeu et la maintenir est devenu de plus en plus difficile.
 
 Nous travaillons sur un nouveau client, nommé Rewrite, auquel vous pouvez jeter un coup d'oeil en appuyant sur le bouton Télécharger ci-dessous.
 
-Nous voulons recevoir votre aide! Nous avons besoin de vos retours alors que nous introduisons de nouvelles fonctionalités bien attendues telles qu'un mode en ligne, un éditeur de maps avancé et plus encore.",,,,,
-Important,Important,重要,Important,,,,,
-Download,Download,ダウンロード,Télécharger,,,,,
+Nous voulons recevoir votre aide　! Nous avons besoin de vos retours alors que nous introduisons de nouvelles fonctionalités bien attendues telles qu'un mode en ligne, un éditeur de maps avancé et plus encore.","¡Hola! Esta versión de Rhythia ya no recibe actualizaciones porque utiliza un motor de juego antiguo y mantenerla se ha vuelto más y más difícil.
+
+Estamos trabajando en un nuevo cliente, llamado Rewrite, al cual le puedes echar un vistazo haciendo click sobre el botón ""Descargar"" inferior.
+
+¡Nos gustaría recibir tu ayuda! Necesitamos tu opinión a la vez que introducimos nuevas funcionalidades ampliamente solicitadas como un modo online o un editor de mapas avanzado, entre muchas otras.",,,,"Ciao! Non stiamo più aggiornando la versione di Rhythia che stai utilizzando. Questa versione è stata sviluppata con un motore ormai obsoleto e mantenerla è diventato sempre più difficile.
+
+Negli ultimi mesi abbiamo lavorato a un nuovo client chiamato Rewrite, che puoi scaricare premendo il pulsante ""Scarica"".
+
+Abbiamo bisogno del tuo aiuto! Stiamo raccogliendo feedback mentre lavoriamo all'introduzione di nuove funzionalità molto attese, tra cui: modalità online, editor di mappe integrato direttamente nel gioco, modcharts e molto altro ancora."
+Important,Important,重要,Important,,,,,Importante
+Download,Download,ダウンロード,Télécharger,,,,,Scarica
+Thank you!,Thank you!,読んでくれてありがとうございます！　,Merci d'avoir lu,,,,,Grazie!

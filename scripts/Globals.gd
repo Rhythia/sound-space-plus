@@ -162,8 +162,10 @@ const locale:Array = [
 	"en",
 	"ja",
 	"fr",
-	"es"
-]	
+	"es",
+	"it",
+	"pl"
+]
 
 const official_map_difficulties:Dictionary = {
 	2078819639: 0, 3666416563: 0, 2075061500: 1, 238047242: 0, 245187339: 0, 1699595302: 0, 249267198: 0,
@@ -530,35 +532,35 @@ func get_files_recursive(
 	print("-- start recurse --")
 	print(paths)
 	var dir:Directory = Directory.new()
-	
+
 	var files:Array = []
 	var folders:Array = []
-	
+
 	var subfolders:Array = []
 	var subfolders2:Array = paths
-	
+
 	var i = 0
 	var layer = 0
 	while subfolders2.size() != 0:
 		layer += 1
-		
+
 		if layer > max_layers:
 			print("recursed too deep! stopping!")
 			break
-		
+
 		i += 1
 		if pause_amt != -1 and (pause_amt == 0 or ((i%pause_amt) == 0)):
 			yield(get_tree(),"idle_frame")
-		
+
 #		print("start layer %s" % layer)
 		subfolders = subfolders2
 		subfolders2 = []
-		
+
 		while subfolders.size() != 0:
 			i += 1
 			if pause_amt != -1 and (pause_amt == 0 or ((i%pause_amt) == 0)):
 				yield(get_tree(),"idle_frame")
-			
+
 			var cpath:String = ProjectSettings.globalize_path(subfolders.pop_back().strip_edges())
 			cpath = cpath.simplify_path()
 			var err = dir.open(cpath)
@@ -571,16 +573,16 @@ func get_files_recursive(
 						i += 1
 						if pause_amt != -1 and (pause_amt == 0 or ((i%pause_amt) == 0)):
 							yield(get_tree(),"idle_frame")
-						
+
 						if folders_with != "" and n == folders_with:
 							folders.append(cpath)
-						
+
 						if dir.dir_exists(p):
 							if folders_with == "": folders.append(p)
 							subfolders2.append(p)
 						elif filter_ext == "" or p.get_extension() == filter_ext:
 							files.append(p)
-						
+
 						n = dir.get_next()
 						p = cpath.plus_file(n)
 					dir.list_dir_end()
@@ -588,8 +590,8 @@ func get_files_recursive(
 					print("failed to list files in folder %s (error code %s)" % [cpath,err])
 			else:
 				print("failed to change to folder %s (error code %s)" % [cpath,err])
-			
-	
+
+
 	print("-- end recurse - took %s usec --" % [Globals.comma_sep(OS.get_ticks_usec() - a)])
 	if pause_amt != -1:
 		emit_signal("recurse_result",{files = files, folders = folders})
@@ -612,7 +614,7 @@ var con:LineEdit
 signal console_sent
 func _process(delta):
 	notify_gui.raise()
-	
+
 	if Input.is_action_just_pressed("debug_notify"):
 		notify(NOTIFY_INFO,"This is a notification!","Debug Notify")
 	if Input.is_action_just_pressed("console"):
@@ -627,7 +629,7 @@ func _process(delta):
 			con.rect_size.x = 400
 			con.raise()
 			con.grab_focus()
-			
+
 			yield(con,"text_entered")
 			var ctxt = con.text
 			console_open = false
@@ -643,7 +645,7 @@ func _process(delta):
 	elif fps_visible:
 		fps_disp.text = "%s fps" % Engine.get_frames_per_second()
 		fps_disp.raise()
-	
+
 	if Input.is_action_just_pressed("fps"):
 		if !fps_disp.is_inside_tree():
 			rootg.add_child(fps_disp)
@@ -655,7 +657,7 @@ func _ready():
 	var thread = Thread.new()
 	Rhythia.is_init = true
 	thread.start(Rhythia,"do_init")
-	
+
 	var disable_intro = false
 	var file:File = File.new()
 	if file.file_exists(Globals.p("user://settings.json")):
@@ -667,36 +669,36 @@ func _ready():
 		if !decode.error:
 			disable_intro = decode.result.has("disable_intro") and decode.result.disable_intro
 	if !disable_intro: get_tree().call_deferred("change_scene","res://scenes/Intro.tscn")
-	
+
 	url_regex.compile(
 		"((https?)://)[\\w\\-.]{2,256}(:\\d{1,5})?(/[\\w@:%._\\-+~&=]+)+/?"
 	)
-	
+
 	confirm_prompt = load("res://prefabs/menu/confirm.tscn").instance()
 	rootg.call_deferred("add_child",confirm_prompt)
 
 	string_prompt = load("res://prefabs/menu/string.tscn").instance()
 	rootg.call_deferred("add_child",string_prompt)
-	
+
 	file_sel = load("res://prefabs/menu/filesel.tscn").instance()
 	rootg.call_deferred("add_child",file_sel)
-	
+
 	notify_gui = load("res://prefabs/menu/notification_gui.tscn").instance()
 	rootg.call_deferred("add_child",notify_gui)
-	
+
 	fps_disp.margin_left = 15
 	fps_disp.margin_top = 15
 	fps_disp.margin_right = 0
 	fps_disp.margin_bottom = 0
 	fps_disp.set("custom_fonts/font",load("res://assets/font/debug2.tres"))
-	
+
 	for arg in OS.get_cmdline_args():
 		if arg.find("=") > -1:
 			var key_value = arg.split("=")
 			cmdline[key_value[0].lstrip("--")] = key_value[1]
 		else:
 			cmdline[arg.lstrip("--")] = ""
-	
+
 	if OS.has_feature("debug"):
 		rootg.call_deferred("add_child",fps_disp)
 		fps_visible = true

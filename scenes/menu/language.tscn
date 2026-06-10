@@ -99,9 +99,10 @@ anchor_top = 1.326
 anchor_right = 0.482
 anchor_bottom = 1.326
 margin_left = -168.08
-margin_top = -62.582
+margin_top = -47.582
 margin_right = 183.92
-margin_bottom = -33.582
+margin_bottom = -16.582
+hint_tooltip = "The translations might not be perfect, but about 95% of the game is covered on any languages that are finished (which is good enough for me!)"
 text = "Language"
 
 [node name="cancel" type="Button" parent="ChangeLanguage"]

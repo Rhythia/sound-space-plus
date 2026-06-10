@@ -2,10 +2,13 @@ extends ColorRect
 
 onready var languageselect = $ChangeLanguage/SelectLanguageWindow/languageselector
 
-
+# locale table for Globals.locale
 # en = 0
 # jp = 1
 # fr = 2
+# es = 3
+# it = 4
+# pl = 5
 
 # # Called when the node enters the scene tree for	 the first time.
 func _ready():
@@ -18,6 +21,8 @@ func add_items():
 	languageselect.add_item("JAPANESE")
 	languageselect.add_item("FRENCH")
 	languageselect.add_item("SPANISH")
+	languageselect.add_item("ITALIAN")
+	languageselect.add_item("POLISH")
 
 func _on_languageselector_item_selected(index):
 	Rhythia.language = index
