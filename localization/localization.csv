@@ -416,6 +416,7 @@ name,name,名前,nom,nombre,,,,nome
 auto play screen,auto play screen,オートプレイ画面,écran auto-jouer,pantalla de auto-juego,,,,schermata di auto-gioco
 Select random from search,Select random from search,サーチからランダムにマップを選ぶ,Aléatoire,Seleccionar aleatorio dentro de la búsqueda,,,,Seleziona brano casuale dalla ricerca
 Delete Map,Delete Map,マップを削除,Supprimer,Eliminar,,,,Elimina mappa
+Delete map,Delete map,マップを削除,Supprimer,Eliminar,,,,Elimina mappa
 Are you sure you want to delete this map? You might not be able to get it back.,Are you sure you want to delete this map? You might not be able to get it back.,このマップを削除してもよろしいですか？このマップを戻せなくなる可能性があります,Êtes-vous sûr de vouloir supprimer cette map ? Il se puisse que vous ne pouviez pas la ravoir,¿Estás seguro de que quieres borrar este mapa? Es posible que no lo puedas recuperar.,,,,Sei sicuro di voler eliminare questa mappa? Potresti non essere in grado di recuperarla.
 Cancel,Cancel,キャンセル,Retour,Volver,,,,Annulla
 OK,OK,OK,OK,OK,,,,OK
@@ -562,6 +563,6 @@ Estamos trabajando en un nuevo cliente, llamado Rewrite, al cual le puedes echar
 Negli ultimi mesi abbiamo lavorato a un nuovo client chiamato Rewrite, che puoi scaricare premendo il pulsante ""Scarica"".
 
 Abbiamo bisogno del tuo aiuto! Stiamo raccogliendo feedback mentre lavoriamo all'introduzione di nuove funzionalità molto attese, tra cui: modalità online, editor di mappe integrato direttamente nel gioco, modcharts e molto altro ancora."
-Important,Important,重要,Important,,,,,Importante
-Download,Download,ダウンロード,Télécharger,,,,,Scarica
-Thank you!,Thank you!,読んでくれてありがとうございます！　,Merci d'avoir lu,,,,,Grazie!
+Important,Important,重要,Important,Importante,,,,Importante
+Download,Download,ダウンロード,Télécharger,Descargar,,,,Scarica
+Thank you!,Thank you!,読んでくれてありがとうございます！　,Merci d'avoir lu,¡Gracias!,,,,Grazie!

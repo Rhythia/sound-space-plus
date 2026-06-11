@@ -74,8 +74,8 @@ func item_selected(idx:int):
 				!Rhythia.single_map_mode
 			):
 				Globals.confirm_prompt.open(
-					"Are you sure you want to delete this map? You might not be able to get it back.",
-					"Delete Map",
+					tr("Are you sure you want to delete this map? You might not be able to get it back."),
+					tr("Delete Map"),
 					[
 						{ text = "Cancel" },
 						{ text = "OK", wait = 1 }
@@ -161,7 +161,7 @@ func upd(_s=null):
 		Rhythia.selected_song.songType == Globals.MAP_SSPM2 or
 		Rhythia.selected_song.is_online
 	))
-	
+
 	get_popup().set_item_disabled(3,(
 		Rhythia.single_map_mode or
 		#SP.selected_song.is_builtin or
@@ -170,18 +170,18 @@ func upd(_s=null):
 			Rhythia.selected_song.songType == Globals.MAP_SSPM2
 		)
 	))
-	
+
 	get_popup().set_item_disabled(5,(
 		Rhythia.selected_song.is_broken or
 		#Rhythia.selected_song.is_builtin or
 		Rhythia.selected_song.is_online
 	))
-	
+
 	copy_submenu.set_item_disabled(1,(
 		#Rhythia.selected_song.is_builtin or
 		Rhythia.selected_song.is_online
 	))
-	
+
 	for i in range(6):
 		difficulty_submenu.set_item_checked(i,Rhythia.selected_song.difficulty == i - 1)
 
@@ -193,25 +193,25 @@ func _ready():
 	get_popup().connect("id_pressed",self,"item_selected")
 	copy_submenu.connect("id_pressed",self,"copy_item_selected")
 	difficulty_submenu.connect("id_pressed",self,"diff_item_selected")
-	
-	get_popup().add_item("Delete map",0)
+
+	get_popup().add_item(tr("Delete map"),0)
 	get_popup().add_item("Convert to sspm v2",1)
 	get_popup().add_submenu_item("Copy...","Copy",2)
 	get_popup().add_submenu_item("Set difficulty","Difficulty",3)
 	get_popup().add_item("Export .txt map data",4)
 	get_popup().add_item("Export audio data",5)
-	
+
 	copy_submenu.add_item("ID",0)
 	copy_submenu.add_item("Path",1)
 	copy_submenu.add_item("Name",2)
-	
+
 	difficulty_submenu.add_radio_check_item("N/A",0)
 	difficulty_submenu.add_radio_check_item("Easy",1)
 	difficulty_submenu.add_radio_check_item("Medium",2)
 	difficulty_submenu.add_radio_check_item("Hard",3)
 	difficulty_submenu.add_radio_check_item("Logic?",4)
 	difficulty_submenu.add_radio_check_item("助 (Tasukete)",5)
-	
+
 	if Rhythia.selected_song: upd()
 	Rhythia.connect("selected_song_changed",self,"upd")
 	yield(get_tree(),"idle_frame")

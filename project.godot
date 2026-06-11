@@ -298,7 +298,7 @@ config/disable_native_file_dialogs.web=true
 config/disable_native_file_dialogs.OSX=true
 config/is_using_controller=true
 config/discord_rpc=true
-config/discord_rpc.editor=true
+config/discord_rpc.editor=false
 networking/github_repo="David20122/sound-space-plus"
 
 [audio]
@@ -527,7 +527,7 @@ menu_quickbar={
 
 [locale]
 
-translations=PoolStringArray( "res://localization/localization.csv", "res://localization/localization.en.translation", "res://localization/localization.fr.translation", "res://localization/localization.ja.translation" )
+translations=PoolStringArray( "res://localization/localization.csv", "res://localization/localization.en.translation", "res://localization/localization.fr.translation", "res://localization/localization.ja.translation", "res://localization/localization.pl.translation", "res://localization/localization.es.translation", "res://localization/localization.it.translation" )
 locale_filter=[ 0, [ "en", "ja" ] ]
 
 [logging]
