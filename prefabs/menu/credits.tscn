@@ -517,7 +517,7 @@ autowrap = true
 [node name="SpecialThanks" type="VBoxContainer" parent="."]
 margin_top = 1490.0
 margin_right = 1216.0
-margin_bottom = 1822.0
+margin_bottom = 1756.0
 grow_horizontal = 2
 custom_constants/separation = 8
 alignment = 1
@@ -587,29 +587,10 @@ custom_fonts/font = SubResource( 160 )
 text = "frostlines - Provided massive amounts of feedback and ideas"
 align = 1
 
-[node name="C4" type="CenterContainer" parent="SpecialThanks"]
+[node name="C9" type="CenterContainer" parent="SpecialThanks"]
 margin_top = 151.0
 margin_right = 1216.0
 margin_bottom = 176.0
-
-[node name="H" type="HBoxContainer" parent="SpecialThanks/C4"]
-margin_left = 461.0
-margin_right = 754.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="SpecialThanks/C4/H"]
-margin_right = 293.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "Jayden Jones - Former developer"
-align = 1
-
-[node name="C9" type="CenterContainer" parent="SpecialThanks"]
-margin_top = 184.0
-margin_right = 1216.0
-margin_bottom = 209.0
 
 [node name="H" type="HBoxContainer" parent="SpecialThanks/C9"]
 margin_left = 386.0
@@ -646,9 +627,9 @@ text = "Omega - Created the Circuit background world"
 align = 1
 
 [node name="C6" type="CenterContainer" parent="SpecialThanks"]
-margin_top = 217.0
+margin_top = 184.0
 margin_right = 1216.0
-margin_bottom = 233.0
+margin_bottom = 200.0
 
 [node name="MarginContainer" type="MarginContainer" parent="SpecialThanks/C6"]
 margin_left = 248.0
@@ -664,29 +645,10 @@ margin_bottom = 8.0
 rect_min_size = Vector2( 720, 0 )
 custom_styles/panel = SubResource( 161 )
 
-[node name="C5" type="CenterContainer" parent="SpecialThanks"]
-margin_top = 241.0
-margin_right = 1216.0
-margin_bottom = 266.0
-
-[node name="H" type="HBoxContainer" parent="SpecialThanks/C5"]
-margin_left = 300.0
-margin_right = 915.0
-margin_bottom = 25.0
-alignment = 1
-
-[node name="Label" type="Label" parent="SpecialThanks/C5/H"]
-margin_right = 615.0
-margin_bottom = 25.0
-custom_colors/font_color = Color( 0.878431, 0.858824, 0.682353, 1 )
-custom_fonts/font = SubResource( 160 )
-text = "Past and present patrons - Quite literally paying for our Steam release"
-align = 1
-
 [node name="C" type="CenterContainer" parent="SpecialThanks"]
-margin_top = 274.0
+margin_top = 208.0
 margin_right = 1216.0
-margin_bottom = 299.0
+margin_bottom = 233.0
 
 [node name="H" type="HBoxContainer" parent="SpecialThanks/C"]
 margin_left = 282.0
@@ -703,9 +665,9 @@ text = "Community staff - Helping people & keeping the community under control"
 align = 1
 
 [node name="C2" type="CenterContainer" parent="SpecialThanks"]
-margin_top = 307.0
+margin_top = 241.0
 margin_right = 1216.0
-margin_bottom = 332.0
+margin_bottom = 266.0
 
 [node name="H" type="HBoxContainer" parent="SpecialThanks/C2"]
 margin_left = 295.0
@@ -722,7 +684,7 @@ text = "The playtester team - Catching major bugs before they reach the public"
 align = 1
 
 [node name="SPACER" type="Control" parent="."]
-margin_top = 1834.0
+margin_top = 1768.0
 margin_right = 1216.0
-margin_bottom = 1959.0
+margin_bottom = 1893.0
 rect_min_size = Vector2( 0, 125 )
