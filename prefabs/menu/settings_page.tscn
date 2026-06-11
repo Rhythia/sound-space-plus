@@ -1,4 +1,4 @@
-[gd_scene load_steps=92 format=2]
+[gd_scene load_steps=93 format=2]
 
 [ext_resource path="res://uitheme.tres" type="Theme" id=1]
 [ext_resource path="res://assets/font/Lato/Lato-Regular.ttf" type="DynamicFontData" id=2]
@@ -41,6 +41,7 @@
 [ext_resource path="res://scripts/ui/settings/fov.gd" type="Script" id=39]
 [ext_resource path="res://assets/font/Lato/Lato-Bold.ttf" type="DynamicFontData" id=40]
 [ext_resource path="res://scripts/ui/settings/Bloom.gd" type="Script" id=41]
+[ext_resource path="res://scripts/ui/settings/UpdateCheck.gd" type="Script" id=42]
 [ext_resource path="res://scripts/ui/settings/NoteScale.gd" type="Script" id=44]
 [ext_resource path="res://scripts/ui/settings/ReplaceCustomFile.gd" type="Script" id=45]
 [ext_resource path="res://addons/native_dialogs/bin/native_dialog_open_file.gdns" type="Script" id=46]
@@ -289,10 +290,19 @@ theme = ExtResource( 1 )
 text = "Reload Content"
 script = ExtResource( 59 )
 
+[node name="CheckForUpdate" type="Button" parent="TopButtons/TopButtonsHBox"]
+margin_left = 945.0
+margin_right = 1085.0
+margin_bottom = 33.0
+rect_min_size = Vector2( 140, 0 )
+theme = ExtResource( 1 )
+text = "Check for Updates"
+script = ExtResource( 42 )
+
 [node name="TabContainer" type="TabContainer" parent="."]
 margin_top = 59.0
 margin_right = 1280.0
-margin_bottom = 614.0
+margin_bottom = 646.0
 theme = ExtResource( 1 )
 tab_align = 0
 
@@ -5282,18 +5292,18 @@ custom_styles/separator = SubResource( 55 )
 [node name="Recording" type="VBoxContainer" parent="TabContainer/Replays & Misc"]
 margin_top = 30.0
 margin_right = 1280.0
-margin_bottom = 228.0
+margin_bottom = 260.0
 
 [node name="Group" type="MarginContainer" parent="TabContainer/Replays & Misc/Recording"]
 margin_right = 1280.0
-margin_bottom = 198.0
+margin_bottom = 230.0
 mouse_filter = 1
 custom_constants/margin_left = 66
 
 [node name="H" type="GridContainer" parent="TabContainer/Replays & Misc/Recording/Group"]
 margin_left = 66.0
 margin_right = 1280.0
-margin_bottom = 198.0
+margin_bottom = 230.0
 
 [node name="LegacyMenu" type="CheckBox" parent="TabContainer/Replays & Misc/Recording/Group/H"]
 margin_right = 318.0
@@ -5314,18 +5324,38 @@ flat = true
 script = ExtResource( 54 )
 target = "enable_oldmenu"
 
-[node name="SEPARATOR3" type="HSeparator" parent="TabContainer/Replays & Misc/Recording/Group/H"]
+[node name="DisableAutoUpdate" type="CheckBox" parent="TabContainer/Replays & Misc/Recording/Group/H"]
 margin_top = 32.0
 margin_right = 318.0
-margin_bottom = 62.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 0, 28 )
+hint_tooltip = "When turned on, the game will not ask for updates anymore."
+theme = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_focus = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_hover_pressed = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_hover = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.898039, 0.94902, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+action_mode = 0
+text = "Disable Auto-Updater"
+flat = true
+script = ExtResource( 54 )
+target = "disable_update"
+
+[node name="SEPARATOR3" type="HSeparator" parent="TabContainer/Replays & Misc/Recording/Group/H"]
+margin_top = 64.0
+margin_right = 318.0
+margin_bottom = 94.0
 rect_min_size = Vector2( 0, 10 )
 custom_constants/separation = 30
 custom_styles/separator = SubResource( 55 )
 
 [node name="Replays" type="CheckBox" parent="TabContainer/Replays & Misc/Recording/Group/H"]
-margin_top = 66.0
+margin_top = 98.0
 margin_right = 318.0
-margin_bottom = 94.0
+margin_bottom = 126.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "records replays. what else did you expect...? (drag a replay file into the game to view)"
 theme = ExtResource( 1 )
@@ -5343,9 +5373,9 @@ script = ExtResource( 54 )
 target = "record_replays"
 
 [node name="AltCam" type="CheckBox" parent="TabContainer/Replays & Misc/Recording/Group/H"]
-margin_top = 98.0
+margin_top = 130.0
 margin_right = 318.0
-margin_bottom = 126.0
+margin_bottom = 158.0
 rect_min_size = Vector2( 0, 28 )
 hint_tooltip = "alters the camera angle in replays - side view"
 theme = ExtResource( 1 )
@@ -5363,9 +5393,9 @@ script = ExtResource( 54 )
 target = "alt_cam"
 
 [node name="Mode" type="HBoxContainer" parent="TabContainer/Replays & Misc/Recording/Group/H"]
-margin_top = 130.0
+margin_top = 162.0
 margin_right = 318.0
-margin_bottom = 162.0
+margin_bottom = 194.0
 hint_tooltip = "[def. Maximise] changes the method used for dynamic fps"
 
 [node name="Mode" type="OptionButton" parent="TabContainer/Replays & Misc/Recording/Group/H/Mode"]
@@ -5394,9 +5424,9 @@ align = 2
 valign = 1
 
 [node name="FPS" type="HBoxContainer" parent="TabContainer/Replays & Misc/Recording/Group/H"]
-margin_top = 166.0
+margin_top = 198.0
 margin_right = 318.0
-margin_bottom = 198.0
+margin_bottom = 230.0
 hint_tooltip = "[def. 30/144] changes the dynamic fps bounds of your replays"
 
 [node name="FPS" type="OptionButton" parent="TabContainer/Replays & Misc/Recording/Group/H/FPS"]
@@ -5425,17 +5455,17 @@ align = 2
 valign = 1
 
 [node name="SEPARATOR3" type="HSeparator" parent="TabContainer/Replays & Misc"]
-margin_top = 228.0
+margin_top = 260.0
 margin_right = 1280.0
-margin_bottom = 258.0
+margin_bottom = 290.0
 rect_min_size = Vector2( 0, 10 )
 custom_constants/separation = 30
 custom_styles/separator = SubResource( 55 )
 
 [node name="Experimental" type="VBoxContainer" parent="TabContainer/Replays & Misc"]
-margin_top = 258.0
+margin_top = 290.0
 margin_right = 1280.0
-margin_bottom = 495.0
+margin_bottom = 527.0
 
 [node name="Group" type="MarginContainer" parent="TabContainer/Replays & Misc/Experimental"]
 margin_right = 1280.0
@@ -5757,17 +5787,17 @@ text = "GUI scale, higher = smaller"
 valign = 1
 
 [node name="SEPARATOR" type="HSeparator" parent="TabContainer/Replays & Misc"]
-margin_top = 495.0
+margin_top = 527.0
 margin_right = 1280.0
-margin_bottom = 525.0
+margin_bottom = 557.0
 rect_min_size = Vector2( 0, 10 )
 custom_constants/separation = 30
 custom_styles/separator = SubResource( 55 )
 
 [node name="Control" type="Control" parent="."]
-margin_top = 618.0
+margin_top = 650.0
 margin_right = 1280.0
-margin_bottom = 618.0
+margin_bottom = 650.0
 
 [connection signal="pressed" from="TabContainer/Replays & Misc/Experimental/Group/H/Intro/Play" to="TabContainer/Replays & Misc/Experimental/Group/H/Intro/Play" method="_on_Play_pressed"]
 [connection signal="value_changed" from="TabContainer/Replays & Misc/Experimental/Group/H/RenderScale/Scale" to="TabContainer/Replays & Misc/Experimental/Group/H/RenderScale/Scale" method="_on_Scale_value_changed"]
