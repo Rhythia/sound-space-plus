@@ -3851,8 +3851,8 @@ valign = 1
 
 [node name="LetterGrade" type="Label" parent="Main/Results/Results/EndInfo"]
 material = SubResource( 126 )
-margin_left = 148.0
-margin_right = 279.0
+margin_left = 152.0
+margin_right = 283.0
 margin_bottom = 44.0
 focus_mode = 2
 theme = ExtResource( 1 )
