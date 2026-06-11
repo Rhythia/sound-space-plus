@@ -749,6 +749,7 @@ var vhs_shader:bool = false
 
 # Settings - Experimental
 var enable_oldmenu:bool = false
+var disable_update:bool = false
 var render_scale:float = 1
 var ensure_hitsync:bool = false
 var hitsync_offset:float = 0 # don't save this yet; probably not even a necessary setting
@@ -1246,6 +1247,8 @@ func load_saved_settings(saveFile:String = Globals.p("user://settings.json")):
 
 		if data.has("enable_oldmenu"):
 			enable_oldmenu = data.enable_oldmenu
+		if data.has("disable_update"):
+			disable_update = data.disable_update
 		if data.has("ensure_hitsync"):
 			ensure_hitsync = data.ensure_hitsync
 		if data.has("retain_song_pitch"):
@@ -1517,6 +1520,8 @@ func load_saved_settings(saveFile:String = Globals.p("user://settings.json")):
 			last_search_incl_online = bool(file.get8())
 		if sv >= 51:
 			enable_oldmenu = bool(file.get_8())
+		if sv >= 52:
+			disable_update = bool(file.get_8())
 		file.close()
 		save_settings()
 	return 0
@@ -1689,6 +1694,7 @@ func save_settings(saveFile:String = Globals.p("user://settings.json")):
 			edge_drift = ser_float(edge_drift),
 
 			enable_oldmenu = enable_oldmenu,
+			disable_update = disable_update,
 			ensure_hitsync = ensure_hitsync,
 			retain_song_pitch = retain_song_pitch,
 			do_note_pushback = do_note_pushback,
@@ -2080,36 +2086,6 @@ func do_init(_ud=null):
 			single_map_mode_path = Globals.cmdline.txt
 			single_map_mode_audio_path = Globals.cmdline.audio
 
-	# Check for updates
-	if (OS.has_feature("Windows") or OS.has_feature("X11")) and !OS.has_feature("editor"):
-		emit_signal("init_stage_reached","Check for updates")
-		emit_signal("init_stage_num",-1)
-		yield(get_tree(),"idle_frame")
-		Online.check_latest_version()
-		var latest_version = yield(Online,"latest_version")
-		if ProjectSettings.get_setting("application/config/version") != latest_version:
-			var sel = 1
-			Globals.confirm_prompt.s_alert.play()
-			Globals.confirm_prompt.open("A new version of the game was detected.\n Would you like to automatically update?","Outdated",[{text="Ignore",wait=2},{text="Update",wait=1}])
-			sel = yield(Globals.confirm_prompt,"option_selected")
-			Globals.confirm_prompt.s_next.play()
-			Globals.confirm_prompt.close()
-			yield(Globals.confirm_prompt,"done_closing")
-			if bool(sel):
-				emit_signal("init_stage_reached","Updating the game")
-				Online.attempt_update()
-				yield(Online,"update_finished")
-				get_tree().call_deferred("quit",1)
-				OS.execute(OS.get_executable_path(),["--updated"],false)
-				return
-		elif Globals.cmdline.keys().has("updated"):
-			var rdir = Directory.new()
-			rdir.open(OS.get_executable_path().get_base_dir())
-			if rdir.file_exists("SoundSpacePlus.pck.old"):
-				rdir.remove("SoundSpacePlus.pck.old")
-			if rdir.file_exists("update.zip"):
-				rdir.remove("update.zip")
-
 	emit_signal("init_stage_reached","Init filesystem")
 	emit_signal("init_stage_num",-1)
 	yield(get_tree(),"idle_frame")
@@ -2408,6 +2384,37 @@ func do_init(_ud=null):
 		get_tree().change_scene("res://scenes/errors/settings.tscn")
 		return
 	print('settings done')
+
+	# check for updates
+	if !disable_update:
+		if (OS.has_feature("Windows") or OS.has_feature("X11")) and !OS.has_feature("editor"):
+			emit_signal("init_stage_reached","Check for updates")
+			emit_signal("init_stage_num",-1)
+			yield(get_tree(),"idle_frame")
+			Online.check_latest_version()
+			var latest_version = yield(Online,"latest_version")
+			if ProjectSettings.get_setting("application/config/version") != latest_version:
+				var sel = 1
+				Globals.confirm_prompt.s_alert.play()
+				Globals.confirm_prompt.open("A new version of the game was detected.\n Would you like to automatically update?","Outdated",[{text="Ignore",wait=2},{text="Update",wait=1}])
+				sel = yield(Globals.confirm_prompt,"option_selected")
+				Globals.confirm_prompt.s_next.play()
+				Globals.confirm_prompt.close()
+				yield(Globals.confirm_prompt,"done_closing")
+				if bool(sel):
+					emit_signal("init_stage_reached","Updating the game")
+					Online.attempt_update()
+					yield(Online,"update_finished")
+					get_tree().call_deferred("quit",1)
+					OS.execute(OS.get_executable_path(),["--updated"],false)
+					return
+			elif Globals.cmdline.keys().has("updated"):
+				var rdir = Directory.new()
+				rdir.open(OS.get_executable_path().get_base_dir())
+				if rdir.file_exists("SoundSpacePlus.pck.old"):
+					rdir.remove("SoundSpacePlus.pck.old")
+				if rdir.file_exists("update.zip"):
+					rdir.remove("update.zip")
 
 	if !hlm_converted:
 		parallax *= (0.35/0.25)
