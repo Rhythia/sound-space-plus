@@ -55,6 +55,7 @@ Save,Save,保存,Sauvegarder,Guardar,,Speichern,Zapisz,Salva
 Open User Folder,Open User Folder,ユーザーフォルダを開く,Ouvrir dossier utilisateur,Abrir carpeta de usuario,,Benutzer Ordner öffnen,Otwórż folder użytkownika,Apri cartella profilo
 Open Replay Folder,Open Replay Folder,リプレイフォルダーを開く,Ouvrir dossier de replay,Abrir carpeta de repeticiones,,Wiederholungsordner öffnen,Otwórż folder z powtórkami,Apri cartella Replay
 Reload Content,Reload Content,再読み込み,Recharger le contenu,Recargar contenido,,Inhalt neu Laden,Odśwież zasoby,Ricarica contenuti
+Check for Updates,Check for Updates,アップデートを確認する,Vérifier pour une mise à jour,Comprobar actualizaciones,,,,
 Disable Pausing,Disable Pausing,一時停止を無効にする,Désactiver les pauses,Desactivar pausas,,Pausierungen ausschalten,Wyłącz Pauzowanie,Disabilita pausa
 disallows pausing the map,disallows pausing the map,一時停止を使わない,empêche les pauses,evita poder pausar el juego,,Hält dich davon ab zu pausieren,Nie zezwalaj na pauzowanie mapy,Impedisce la pausa della mappa
 Custom Speed Rate,Custom Speed Rate,ノーツ速度,Vitesse customisé,Velocidad personalizable,,Custom Schnelligkeit,Niestandarowa Prędkość Mapy,Velocità personalizzata
@@ -136,7 +137,8 @@ Miss* (no color),Miss* (no color),ミス* (無色),Raté* (sans couleurs),Fallo*
 Show Miss Effect,Show Miss Effect,ミスエフェクトを表示,Afficher miss effect,Mostrar efecto visual de fallo,,,Włącz efekt pudłowania,Mostra effetto miss
 "replace ""hit"" with ""miss"" in the description of the setting above this one","replace ""hit"" with ""miss"" in the description of the setting above this one",この上の設定の説明の「ヒット」を「ミス」に置き換える。,"remplace ""hit"" avec ""miss"" dans la description du paramètre","sustituye ""golpe"" por ""fallo"" en la descripción del ajuste superior",,,zamień „trafienie” na „pudło” w opisie ustawienia powyżej tego,sostituisci “hit” con “miss” nella descrizione dell'impostazione sopra questa
 Replays & Recording,Replays & Recording,録画とリプレイ,Replays et enregistrement,Repeticiones y grabación,,,Powtórki i nagrywanie,Replays e registrazione
-Enable Legacy Menu,Enable Legacy Menu,古いのメニューを使う,Utiliser le menu classique,,,,,Attiva Menu Legacy
+Enable Legacy Menu,Enable Legacy Menu,古いのメニューを使う,Utiliser le menu classique,Habilitar menú legado,,,,Attiva Menu Legacy
+Disable Auto-Updater,Disable Auto-Updater,アップデートをオフにする,Désactiver les mises à jour automatiques,Comprobar actualizaciones,,,,
 Record Replays,Record Replays,リプレイを録画,Enregistrer replays,Grabar repeticiones,,,Nagrywaj Powtórki,Registra replay
 records replays. what else did you expect...? (drag a replay file into the game to view),records replays. what else did you expect...? (drag a replay file into the game to view),リプレイを録画 (リプレイファイルをゲームにドラッグして表示する）,déposez un fichier replay sur le jeu pour le visionner,permite grabar repeticiones (desplaza un fichero sobre la ventana del juego para visualizar),,,nagrywa powtórki.... co innego myslałes? (wrzuć plik powtórki do okna gry aby odtworzyć),registra i replay. Cos'altro ti aspettavi...? (trascina un file di replay nel gioco per visualizzarlo)
 Alt. Replay Camera,Alt. Replay Camera,カメラアングルを追加,Caméra replay alternative,Repetición en cámara alternativa,,,Alternatywna kamera powtórki,Alt. Replay Camera
