@@ -4397,7 +4397,7 @@ scroll_horizontal_enabled = false
 scroll_deadzone = 45
 
 [node name="L" parent="Main/Credits/C/S" instance=ExtResource( 7 )]
-margin_bottom = 1662.0
+margin_bottom = 1893.0
 
 [node name="Content" type="ReferenceRect" parent="Main"]
 visible = false
