@@ -750,6 +750,7 @@ var vhs_shader:bool = false
 # Settings - Experimental
 var enable_oldmenu:bool = false
 var disable_update:bool = false
+var legacy_music:bool = false
 var render_scale:float = 1
 var ensure_hitsync:bool = false
 var hitsync_offset:float = 0 # don't save this yet; probably not even a necessary setting
@@ -1249,6 +1250,8 @@ func load_saved_settings(saveFile:String = Globals.p("user://settings.json")):
 			enable_oldmenu = data.enable_oldmenu
 		if data.has("disable_update"):
 			disable_update = data.disable_update
+		if data.has("legacy_music"):
+			legacy_music = data.legacy_music
 		if data.has("ensure_hitsync"):
 			ensure_hitsync = data.ensure_hitsync
 		if data.has("retain_song_pitch"):
@@ -1522,6 +1525,8 @@ func load_saved_settings(saveFile:String = Globals.p("user://settings.json")):
 			enable_oldmenu = bool(file.get_8())
 		if sv >= 52:
 			disable_update = bool(file.get_8())
+		if sv >= 53:
+			legacy_music = bool(file.get_8())
 		file.close()
 		save_settings()
 	return 0
@@ -1695,6 +1700,7 @@ func save_settings(saveFile:String = Globals.p("user://settings.json")):
 
 			enable_oldmenu = enable_oldmenu,
 			disable_update = disable_update,
+			legacy_music = legacy_music,
 			ensure_hitsync = ensure_hitsync,
 			retain_song_pitch = retain_song_pitch,
 			do_note_pushback = do_note_pushback,
@@ -2370,10 +2376,6 @@ func do_init(_ud=null):
 	def_pb_snd = load("res://assets/sfx/new_best.wav")
 	normal_pb_sound = def_pb_snd
 
-	emit_signal("init_stage_reached","Init default assets 6/6")
-	if lp: yield(get_tree(),"idle_frame")
-	def_menu_bgm = load("res://assets/sfx/music/menu_loop.ogg")
-
 	# Read settings
 	emit_signal("init_stage_reached","Read user settings")
 	yield(get_tree(),"idle_frame")
@@ -2384,6 +2386,15 @@ func do_init(_ud=null):
 		get_tree().change_scene("res://scenes/errors/settings.tscn")
 		return
 	print('settings done')
+
+	emit_signal("init_stage_reached","Init default assets 6/6")
+	if lp: yield(get_tree(),"idle_frame")
+
+	var menu_music: String = "res://assets/sfx/music/menu_loop.ogg"
+	if legacy_music:
+		menu_music = "res://assets/sfx/music/OLDmenu_loop.ogg"
+
+	def_menu_bgm = load(menu_music)
 
 	# check for updates
 	if !disable_update:

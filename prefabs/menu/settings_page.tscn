@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=2]
+[gd_scene load_steps=94 format=2]
 
 [ext_resource path="res://uitheme.tres" type="Theme" id=1]
 [ext_resource path="res://assets/font/Lato/Lato-Regular.ttf" type="DynamicFontData" id=2]
@@ -42,6 +42,7 @@
 [ext_resource path="res://assets/font/Lato/Lato-Bold.ttf" type="DynamicFontData" id=40]
 [ext_resource path="res://scripts/ui/settings/Bloom.gd" type="Script" id=41]
 [ext_resource path="res://scripts/ui/settings/UpdateCheck.gd" type="Script" id=42]
+[ext_resource path="res://assets/images/branding/sspicon.png" type="Texture" id=43]
 [ext_resource path="res://scripts/ui/settings/NoteScale.gd" type="Script" id=44]
 [ext_resource path="res://scripts/ui/settings/ReplaceCustomFile.gd" type="Script" id=45]
 [ext_resource path="res://addons/native_dialogs/bin/native_dialog_open_file.gdns" type="Script" id=46]
@@ -302,7 +303,7 @@ script = ExtResource( 42 )
 [node name="TabContainer" type="TabContainer" parent="."]
 margin_top = 59.0
 margin_right = 1280.0
-margin_bottom = 646.0
+margin_bottom = 674.0
 theme = ExtResource( 1 )
 tab_align = 0
 
@@ -5794,10 +5795,48 @@ rect_min_size = Vector2( 0, 10 )
 custom_constants/separation = 30
 custom_styles/separator = SubResource( 55 )
 
-[node name="Control" type="Control" parent="."]
-margin_top = 650.0
+[node name="H" type="HBoxContainer" parent="TabContainer/Replays & Misc"]
+margin_top = 557.0
 margin_right = 1280.0
-margin_bottom = 650.0
+margin_bottom = 585.0
+
+[node name="Control" type="Control" parent="TabContainer/Replays & Misc/H"]
+margin_right = 1228.0
+margin_bottom = 28.0
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/Replays & Misc/H"]
+margin_left = 1232.0
+margin_right = 1260.0
+margin_bottom = 28.0
+rect_min_size = Vector2( 28, 28 )
+texture = ExtResource( 43 )
+expand = true
+stretch_mode = 1
+
+[node name="LegacyMusic" type="CheckBox" parent="TabContainer/Replays & Misc/H"]
+margin_left = 1264.0
+margin_right = 1280.0
+margin_bottom = 28.0
+rect_min_size = Vector2( 0, 28 )
+theme = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_focus = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_hover_pressed = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_hover = Color( 0.898039, 0.94902, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.898039, 0.94902, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+action_mode = 0
+flat = true
+expand_icon = true
+script = ExtResource( 54 )
+target = "legacy_music"
+
+[node name="Control" type="Control" parent="."]
+margin_top = 678.0
+margin_right = 1280.0
+margin_bottom = 678.0
 
 [connection signal="pressed" from="TabContainer/Replays & Misc/Experimental/Group/H/Intro/Play" to="TabContainer/Replays & Misc/Experimental/Group/H/Intro/Play" method="_on_Play_pressed"]
 [connection signal="value_changed" from="TabContainer/Replays & Misc/Experimental/Group/H/RenderScale/Scale" to="TabContainer/Replays & Misc/Experimental/Group/H/RenderScale/Scale" method="_on_Scale_value_changed"]
