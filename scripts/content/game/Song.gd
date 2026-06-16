@@ -749,7 +749,6 @@ func read_markers() -> Dictionary:
 			
 			
 			var offset = 0
-			offset = 0
 			m[mt_size[type_id]] = ms # ms timestamp
 			
 			for ti in range(data.size()):
